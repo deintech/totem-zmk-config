@@ -1,0 +1,3 @@
+TO_MACRO(m, BAS)    //to_mBAS
+TO_MACRO(w, BAS)    //to_wBAS
+TO_MACRO(a, BAS)    //to_aBAS
