@@ -1,11 +1,11 @@
 /*
  * Copyright (c) 2025 Camilo Martinez (Equiman)
  * SPDX-License-Identifier: MIT
- */
-
- /*
+ *
  * Documentation:
- * https://zmk.dev/docs/keymaps/behaviors/mod-morph
+ * @see https://zmk.dev/docs/behaviors/mod-morph
+ * @see https://zmk.dev/docs/keymaps/key-codes
+ * @see https://zmk.dev/docs/features/output-modifiers
  */
 
 /*

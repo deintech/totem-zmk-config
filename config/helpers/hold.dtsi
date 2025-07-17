@@ -1,12 +1,13 @@
 /*
  * Copyright (c) 2025 Camilo Martinez (Equiman)
  * SPDX-License-Identifier: MIT
- */
-
-/*
+ *
  * Documentation:
- * https://zmk.dev/docs/keymaps/behaviors/hold-tap
- * https://zmk.dev/docs/keymaps/behaviors/mod-morph
+ * @see https://zmk.dev/docs/behaviors/hold-tap
+ * @see https://zmk.dev/docs/behaviors/mod-morph
+ * @see https://zmk.dev/docs/behaviors/macros
+ * @see https://zmk.dev/docs/behaviors/layers
+ * @see https://zmk.dev/docs/keymaps/key-codes
  */
 
 /*
@@ -62,3 +63,4 @@
       flavor = HR_FLAVOR;                           \
       bindings = <&kp>, <&MP>;                      \
   };
+  

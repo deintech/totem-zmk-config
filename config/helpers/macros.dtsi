@@ -1,6 +1,11 @@
 /*
  * Copyright (c) 2023 Camilo Martinez (Equiman)
  * SPDX-License-Identifier: MIT
+ *
+ * Documentation:
+ * @see https://zmk.dev/docs/behaviors/macros
+ * @see https://zmk.dev/docs/behaviors/layers
+ * @see https://zmk.dev/docs/keymaps/key-codes
  */
 
 /*
@@ -65,3 +70,4 @@
           , <&macro_release &mo OS##MO>                           \
           , <&macro_tap &kp F_##OS##TO>;                          \
   };
+  
