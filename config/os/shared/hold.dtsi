@@ -1,0 +1,77 @@
+/*
+ * Copyright (c) 2023 Camilo Martinez (Equiman)
+ * SPDX-License-Identifier: MIT
+ *
+ * Documentation:
+ * @see https://zmk.dev/docs/behaviors/hold-tap
+ * @see https://zmk.dev/docs/behaviors/layers
+ * @see https://zmk.dev/docs/features/tapping-terms
+ */
+
+/*
+ * @brief Base ZMK hold-tap behavior for Home Row Mods.
+ *
+ * This node defines a standard `zmk,behavior-hold-tap` specifically configured for
+ * "Home Row Mods" functionality. It allows a single key to function as a regular
+ * key (`&kp`) when tapped quickly and as a modifier (or another key behavior)
+ * when held. The `flavor`, `tapping-term-ms`, and `quick-tap-ms` are
+ * typically set via predefined constants (`HR_FLAVOR`, `HR_TAPPING`, `HR_QUICK_TAP`)
+ * to ensure consistent behavior across all home row mod keys.
+ *
+ * @note This is a generic definition. The actual keycodes for the tap and hold
+ * actions are provided when this behavior is referenced in a keymap binding.
+ * For example: `&hm LGUI A` would mean "hold for Left GUI, tap for A".
+ */
+hm: homerow_mods {
+    compatible = "zmk,behavior-hold-tap";
+    #binding-cells = <2>;
+    tapping-term-ms = <HR_TAPPING>;
+    quick-tap-ms = <HR_QUICK_TAP>;
+    flavor = HR_FLAVOR;
+    bindings = <&kp>, <&kp>;
+};
+
+/*
+ * @brief ZMK hold-tap behavior for Layer Toggle on Hold, Key Press on Tap.
+ *
+ * This node defines a `zmk,behavior-hold-tap` where holding the key activates
+ * a layer change (`&to`), and tapping the key sends a standard key press (`&kp`).
+ * The `flavor = "hold-preferred"` ensures that if you hold the key for longer
+ * than `HP_TAPPING` milliseconds, it immediately registers as a layer change.
+ * This is commonly used for keys that provide quick access to a layer when held,
+ * but also have a default key output when tapped.
+ *
+ * @note The specific layer and key press are defined when this behavior is
+ * referenced in a keymap binding. For example: `&tokp MY_LAYER RET` would mean
+ * "hold to go to MY_LAYER, tap for Enter".
+ */
+tokp: to_kp {
+    compatible = "zmk,behavior-hold-tap";
+    #binding-cells = <2>;
+    tapping-term-ms = <HP_TAPPING>;
+    flavor = "hold-preferred";
+    bindings = <&to>, <&kp>;
+};
+
+/*
+ * @brief ZMK hold-tap behavior for Momentary Layer on Hold, Layer Toggle on Tap.
+ *
+ * This node defines a `zmk,behavior-hold-tap` that provides advanced layer
+ * control from a single key. When the key is held, it momentarily activates
+ * a layer (`&mo`). When the key is quickly tapped, it toggles to a different
+ * layer (`&to`). The `flavor = "hold-preferred"` ensures the momentary layer
+ * action is prioritized when the key is held down. This is useful for designs
+ * where holding gives temporary access to a layer, while tapping permanently
+ * switches to another.
+ *
+ * @note The specific layers for the momentary and toggle actions are defined
+ * when this behavior is referenced in a keymap binding. For example:
+ * `&moto MOMENTARY_LYR TOGGLE_LYR` would mean "hold for MOMENTARY_LYR, tap to go to TOGGLE_LYR".
+ */
+moto: mo_to {
+    compatible = "zmk,behavior-hold-tap";
+    #binding-cells = <2>;
+    tapping-term-ms = <HP_TAPPING>;
+    flavor = "hold-preferred";
+    bindings = <&mo>, <&to>;
+};

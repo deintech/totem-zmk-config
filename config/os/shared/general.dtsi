@@ -1,6 +1,12 @@
 /*
+ * Copyright (c) 2025 Camilo Martinez (Equiman)
+ * SPDX-License-Identifier: MIT
+ *
  * Documentation:
- * https://zmk.dev/docs/keymaps/behaviors/hold-tap#mod-tap
+ * @see https://zmk.dev/docs/behaviors/hold-tap
+ * @see https://zmk.dev/docs/behaviors/caps-word
+ * @see https://zmk.dev/docs/features/tapping-terms
+ * @see https://zmk.dev/docs/keymaps/key-codes
  */
 
 /* Mod Tap */
@@ -9,4 +15,11 @@
     quick-tap-ms = <MT_QUICK_TAP>;      // repeat on tap-into-hold
     flavor = "tap-preferred";
     hold-trigger-key-positions = <0>;   // tap on interrupt
+};
+
+/* Caps Word */
+cw: caps_word {
+    compatible = "zmk,behavior-caps-word";
+    #binding-cells = <0>;
+    continue-list = <UNDERSCORE MINUS BACKSPACE DEL>;
 };

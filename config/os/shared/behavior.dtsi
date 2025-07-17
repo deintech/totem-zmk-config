@@ -1,7 +1,8 @@
 /*
  * Documentation:
- * https://zmk.dev/docs/keymaps/behaviors/hold-tap
- * https://zmk.dev/docs/keymaps/behaviors/hold-tap
+ * @see https://zmk.dev/docs/behaviors/hold-tap
+ * @see https://zmk.dev/docs/behaviors/mod-tap
+ * @see https://zmk.dev/docs/behaviors/macros
  */
 
 /* Home Row */
@@ -22,4 +23,3 @@
 #define MC_WAIT       100
 #define MC_TAP        200
 #define MC_LAYERS       0
-
