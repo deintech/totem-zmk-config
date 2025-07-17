@@ -16,6 +16,105 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
+/* Global */
+#include "os/shared/behavior.dtsi"
+#include "os/shared/general.dtsi"
+// #include "os/macos/layers.dtsi"
+// #include "os/windows/layers.dtsi"
+// #include "os/android/layers.dtsi"
+
+/* Keys */
+#include "os/shared/keys.dtsi"
+// #include "os/macos/keys.dtsi"
+// #include "os/windows/keys.dtsi"
+// #include "os/android/keys.dtsi"
+
+/* Helpers */
+#include "helpers/macros.dtsi"
+#include "helpers/hold.dtsi"
+#include "helpers/morph.dtsi"
+
+/ {
+    macros {
+        #include "os/shared/macros/layers.dtsi"
+        #include "os/shared/macros/settings.dtsi"
+
+        // #include "os/macos/macros/layers.dtsi"
+        // #include "os/macos/macros/int.dtsi"
+        // #include "os/macos/macros/dev.dtsi"
+
+        // #include "os/windows/macros/layers.dtsi"
+        // #include "os/windows/macros/int.dtsi"
+        // #include "os/windows/macros/dev.dtsi"
+
+        // #include "os/android/macros/layers.dtsi"
+        // #include "os/android/macros/int.dtsi"
+        // #include "os/android/macros/dev.dtsi"
+        // #include "os/android/macros/stg.dtsi"
+    };
+};
+
+/ {
+    behaviors {
+        #include "os/shared/hold.dtsi"
+        #include "os/shared/morph/base.dtsi"
+        #include "os/shared/morph/num.dtsi"
+
+        // #include "os/macos/morph/layers.dtsi"
+        // #include "os/macos/morph/base.dtsi"
+        // #include "os/macos/morph/int.dtsi"
+        // #include "os/macos/morph/actions.dtsi"
+        // #include "os/macos/morph/dev.dtsi"
+        // #include "os/macos/morph/settings.dtsi"
+        // #include "os/macos/hold/layers.dtsi"
+        // #include "os/macos/hold/base.dtsi"
+        // #include "os/macos/hold/dev.dtsi"
+        // #include "os/macos/hold/settings.dtsi"
+
+        // #include "os/windows/morph/layers.dtsi"
+        // #include "os/windows/morph/base.dtsi"
+        // #include "os/windows/morph/int.dtsi"
+        // #include "os/windows/morph/actions.dtsi"
+        // #include "os/windows/morph/dev.dtsi"
+        // #include "os/windows/morph/settings.dtsi"
+        // #include "os/windows/hold/layers.dtsi"
+        // #include "os/windows/hold/base.dtsi"
+        // #include "os/windows/hold/dev.dtsi"
+
+        // #include "os/android/morph/layers.dtsi"
+        // #include "os/android/morph/base.dtsi"
+        // #include "os/android/morph/int.dtsi"
+        // #include "os/android/morph/dev.dtsi"
+        // #include "os/android/hold/layers.dtsi"
+        // #include "os/android/hold/base.dtsi"
+    };
+};
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+        // #include "os/macos/combos/base.dtsi"
+        // #include "os/macos/combos/help.dtsi"
+        // #include "os/macos/combos/settings.dtsi"
+
+        // #include "os/windows/combos/base.dtsi"
+        // #include "os/windows/combos/help.dtsi"
+
+        // #include "os/android/combos/base.dtsi"
+    };
+};
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        // #include "os/macos/keymap.dtsi"
+        // #include "os/windows/keymap.dtsi"
+        // #include "os/android/keymap.dtsi"
+    };
+};
+
 #define BASE 0
 #define NAV  1
 #define SYM  2
