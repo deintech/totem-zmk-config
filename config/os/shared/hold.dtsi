@@ -5,7 +5,9 @@
  * Documentation:
  * @see https://zmk.dev/docs/behaviors/hold-tap
  * @see https://zmk.dev/docs/behaviors/layers
+ * @see https://zmk.dev/docs/behaviors/caps-word
  * @see https://zmk.dev/docs/features/tapping-terms
+ * @see https://zmk.dev/docs/keymaps/key-codes
  */
 
 /*
@@ -74,4 +76,27 @@ moto: mo_to {
     tapping-term-ms = <HP_TAPPING>;
     flavor = "hold-preferred";
     bindings = <&mo>, <&to>;
+};
+
+/*
+ * @brief Caps Word Behavior (`cw`).
+ *
+ * This Devicetree node defines the `zmk,behavior-caps-word` behavior, which
+ * automatically capitalizes the first letter of each word typed after activation.
+ * This is a highly convenient feature for entering words like "GitHub" or "ZMK"
+ * without manually managing Shift.
+ *
+ * @param compatible Specifies that this node defines a Caps Word behavior.
+ * @param binding-cells Indicates that this behavior does not require any additional
+ * parameters when used in a keymap.
+ * @param continue-list This property defines a list of keycodes that, when pressed
+ * while Caps Word is active, will **not** terminate the Caps Word state. This is
+ * useful for typing hyphenated words, underscores, or making corrections without
+ * deactivating Caps Word. For example, typing "my-word" with Caps Word active
+ * would result in "My-Word" rather than "My-word" (if '-' were not in the list).
+ */
+cw: caps_word {
+    compatible = "zmk,behavior-caps-word";
+    #binding-cells = <0>;
+    continue-list = <UNDERSCORE MINUS BACKSPACE DEL>;
 };
