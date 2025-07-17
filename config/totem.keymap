@@ -23,12 +23,6 @@
 #include "os/windows/layers.dtsi"
 #include "os/android/layers.dtsi"
 
-/* Keys */
-#include "os/shared/keys.dtsi"
-// #include "os/macos/keys.dtsi"
-// #include "os/windows/keys.dtsi"
-// #include "os/android/keys.dtsi"
-
 /* Helpers */
 #include "helpers/macros.dtsi"
 #include "helpers/hold.dtsi"
@@ -39,9 +33,10 @@
         #include "os/shared/macros/layers.dtsi"
         #include "os/shared/macros/settings.dtsi"
 
-        // #include "os/macos/macros/layers.dtsi"
-        // #include "os/macos/macros/int.dtsi"
-        // #include "os/macos/macros/dev.dtsi"
+        #include "os/macos/macros/layers.dtsi"
+        #include "os/macos/macros/locale.dtsi"
+        #include "os/macos/macros/base.dtsi"
+        #include "os/macos/macros/dev.dtsi"
 
         // #include "os/windows/macros/layers.dtsi"
         // #include "os/windows/macros/int.dtsi"
@@ -60,13 +55,14 @@
         #include "os/shared/morph/base.dtsi"
         #include "os/shared/morph/num.dtsi"
 
+        #include "os/macos/morph/shared.dtsi"
         // #include "os/macos/morph/layers.dtsi"
         // #include "os/macos/morph/base.dtsi"
         // #include "os/macos/morph/int.dtsi"
         // #include "os/macos/morph/actions.dtsi"
         // #include "os/macos/morph/dev.dtsi"
         // #include "os/macos/morph/settings.dtsi"
-        // #include "os/macos/hold/layers.dtsi"
+        #include "os/macos/hold/layers.dtsi"
         // #include "os/macos/hold/base.dtsi"
         // #include "os/macos/hold/dev.dtsi"
         // #include "os/macos/hold/settings.dtsi"
@@ -105,6 +101,12 @@
     };
 };
 
+/* Keys */
+#include "os/shared/keys.dtsi"
+#include "os/macos/keys.dtsi"
+// #include "os/windows/keys.dtsi"
+// #include "os/android/keys.dtsi"
+
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -114,6 +116,9 @@
         // #include "os/android/keymap.dtsi"
     };
 };
+
+
+// ORIGINAL TOTEM
 
 #define BASE 0
 #define NAV  1

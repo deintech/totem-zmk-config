@@ -1,0 +1,18 @@
+// action:  ?░:░
+m_md_cto: macro_mac_conditional_ternary_operator {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+        = <&none>
+        , <&macro_wait_time MC_WAIT>
+        , <&kp QMARK &kp SPACE &kp SPACE &kp COLON &kp SPACE>
+        , <&kp LEFT &kp LEFT &kp LEFT>;
+};
+
+// action:  ?.
+m_md_oco: macro_mac_optional_chaining_operator {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+        = <&kp QMARK &kp DOT>;
+};
