@@ -1,0 +1,67 @@
+/*
+ * Copyright (c) 2023 Camilo Martinez (Equiman)
+ * SPDX-License-Identifier: MIT
+ */
+
+/*
+ * @brief Macro for direct layer switching with feedback.
+ *
+ * This macro creates a `zmk,behavior-macro` node that performs a direct layer
+ * transition using `&to`. Simultaneously, it sends a unique key press (specifically
+ * a keycode above F13, such as `F_##OS##TO`) to indicate the active layer change.
+ * This keycode acts as a signal to external applications or the operating system,
+ * allowing for visual feedback (e.g., in a layer indicator application) or other
+ * programmatic responses based on the current layer. The macro ensures a consistent
+ * naming convention for OS-specific layer-switching behaviors.
+ *
+ * @param OS Operative System prefix (e.g., `android`, `macos`, `windows`).
+ * Used for naming consistency.
+ * @param TO Target Layer: The identifier for the layer to switch to.
+ * This identifier is also used to derive the associated
+ */
+#define TO_MACRO(OS, TO)                      \
+  to_##OS##TO##: to_##OS##TO##_layer {        \
+      compatible = "zmk,behavior-macro";      \
+      #binding-cells = <0>;                   \
+      bindings = <&to OS##TO &kp F_##OS##TO>; \
+  };
+
+/*
+ * @brief Macro behavior for momentary layer switching with feedback.
+ *
+ * This macro creates a complex `zmk,behavior-macro` node designed for momentary layer
+ * activation (`&mo`) coupled with dynamic layer status indication.
+ *
+ * - When the key associated with this macro is pressed, it momentarily switches to the `MO` layer.
+ * Simultaneously, it sends a unique key press (a keycode above F13, specifically `F_##OS##MO`)
+ * to signal the activation of the `MO` layer.
+ * - Upon release of the key, the macro exits the momentary `MO` layer and sends a different
+ * unique key press (another keycode above F13, `F_##OS##TO`). This second keycode indicates
+ * the return to the previous layer, or a transition to the `TO` layer, providing
+ * continuous feedback on the active layer state.
+ *
+ * The `wait-ms` and `tap-ms` properties (using `MC_LAYERS`) suggest a timing mechanism
+ * to ensure proper sequencing of actions within the macro, particularly useful for
+ * ensuring the layer change is registered before the subsequent key press, and that
+ * the release action correctly processes.
+ *
+ * @param OS Operative System prefix (e.g., `android`, `macos`, `windows`).
+ * Used for naming consistency.
+ * @param MO Momentary Layer: The identifier for the layer to momentarily activate when the key is pressed.
+ * This is also used to derive the initial function key (`F_OSMO`).
+ * @param TO Target Layer: The identifier for the layer to return to (or transition to)
+ * when the key is released. This is used to derive the final
+ */
+#define MOTO_MACRO(OS, MO, TO)                                    \
+  mo_##OS##MO##_to_##OS##TO##: momentary_##OS##MO##_to_##OS##TO { \
+      compatible = "zmk,behavior-macro";                          \
+      #binding-cells = <0>;                                       \
+      wait-ms = <MC_LAYERS>;                                      \
+      tap-ms = <MC_LAYERS>;                                       \
+      bindings                                                    \
+          = <&macro_press &mo OS##MO>                             \
+          , <&macro_tap &kp F_##OS##MO>                           \
+          , <&macro_pause_for_release>                            \
+          , <&macro_release &mo OS##MO>                           \
+          , <&macro_tap &kp F_##OS##TO>;                          \
+  };

@@ -1,0 +1,64 @@
+/*
+ * Copyright (c) 2025 Camilo Martinez (Equiman)
+ * SPDX-License-Identifier: MIT
+ */
+
+/*
+ * Documentation:
+ * https://zmk.dev/docs/keymaps/behaviors/hold-tap
+ * https://zmk.dev/docs/keymaps/behaviors/mod-morph
+ */
+
+/*
+ * @brief Macro for Momentary Toggle on Hold (Layers)
+ *
+ * This macro defines a ZMK hold-tap behavior, allowing for three-layer combinations
+ * on a single key. It's designed for scenarios where a key needs to switch
+ * between different layers based on a hold or a tap action.
+ *
+ * - **Hold Action:** Momentarily switches the active layer between the `MO` (Momentary)
+ * and `CB` (Callback) layers. The `flavor = "hold-preferred"` setting ensures the
+ * hold action is prioritized.
+ * - **Tap Action:** Switches to the `TO` (Target) layer upon a quick tap.
+ *
+ * @param OS Operative System prefix (e.g., `android`, `macos`, `windows`).
+ * Used for naming consistency across OS-specific behaviors.
+ * @param MO Momentary Layer: The layer activated when the key is held.
+ * @param CB Callback Layer: The layer active on hold release (or a secondary layer
+ * associated with the hold action).
+ * @param TO Target Layer: The layer activated when the key is tapped.
+ */
+#define MOTO_HOLD(OS, MO, CB, TO)                                             \
+  mo_##OS##MO##OS##CB##_to_##OS##TO: hold_mo_##OS##MO##OS##CB##_to_##OS##TO { \
+      compatible = "zmk,behavior-hold-tap";                                   \
+      #binding-cells = <2>;                                                   \
+      tapping-term-ms = <HP_TAPPING>;                                         \
+      flavor = "hold-preferred";                                              \
+      bindings = <&mo_##OS##MO##_to_##OS##CB>, <&to_##OS##TO>;                \
+  };
+
+/*
+ * @brief Macro for Home Row Hold (Morph)
+ *
+ * This macro defines a ZMK hold-tap behavior to combine a home row key
+ * with a modifier or a custom "morph" action. It allows a single home row key
+ * to function as a standard key on tap, and as a modifier or complex behavior
+ * when held.
+ *
+ * @param OS Operative System prefix (e.g., `android`, `macos`, `windows`).
+ * Used for naming consistency across OS-specific behaviors.
+ * @param LYR Layer: The base layer where this behavior is primarily active.
+ * @param MOD Modifier: The modifier key (e.g., `LG`, `LS`, `LA`, `LC`)
+ * applied when the key is held.
+ * @param MP Morphe: Custom key morph with different  The behavior (e.g., a keycode or a custom macro)
+ * executed when the key is tapped.
+ */
+#define HR_HOLD(OS, LYR, MOD, MP)                   \
+  hm_##OS##LYR##_##MOD: hold_hm_##OS##LYR##_##MOD { \
+      compatible = "zmk,behavior-hold-tap";         \
+      #binding-cells = <2>;                         \
+      tapping-term-ms = <HR_TAPPING>;               \
+      quick-tap-ms = <HR_QUICK_TAP>;                \
+      flavor = HR_FLAVOR;                           \
+      bindings = <&kp>, <&MP>;                      \
+  };

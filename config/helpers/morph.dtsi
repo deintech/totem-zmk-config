@@ -1,0 +1,170 @@
+/*
+ * Copyright (c) 2025 Camilo Martinez (Equiman)
+ * SPDX-License-Identifier: MIT
+ */
+
+ /*
+ * Documentation:
+ * https://zmk.dev/docs/keymaps/behaviors/mod-morph
+ */
+
+/*
+ * @brief Morph Key with Key, Shift, Alt, Alt+Shift variants.
+ *
+ * This macro generates three interconnected `zmk,behavior-mod-morph` nodes. These nodes allow a single
+ * key binding to produce different outputs based on the active modifier keys (Shift, Alt, or both).
+ * It's particularly useful for typing special characters or symbols that require various modifier combinations.
+ *
+ * The `keep-mods = <(MOD_LALT)>` setting on the 'alt' and 'alt_shift' variants ensures that the Left Alt
+ * modifier is preserved after the morph, which is crucial for combinations like AltGr on Windows.
+ *
+ * @param OS Operative System prefix (e.g., `android`, `macos`, `windows`). Used for naming consistency.
+ * @param LYR Layer: The base layer where this behavior is primarily active.
+ * @param NAME Short, unique name for the morph behavior (e.g., `AT`, `EURO`). Used in Devicetree node labels.
+ * @param DESC Descriptive name for the morph (e.g., `at_symbol`, `euro_sign`). Used in Devicetree node instance names.
+ * @param MODS Default modifier combination required for the base morph behavior. This typically defines the
+ * modifiers that trigger the 'alt' variant before Shift is considered.
+ * @param KEY The default key output when no specific modifiers (beyond `MODS`) are pressed.
+ * @param KA The key output when the Alt modifier (or `MODS`) is active.
+ * @param KS The key output when the Shift modifier is active.
+ * @param KAS The key output when both Alt and Shift modifiers are active.
+ */
+#define MORPH_KASAS(OS, LYR, NAME, DESC, MODS, KEY, KA, KS, KAS)                \
+    mp_##OS##LYR##_##NAME##_as: morph_##OS##LYR##_##DESC##_alt_shift {          \
+        compatible = "zmk,behavior-mod-morph";                                  \
+        #binding-cells = <0>;                                                   \
+        mods = <(MODS)>;                                                        \
+        bindings = <KS>, <KAS>;                                                 \
+        keep-mods = <(MOD_LALT)>;                                               \
+    };                                                                          \
+    mp_##OS##LYR##_##NAME##_a: morph_##OS##LYR##_##DESC##_alt {                 \
+        compatible = "zmk,behavior-mod-morph";                                  \
+        #binding-cells = <0>;                                                   \
+        mods = <(MODS)>;                                                        \
+        bindings = <KEY>, <KA>;                                                 \
+        keep-mods = <(MOD_LALT)>;                                               \
+    };                                                                          \
+    mp_##OS##LYR##_##NAME: morph_##OS##LYR##_##DESC {                           \
+        compatible = "zmk,behavior-mod-morph";                                  \
+        #binding-cells = <0>;                                                   \
+        mods = <(MOD_LSFT|MOD_RSFT)>;                                           \
+        bindings = <&mp_##OS##LYR##_##NAME##_a>, <&mp_##OS##LYR##_##NAME##_as>; \
+    };
+
+/*
+ * @brief Morph Key with Shift, Alt variants
+ *
+ * This macro generates two interconnected `zmk,behavior-mod-morph` nodes. It allows a single
+ * key binding to produce different outputs based on the active modifier keys (Shift or Alt).
+ * This is suitable for keys that have a base, Shifted, and Alt-modified output.
+ *
+ * The `keep-mods = <(MOD_LALT)>` setting on the 'alt' variant helps preserve the Left Alt
+ * modifier for specific OS layouts (e.g., AltGr emulation).
+ *
+ * @param OS Operative System prefix (e.g., `android`, `macos`, `windows`). Used for naming consistency.
+ * @param LYR Layer: The base layer where this behavior is primarily active.
+ * @param NAME Short, unique name for the morph behavior (e.g., `HASH`). Used in Devicetree node labels.
+ * @param DESC Descriptive name for the morph (e.g., `hash_symbol`). Used in Devicetree node instance names.
+ * @param MODS Default modifier combination required for the base morph behavior. This typically defines the
+ * modifiers that trigger the 'alt' variant before Shift is considered.
+ * @param KEY The default key output when no specific modifiers (beyond `MODS`) are pressed.
+ * @param KS The key output when the Shift modifier is active.
+ * @param KA The key output when the Alt modifier (or `MODS`) is active.
+ */
+#define MORPH_KSA(OS, LYR, NAME, DESC, MODS, KEY, KS, KA)       \
+    mp_##OS##LYR##_##NAME##_a: morph_##OS##LYR##_##DESC##_alt { \
+        compatible = "zmk,behavior-mod-morph";                  \
+        #binding-cells = <0>;                                   \
+        mods = <(MODS)>;                                        \
+        bindings = <KEY>, <KA>;                                 \
+        keep-mods = <(MOD_LALT)>;                               \
+    };                                                          \
+    mp_##OS##LYR##_##NAME: morph_##OS##LYR##_##DESC {           \
+        compatible = "zmk,behavior-mod-morph";                  \
+        #binding-cells = <0>;                                   \
+        mods = <(MOD_LSFT|MOD_RSFT)>;                           \
+        bindings = <&mp_##OS##LYR##_##NAME##_a>, <KS>;          \
+    };
+
+/*
+ * @brief Morph Key with Alt, Shift variants.
+ *
+ * This macro generates two interconnected `zmk,behavior-mod-morph` nodes. It allows a single
+ * key binding to produce different outputs based on the active modifier keys (Alt or Shift).
+ * This macro's structure prioritizes the Alt morph before considering Shift, making it suitable
+ * for layouts where the Alt-modified character is the primary alternative, with Shift providing
+ * a third option.
+ *
+ * @param OS Operative System prefix (e.g., `android`, `macos`, `windows`). Used for naming consistency.
+ * @param LYR Layer: The base layer where this behavior is primarily active.
+ * @param NAME Short, unique name for the morph behavior (e.g., `PIPE`). Used in Devicetree node labels.
+ * @param DESC Descriptive name for the morph (e.g., `pipe_char`). Used in Devicetree node instance names.
+ * @param MODS Default modifier combination required for the base morph behavior. This typically defines the
+ * modifiers that trigger the 'alt' variant.
+ * @param KEY The default key output when no modifiers (beyond `MODS`) are pressed.
+ * @param KA The key output when the Alt modifier (or `MODS`) is active.
+ * @param KS The key output when the Shift modifier is active.
+ */
+#define MORPH_KAS(OS, LYR, NAME, DESC, MODS, KEY, KA, KS)         \
+    mp_##OS##LYR##_##NAME##_s: morph_##OS##LYR##_##DESC##_shift { \
+        compatible = "zmk,behavior-mod-morph";                    \
+        #binding-cells = <0>;                                     \
+        mods = <(MOD_LSFT|MOD_RSFT)>;                             \
+        bindings = <KEY>, <KS>;                                   \
+    };                                                            \
+    mp_##OS##LYR##_##NAME: morph_##OS##LYR##_##DESC {             \
+        compatible = "zmk,behavior-mod-morph";                    \
+        #binding-cells = <0>;                                     \
+        mods = <(MODS)>;                                          \
+        bindings = <&mp_##OS##LYR##_##NAME##_s>, <KA>;            \
+    };
+
+/*
+ * @brief Morph Key with Alt variant.
+ *
+ * This macro defines a `zmk,behavior-mod-morph` node that allows a key to produce
+ * a different output when the Alt modifier is active. It's ideal for characters
+ * that have a base form and an Alt-modified form (e.g., AltGr characters).
+ *
+ * The `keep-mods = <(MOD_LALT)>` setting ensures the Left Alt modifier is preserved
+ * after the morph, which is important for certain OS layouts.
+ *
+ * @param OS Operative System prefix (e.g., `android`, `macos`, `windows`). Used for naming consistency.
+ * @param LYR Layer: The base layer where this behavior is primarily active.
+ * @param NAME Short, unique name for the morph behavior (e.g., `TILDE`). Used in Devicetree node labels.
+ * @param DESC Descriptive name for the morph (e.g., `tilde_char`). Used in Devicetree node instance names.
+ * @param MODS Modifier combination required to trigger the morphed behavior (typically related to Alt).
+ * @param KEY The default key output when `MODS` are not active.
+ * @param KA The key output when `MODS` are active.
+ */
+#define MORPH_KA(OS, LYR, NAME, DESC, MODS, KEY, KA)    \
+    mp_##OS##LYR##_##NAME: morph_##OS##LYR##_##DESC {   \
+        compatible = "zmk,behavior-mod-morph";          \
+        #binding-cells = <0>;                           \
+        mods = <(MODS)>;                                \
+        bindings = <KEY>, <KA>;                         \
+        keep-mods = <(MOD_LALT)>;                       \
+    };
+
+/*
+ * @brief Macro for creating a ZMK mod-morph behavior with two variants (Key, Shift).
+ *
+ * This macro defines a `zmk,behavior-mod-morph` node that allows a key to produce
+ * a different output when the Shift modifier is active. This is the most common
+ * type of morph, representing standard shifted key behavior.
+ *
+ * @param OS Operative System prefix (e.g., `android`, `macos`, `windows`). Used for naming consistency.
+ * @param LYR Layer: The base layer where this behavior is primarily active.
+ * @param NAME Short, unique name for the morph behavior (e.g., `ONE`). Used in Devicetree node labels.
+ * @param DESC Descriptive name for the morph (e.g., `one_digit`). Used in Devicetree node instance names.
+ * @param KEY The default key output when Shift is not active.
+ * @param KS The key output when Shift is active.
+ */
+#define MORPH_KS(OS, LYR, NAME, DESC, KEY, KS)          \
+    mp_##OS##LYR##_##NAME: morph_##OS##LYR##_##DESC {   \
+        compatible = "zmk,behavior-mod-morph";          \
+        #binding-cells = <0>;                           \
+        mods = <(MOD_LSFT|MOD_RSFT)>;                   \
+        bindings = <KEY>, <KS>;                         \
+    };
+```
