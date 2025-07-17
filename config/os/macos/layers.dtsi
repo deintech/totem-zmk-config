@@ -1,0 +1,14 @@
+/* macOs */
+#define mBAS  0
+#define mDEV  1
+#define mAXN  2
+#define mFNK  3
+#define mSTG  4
+
+/* Helpers */
+#define H_mCWR  F13
+#define F_mBAS  LS(F14)
+#define F_mDEV  LS(F15)
+#define F_mAXN  LS(F16)
+#define F_mFNK  LS(F17)
+#define F_mSTG  LS(F18)

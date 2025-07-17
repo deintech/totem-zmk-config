@@ -19,9 +19,9 @@
 /* Global */
 #include "os/shared/behavior.dtsi"
 #include "os/shared/general.dtsi"
-// #include "os/macos/layers.dtsi"
-// #include "os/windows/layers.dtsi"
-// #include "os/android/layers.dtsi"
+#include "os/macos/layers.dtsi"
+#include "os/windows/layers.dtsi"
+#include "os/android/layers.dtsi"
 
 /* Keys */
 #include "os/shared/keys.dtsi"
