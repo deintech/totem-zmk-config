@@ -170,51 +170,51 @@
         };
 
         mac_functions_layer {
-            #define MAUL1  &none
-            #define MAUL2  &none
-            #define MAUL3  &none
-            #define MAUL4  &none
-            #define MAUL5  &none
+            #define MFUL1  &none
+            #define MFUL2  &none
+            #define MFUL3  &none
+            #define MFUL4  &none
+            #define MFUL5  &none
 
-            #define MAML1  &none
-            #define MAML2  &none
-            #define MAML3  &none
-            #define MAML4  &none
-            #define MAML5  &none
+            #define MFML1  &none
+            #define MFML2  &none
+            #define MFML3  &none
+            #define MFML4  &none
+            #define MFML5  &none
 
-            #define MABL1  &none
-            #define MABL2  &none
-            #define MABL3  &none
-            #define MABL4  &none
-            #define MABL5  &none
+            #define MFBL1  &none
+            #define MFBL2  &none
+            #define MFBL3  &none
+            #define MFBL4  &none
+            #define MFBL5  &none
 
-            #define MAUR5  &none
-            #define MAUR4  &none
-            #define MAUR3  &none
-            #define MAUR2  &none
-            #define MAUR1  &none
+            #define MFUR5  &none
+            #define MFUR4  &none
+            #define MFUR3  &none
+            #define MFUR2  &none
+            #define MFUR1  &none
 
-            #define MAMR5  &none
-            #define MAMR4  &none
-            #define MAMR3  &none
-            #define MAMR2  &none
-            #define MAMR1  &none
+            #define MFMR5  &none
+            #define MFMR4  &none
+            #define MFMR3  &none
+            #define MFMR2  &none
+            #define MFMR1  &none
 
-            #define MABR5  &none
-            #define MABR4  &none
-            #define MABR3  &none
-            #define MABR2  &none
-            #define MABR1  &none
+            #define MFBR5  &none
+            #define MFBR4  &none
+            #define MFBR3  &none
+            #define MFBR2  &none
+            #define MFBR1  &none
 
-            #define MATL0  &none
-            #define MATL1  &none
-            #define MATL2  &none
-            #define MATL3  &none
+            #define MFTL0  &none
+            #define MFTL1  &none
+            #define MFTL2  &none
+            #define MFTL3  &none
 
-            #define MATR3  &none
-            #define MATR2  &none
-            #define MATR1  &none
-            #define MATR0  &none
+            #define MFTR3  &none
+            #define MFTR2  &none
+            #define MFTR1  &none
+            #define MFTR0  &none
 
 
             display-name = "mFNK";
