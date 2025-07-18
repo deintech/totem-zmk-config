@@ -1,41 +1,41 @@
         mac_base_layer {
-            #define MBUL1  &none
-            #define MBUL2  &none
-            #define MBUL3  &none
-            #define MBUL4  &none
-            #define MBUL5  &none
+            #define MBUL1  &kp Q                         // tap: q ¦ shift: Q
+            #define MBUL2  &kp W                         // tap: w ¦ shift: W
+            #define MBUL3  &kp F                         // tap: f ¦ shift: F
+            #define MBUL4  &kp P                         // tap: p ¦ shift: P
+            #define MBUL5  &kp B                         // tap: b ¦ shift: B
 
-            #define MBML1  &none
-            #define MBML2  &none
-            #define MBML3  &none
-            #define MBML4  &none
-            #define MBML5  &none
+            #define MBML1  &hm_mBAS_LC LCTRL 0           // tap: a ¦ shift: A ¦ alt: á ¦ alt+shift: Á ¦ hold: CONTROL
+            #define MBML2  &hm LCMD  R                   // tap: r ¦ shift: R ¦        ¦              ¦ hold: COMMAND
+            #define MBML3  &hm LALT  S                   // tap: s ¦ shift: S ¦        ¦              ¦ hold: ALT
+            #define MBML4  &hm LSHFT T                   // tap: t ¦ shift: T ¦        ¦              ¦ hold: SHIFT
+            #define MBML5  &kp G                         // tap: g ¦ shift: G
 
-            #define MBBL1  &none
-            #define MBBL2  &none
-            #define MBBL3  &none
-            #define MBBL4  &none
-            #define MBBL5  &none
+            #define MBBL1  &kp Z                         // tap: z ¦ shift: Z
+            #define MBBL2  &kp X                         // tap: x ¦ shift: X
+            #define MBBL3  &kp C                         // tap: c ¦ shift: C
+            #define MBBL4  &kp D                         // tap: d ¦ shift: D
+            #define MBBL5  &kp V                         // tap: v ¦ shift: V
 
-            #define MBUR5  &none
-            #define MBUR4  &none
-            #define MBUR3  &none
-            #define MBUR2  &none
-            #define MBUR1  &none
+            #define MBUR5  &kp J                         // tap: j ¦ shift: J
+            #define MBUR4  &kp L                         // tap: l ¦ shift: L
+            #define MBUR3  &mp_mi_u                      // tap: u ¦ shift: U ¦ alt: ú ¦ alt+shift: Ú
+            #define MBUR2  &mp_mi_y                      // tap: y ¦ shift: Y ¦ alt: ü ¦ alt+shift: Ü
+            #define MBUR1  &mp_k_m                       // tap: - ¦ shift: _ 
 
-            #define MBMR5  &none
-            #define MBMR4  &none
-            #define MBMR3  &none
-            #define MBMR2  &none
-            #define MBMR1  &none
+            #define MBMR5  &kp M                         // tap: m ¦ shift: M
+            #define MBMR4  &hm_mBAS_RS RSHFT 0           // tap: n ¦ shift: N ¦ alt: ñ ¦ alt+shift: Ñ ¦ hold: SHIFT
+            #define MBMR3  &hm_mBAS_RA LALT  0           // tap: e ¦ shift: E ¦ alt: é ¦ alt+shift: É ¦ hold: ALT
+            #define MBMR2  &hm_mBAS_RC RCMD  0           // tap: i ¦ shift: I ¦ alt: í ¦ alt+shift: Í ¦ hold: COMMAND
+            #define MBMR1  &hm_mBAS_RG RCTRL 0           // tap: o ¦ shift: O ¦ alt: ó ¦ alt+shift: Ó ¦ hold: CONTROL
 
-            #define MBBR5  &none
-            #define MBBR4  &none
-            #define MBBR3  &none
-            #define MBBR2  &none
-            #define MBBR1  &none
+            #define MBBR5  &kp K                          // tap: k ¦ shift: K 
+            #define MBBR4  &kp H                          // tap: h ¦ shift: H 
+            #define MBBR3  &mp_cs                         // tap: , ¦ shift: ;
+            #define MBBR2  &mp_dc                         // tap: . ¦ shift: :
+            #define MBBR1  &mp_mk_q                       // tap: ' ¦ shift: "
 
-            #define MBTL0  &none
+            #define MBTL0  MKY_ESC                        // tap: escape ¦ shift: caps lock ¦ hold: BAS layer
             #define MBTL1  &none
             #define MBTL2  &none
             #define MBTL3  &none
