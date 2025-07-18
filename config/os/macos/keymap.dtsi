@@ -40,10 +40,10 @@
             #define MBTL2  &none
             #define MBTL3  &none
 
-            #define MBRT3  &none
-            #define MBRT2  &none
-            #define MBRT1  &none
-            #define MBRT0  &none
+            #define MBTR3  &none
+            #define MBTR2  &none
+            #define MBTR1  &none
+            #define MBTR0  &none
 
 
             display-name = "mBAS";
@@ -97,10 +97,10 @@
             #define MDTL2  &none
             #define MDTL3  &none
 
-            #define MDRT3  &none
-            #define MDRT2  &none
-            #define MDRT1  &none
-            #define MDRT0  &none
+            #define MDTR3  &none
+            #define MDTR2  &none
+            #define MDTR1  &none
+            #define MDTR0  &none
 
 
             display-name = "mDEV";
@@ -154,10 +154,10 @@
             #define MATL2  &none
             #define MATL3  &none
 
-            #define MART3  &none
-            #define MART2  &none
-            #define MART1  &none
-            #define MART0  &none
+            #define MATR3  &none
+            #define MATR2  &none
+            #define MATR1  &none
+            #define MATR0  &none
 
 
             display-name = "mAXN";
@@ -211,10 +211,10 @@
             #define MATL2  &none
             #define MATL3  &none
 
-            #define MART3  &none
-            #define MART2  &none
-            #define MART1  &none
-            #define MART0  &none
+            #define MATR3  &none
+            #define MATR2  &none
+            #define MATR1  &none
+            #define MATR0  &none
 
 
             display-name = "mFNK";
@@ -268,10 +268,10 @@
             #define MSTL2  &none
             #define MSTL3  &none
 
-            #define MSRT3  &none
-            #define MSRT2  &none
-            #define MSRT1  &none
-            #define MSRT0  &none
+            #define MSTR3  &none
+            #define MSTR2  &none
+            #define MSTR1  &none
+            #define MSTR0  &none
 
 
             display-name = "mSTG";
