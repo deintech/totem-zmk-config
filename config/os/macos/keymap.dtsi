@@ -35,7 +35,7 @@
             #define MBBR2  &none
             #define MBBR1  &none
 
-            #define MBTL0  MKY_ESC                      // tap: escape | shift: caps lock | hold: BAS layer
+            #define MBTL0  &none
             #define MBTL1  &none
             #define MBTL2  &none
             #define MBTL3  &none
@@ -149,7 +149,7 @@
             #define MABR2  &none
             #define MABR1  &none
 
-            #define MATL0  MKY_ESC                      // tap: escape | shift: caps lock | hold: BAS layer
+            #define MATL0  MKY_ESC                     // tap: escape | shift: caps lock | hold: BAS layer
             #define MATL1  &none
             #define MATL2  &none
             #define MATL3  &none
@@ -170,34 +170,34 @@
         };
 
         mac_functions_layer {
-            #define MFUL1  &none
-            #define MFUL2  &none
-            #define MFUL3  &none
-            #define MFUL4  &none
+            #define MFUL1  &kp F9                      // tap: F9
+            #define MFUL2  &kp F10                     // tap: F10
+            #define MFUL3  &kp F11                     // tap: F11
+            #define MFUL4  &kp F12                     // tap: F12
             #define MFUL5  &none
 
-            #define MFML1  &none
-            #define MFML2  &none
-            #define MFML3  &none
-            #define MFML4  &none
+            #define MFML1  &hm  LCMD   F5              // tap: F5 | hold: COMMAND
+            #define MFML2  &hm  LCTRL  F6              // tap: F6 | hold: CONTROL
+            #define MFML3  &hm  LALT   F7              // tap: F7 | hold: ALT
+            #define MFML4  &hm  LSHFT  F8              // tap: F8 | hold: SHIFT
             #define MFML5  &none
 
-            #define MFBL1  &none
-            #define MFBL2  &none
-            #define MFBL3  &none
-            #define MFBL4  &none
+            #define MFBL1  &kp F1                      // tap: F1
+            #define MFBL2  &kp F2                      // tap: F2
+            #define MFBL3  &kp F3                      // tap: F3
+            #define MFBL4  &kp F4                      // tap: F4
             #define MFBL5  &none
 
             #define MFUR5  &none
             #define MFUR4  &none
-            #define MFUR3  &none
+            #define MFUR3  &kp PG_UP                   // tap: Page Up
             #define MFUR2  &none
             #define MFUR1  &none
 
             #define MFMR5  &none
-            #define MFMR4  &none
-            #define MFMR3  &none
-            #define MFMR2  &none
+            #define MFMR4  &hm  RSHFT  HOME            // tap: home      | hold: SHIFT
+            #define MFMR3  &hm  LALT   PG_DN           // tap: Page Down | hold: ALT
+            #define MFMR2  &hm  RCTRL  END             // tap: end       | hold: CONTROL
             #define MFMR1  &none
 
             #define MFBR5  &none
@@ -206,7 +206,7 @@
             #define MFBR2  &none
             #define MFBR1  &none
 
-            #define MFTL0  MKY_ESC                      // tap: escape | shift: caps lock | hold: BAS layer
+            #define MFTL0  MKY_ESC                     // tap: escape | shift: caps lock | hold: BAS layer
             #define MFTL1  &none
             #define MFTL2  &none
             #define MFTL3  &none
@@ -227,44 +227,44 @@
         };
 
         mac_settings_layer {
-            #define MSUL1  &m_s_b1                      // tap: bluethoot 1 (macOS)
-            #define MSUL2  &m_s_b2                      // tap: bluethoot 2 (macOS)
-            #define MSUL3  &kp C_BRI_DN                 // tap: bright down
-            #define MSUL4  &kp LG(LS(C))                // tap: color picker
-            #define MSUL5  &kp RG(PLUS)                 // tap: zoom in
+            #define MSUL1  &m_s_b1                     // tap: bluethoot 1 (macOS)
+            #define MSUL2  &m_s_b2                     // tap: bluethoot 2 (macOS)
+            #define MSUL3  &kp C_BRI_DN                // tap: bright down
+            #define MSUL4  &kp LG(LS(C))               // tap: color picker
+            #define MSUL5  &kp RG(PLUS)                // tap: zoom in
 
-            #define MSML1  &hm_mSTG_LC  LCTRL  0        // tap: bluethoot 3 (windows)
-            #define MSML2  &m_s_b4                      // tap: bluethoot 4 (windows)
-            #define MSML3  &kp LALT                     // tap: ALT
-            #define MSML4  &hm_mSTG_LS  LSHFT  0        // tap: mp_mSTG_screenshot | hold: SHIFT
-            #define MSML5  &mp_ma_zoom_reset            // tap: zoom reset | shift: zoom reset on vscode
+            #define MSML1  &hm_mSTG_LC  LCTRL  0       // tap: bluethoot 3 (windows)
+            #define MSML2  &m_s_b4                     // tap: bluethoot 4 (windows)
+            #define MSML3  &kp LALT                    // hold: ALT
+            #define MSML4  &hm_mSTG_LS  LSHFT  0       // tap: mp_mSTG_screenshot | hold: SHIFT
+            #define MSML5  &mp_ma_zoom_reset           // tap: zoom reset | shift: zoom reset on vscode
 
-            #define MSBL1  &m_s_b5                      // tap: bluethoot 5 (android)
-            #define MSBL2  &m_s_b6                      // tap: bluethoot 6 (android)
-            #define MSBL3  &kp C_BRI_UP                 // tap: bright up
-            #define MSBL4  &mp_mSTG_f                   // tap: (finder) file explorer | alt: show/hide system files
-            #define MSBL5  &kp RG(MINUS)                // tap: zoom out
+            #define MSBL1  &m_s_b5                     // tap: bluethoot 5 (android)
+            #define MSBL2  &m_s_b6                     // tap: bluethoot 6 (android)
+            #define MSBL3  &kp C_BRI_UP                // tap: bright up
+            #define MSBL4  &mp_mSTG_f                  // tap: (finder) file explorer | alt: show/hide system files
+            #define MSBL5  &kp RG(MINUS)               // tap: zoom out
 
             #define MSUR5  &kp C_VOL_UP
-            #define MSUR4  &mp_mSTG_topleft             // tap: ide explorer | alt: rectangle top left
-            #define MSUR3  &mp_mSTG_up                  // tap: ide source control | alt: rectangle top halt
-            #define MSUR2  &mp_mSTG_topright            // tap: ide debugger | alt: rectangle top right
-            #define MSUR1  &kp LC(LS(LG(T)))            // tap: todo extension
+            #define MSUR4  &mp_mSTG_topleft            // tap: ide explorer | alt: rectangle top left
+            #define MSUR3  &mp_mSTG_up                 // tap: ide source control | alt: rectangle top halt
+            #define MSUR2  &mp_mSTG_topright           // tap: ide debugger | alt: rectangle top right
+            #define MSUR1  &kp LC(LS(LG(T)))           // tap: todo extension
 
-            #define MSMR5  &mp_mSTG_m                   // tap: vol mute | shift: mic mute
-            #define MSMR4  &hm_mSTG_RS  LSHIFT  0       // tap: mp_mSTG_left
-            #define MSMR3  &hm_mSTG_RA  LALT    0       // tap: mp_mSTG_rectangle
-            #define MSMR2  &mp_mSTG_right               // tap: ide secondary side bar | alt: rectangle right
-            #define MSMR1  &kp LC(UP)                   // tap: mission control
+            #define MSMR5  &mp_mSTG_m                  // tap: vol mute | shift: mic mute
+            #define MSMR4  &hm_mSTG_RS  LSHIFT  0      // tap: mp_mSTG_left
+            #define MSMR3  &hm_mSTG_RA  LALT    0      // tap: mp_mSTG_rectangle
+            #define MSMR2  &mp_mSTG_right              // tap: ide secondary side bar | alt: rectangle right
+            #define MSMR1  &kp LC(UP)                  // tap: mission control
 
             #define MSBR5  &kp C_VOL_DN
-            #define MSBR4  &mp_mSTG_downleft            // tap: none | alt: rectangle bottom left
-            #define MSBR3  &mp_mSTG_down                // tap: ide panel bottom bar | alt: rectangle bottom down
-            #define MSBR2  &mp_mSTG_downright           // tap: none | alt: rectangle bottom right
-            #define MSBR1  &kp LC(DOWN)                 // tap: application window               
+            #define MSBR4  &mp_mSTG_downleft           // tap: none | alt: rectangle bottom left
+            #define MSBR3  &mp_mSTG_down               // tap: ide panel bottom bar | alt: rectangle bottom down
+            #define MSBR2  &mp_mSTG_downright          // tap: none | alt: rectangle bottom right
+            #define MSBR1  &kp LC(DOWN)                // tap: application window               
 
-            #define MSTL0  MKY_ESC                      // tap: escape | shift: caps lock | hold: BAS layer
-            #define MSTL1  &mp_sSTG_cb                  // tap: none | shift: clear current profile | alt: clear all profiles
+            #define MSTL0  MKY_ESC                     // tap: escape | shift: caps lock | hold: BAS layer
+            #define MSTL1  &mp_sSTG_cb                 // tap: none | shift: clear current profile | alt: clear all profiles
             #define MSTL2  &none
             #define MSTL3  &none
 
