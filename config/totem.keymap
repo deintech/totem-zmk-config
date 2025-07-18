@@ -56,16 +56,16 @@
         #include "os/shared/morph/num.dtsi"
 
         #include "os/macos/morph/shared.dtsi"
-        // #include "os/macos/morph/layers.dtsi"
-        // #include "os/macos/morph/base.dtsi"
-        // #include "os/macos/morph/int.dtsi"
-        // #include "os/macos/morph/actions.dtsi"
-        // #include "os/macos/morph/dev.dtsi"
-        // #include "os/macos/morph/settings.dtsi"
+        #include "os/macos/morph/layers.dtsi"
+        #include "os/macos/morph/locale.dtsi"
+        #include "os/macos/morph/base.dtsi"
+        #include "os/macos/morph/actions.dtsi"
+        #include "os/macos/morph/dev.dtsi"
+        #include "os/macos/morph/settings.dtsi"
         #include "os/macos/hold/layers.dtsi"
-        // #include "os/macos/hold/base.dtsi"
-        // #include "os/macos/hold/dev.dtsi"
-        // #include "os/macos/hold/settings.dtsi"
+        #include "os/macos/hold/base.dtsi"
+        #include "os/macos/hold/dev.dtsi"
+        #include "os/macos/hold/settings.dtsi"
 
         // #include "os/windows/morph/layers.dtsi"
         // #include "os/windows/morph/base.dtsi"
@@ -90,9 +90,9 @@
     combos {
         compatible = "zmk,combos";
 
-        // #include "os/macos/combos/base.dtsi"
-        // #include "os/macos/combos/help.dtsi"
-        // #include "os/macos/combos/settings.dtsi"
+        #include "os/macos/combos/base.dtsi"
+        #include "os/macos/combos/help.dtsi"
+        #include "os/macos/combos/settings.dtsi"
 
         // #include "os/windows/combos/base.dtsi"
         // #include "os/windows/combos/help.dtsi"

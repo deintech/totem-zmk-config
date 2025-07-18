@@ -1,0 +1,86 @@
+//mp_mDEV_pound
+MORPH_KA(
+    m,
+    DEV,
+    pound,
+    pound,
+    MOD_LALT,
+    &kp POUND,  // tap:  #
+    &kp LA(N0)  // alt:  °
+)
+
+//mp_mDEV_money
+MORPH_KA(
+    m,
+    DEV,
+    money,
+    money,
+    MOD_LALT,
+    &kp DLLR,       // tap:  $
+    &kp LA(LS(N2))  // alt:  €
+)
+
+//mp_mDEV_lb
+MORPH_KA(
+    m,
+    DEV,
+    lb,
+    left_brackets,
+    MOD_LALT,
+    &kp LBKT,     // tap:  [
+    &kp LA(BSLH)  // alt:  «
+)
+
+//mp_mDEV_rb
+MORPH_KA(
+    m,
+    DEV,
+    rb,
+    right_brackets,
+    MOD_LALT|MOD_RALT,
+    &kp RBKT,         // tap:  ]
+    &kp LA(LS(BSLH))  // alt:  »
+)
+
+// mp_mDEV_qs
+MORPH_KA(
+    m,
+    DEV,
+    qs,
+    question_symbol,
+    MOD_LALT,
+    &kp QMARK,        // tap:  ?
+    &kp LA(LS(FSLH))  // alt:  ¿
+)
+
+// mp_mDEV_es
+MORPH_KA(
+    m,
+    DEV,
+    es,
+    exclamation_symbol,
+    MOD_LALT,
+    &kp EXCL,   // tap:  !
+    &kp LA(N1)  // alt:  ¡
+)
+
+// mp_mDEV_s
+MORPH_KA(
+    m,
+    DEV,
+    s,
+    slash,
+    MOD_LALT|MOD_RALT,
+    &kp FSLH,      // tap:  /
+    &kp LA(LS(A))  // alt:  /* block comment */
+)
+
+//mp_mDEV_ql
+MORPH_KS(
+    m,
+    DEV,
+    ql,
+    question_logical,
+    &m_md_oco,  // tap:    ?.
+    &m_md_cto   // shift:  ?░:░
+)

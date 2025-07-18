@@ -1,0 +1,8 @@
+// tap:     '
+// shift:   "
+mp_mk_q: morph_mac_key_quote {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&m_mi_s>, <&m_mi_d>;
+};

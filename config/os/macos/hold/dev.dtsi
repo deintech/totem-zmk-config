@@ -1,0 +1,3 @@
+HR_HOLD(m, DEV, RS, mp_mDEV_es)   //hm_mDEV_RS
+HR_HOLD(m, DEV, RA, mp_mDEV_lb)   //hm_mDEV_RA
+HR_HOLD(m, DEV, RC, mp_mDEV_rb)   //hm_mDEV_RC

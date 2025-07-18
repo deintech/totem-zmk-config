@@ -1,0 +1,5 @@
+HR_HOLD(m, BAS, RS, mp_mi_n)  //hm_mBAS_RS
+HR_HOLD(m, BAS, RA, mp_mi_e)  //hm_mBAS_RA
+HR_HOLD(m, BAS, LC, mp_mi_a)  //hm_mBAS_LC
+HR_HOLD(m, BAS, RC, mp_mi_i)  //hm_mBAS_RC
+HR_HOLD(m, BAS, RG, mp_mi_o)  //hm_mBAS_RG

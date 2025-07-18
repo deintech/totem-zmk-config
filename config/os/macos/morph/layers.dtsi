@@ -1,0 +1,13 @@
+mp_m_stg: morph_mac_stg_layer {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&mo_mSTG_to_mBAS>, <&to_mSTG>;
+};
+
+mp_m_dev: morph_mac_dev_layer {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&mo_mDEV_to_mBAS>, <&to_mDEV>;
+};
