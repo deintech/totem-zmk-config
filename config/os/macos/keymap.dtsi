@@ -56,51 +56,51 @@
         };
 
         mac_dev_layer {
-            #define MDUL1  &none
-            #define MDUL2  &none
-            #define MDUL3  &none
-            #define MDUL4  &none
-            #define MDUL5  &none
+            #define MDUL1  &kp AT                        // tap: @
+            #define MDUL2  &mp_mDEV_pound                // tap: # ¦ alt: °
+            #define MDUL3  &mp_mDEV_money                // tap: $ ¦ alt: €
+            #define MDUL4  &kp PLUS                      // tap: +
+            #define MDUL5  &m_mi_d                       // tap: "
 
-            #define MDML1  &none
-            #define MDML2  &none
-            #define MDML3  &none
-            #define MDML4  &none
-            #define MDML5  &none
+            #define MDML1  &hm LCTRL AMPS                // tap: & ¦ hold: CONTROL
+            #define MDML2  &hm LCMD  LBRC                // tap: { ¦ hold: COMMAND
+            #define MDML3  &hm LALT  RBRC                // tap: } ¦ hold: ALT
+            #define MDML4  &hm LSHFT EQUAL               // tap: = ¦ hold: SHIFT
+            #define MDML5  &m_mi_s                       // tap: '
 
-            #define MDBL1  &none
-            #define MDBL2  &none
-            #define MDBL3  &none
-            #define MDBL4  &none
-            #define MDBL5  &none
+            #define MDBL1  &kp LG(R)                     // tap: reload ¦ shift: hard reload
+            #define MDBL2  &kp LPAR                      // tap: (
+            #define MDBL3  &kp RPAR                      // tap: )
+            #define MDBL4  &kp ASTRK                     // tap: *
+            #define MDBL5  &kp BSLH                      // tap: \
 
-            #define MDUR5  &none
-            #define MDUR4  &none
-            #define MDUR3  &none
-            #define MDUR2  &none
-            #define MDUR1  &none
+            #define MDUR5  &m_mi_t                       // tap: ~
+            #define MDUR4  &kp MINUS                     // tap: -
+            #define MDUR3  &kp UNDER                     // tap: _
+            #define MDUR2  &kp PRCNT                     // tap: %
+            #define MDUR1  &m_mi_c                       // tap: ^
 
-            #define MDMR5  &none
-            #define MDMR4  &none
-            #define MDMR3  &none
-            #define MDMR2  &none
-            #define MDMR1  &none
+            #define MDMR5  &m_mi_g                       // tap: `
+            #define MDMR4  &hm_mDEV_RS RSHFT 0           // tap: ! ¦ alt: ¡ ¦ hold: SHIFT
+            #define MDMR3  &hm_mDEV_RA LALT  0           // tap: [ ¦ alt: « ¦ hold: ALT
+            #define MDMR2  &hm_mDEV_RC RCMD  0           // tap: ] ¦ alt: » ¦ hold: COMMAND
+            #define MDMR1  &hm RCTRL PIPE                // tap: | ¦        ¦ hold: CONTROL
 
-            #define MDBR5  &none
-            #define MDBR4  &none
-            #define MDBR3  &none
-            #define MDBR2  &none
-            #define MDBR1  &none
+            #define MDBR5  &kp FSLH                      // tap: / 
+            #define MDBR4  &mp_mDEV_qs                   // tap: ?  ¦ alt: ¿
+            #define MDBR3  &kp LT                        // tap: <
+            #define MDBR2  &kp GT                        // tap: >
+            #define MDBR1  &mp_mDEV_ql                   // tap: ?. ¦ shift: ?░:░
 
-            #define MDTL0  &none
+            #define MDTL0  MKY_ESC                        // tap: escape ¦ shift: caps lock ¦ hold: BAS layer
             #define MDTL1  &none
             #define MDTL2  &none
             #define MDTL3  &none
 
-            #define MDTR3  MKY_ESC                        // tap: escape | shift: caps lock | hold: BAS layer
-            #define MDTR2  &none
+            #define MDTR3  &kp LG(FSLH)                  // tap: // line comment
+            #define MDTR2  &kp LA(LS(A))                 // tap: /* block comment */ 
             #define MDTR1  &none
-            #define MDTR0  &none
+            #define MDTR0  &kp LA(LG(I))                 // tap: dev tools
 
 
             display-name = "mDEV";
@@ -114,48 +114,48 @@
 
         mac_act_num_layer {
             #define MAUL1  &kp  LC(LS(LG(RIGHT)))        // tap: expand selection
-            #define MAUL2  &mp_ma_prev                   // tap: prev tab | shift: prev desktop
+            #define MAUL2  &mp_ma_prev                   // tap: prev tab ¦ shift: prev desktop
             #define MAUL3  &kp UP                        // tap: up arrow
-            #define MAUL4  &mp_ma_next                   // tap: next tab | shift: next desktop
+            #define MAUL4  &mp_ma_next                   // tap: next tab ¦ shift: next desktop
             #define MAUL5  &kp  LG(F)                    // tap: find
 
-            #define MAML1  &hm LCTRL LC(LS(LG(LEFT)))    // tap: shrink selection | hold: CONTROL
-            #define MAML2  &hm LCMD  LEFT                // tap: left arrow | hold: COMMAND
-            #define MAML3  &hm LALT  DOWN                // tap: down arrow | hold: ALT
-            #define MAML4  &hm LSHFT RIGHT               // tap: right arrow | hold: SHIFT
+            #define MAML1  &hm LCTRL LC(LS(LG(LEFT)))    // tap: shrink selection ¦ hold: CONTROL
+            #define MAML2  &hm LCMD  LEFT                // tap: left arrow ¦ hold: COMMAND
+            #define MAML3  &hm LALT  DOWN                // tap: down arrow ¦ hold: ALT
+            #define MAML4  &hm LSHFT RIGHT               // tap: right arrow ¦ hold: SHIFT
             #define MAML5  &kp LA(LG(F))                 // tap: replace
 
             #define MABL1  &kp RG(Z)                     // tap: undo
             #define MABL2  &kp RG(X)                     // tap: cut
             #define MABL3  &kp RG(C)                     // tap: copy
-            #define MABL4  &mp_ma_paste                  // tap: paste | shift: paste without format
+            #define MABL4  &mp_ma_paste                  // tap: paste ¦ shift: paste without format
             #define MABL5  &kp RS(RG(Z))                 // tap: redo
 
-            #define MAUR5  &kp KP_PLUS                   // tap: plus sign     
-            #define MAUR4  &kp N7                        // tap: 7 number
-            #define MAUR3  &kp N8                        // tap: 8 number
-            #define MAUR2  &kp N9                        // tap: 9 number
-            #define MAUR1  &kp KP_MULTIPLY               // tap: multiply sign 
+            #define MAUR5  &kp KP_PLUS                   // tap: +     
+            #define MAUR4  &kp N7                        // tap: 7
+            #define MAUR3  &kp N8                        // tap: 8
+            #define MAUR2  &kp N9                        // tap: 9
+            #define MAUR1  &kp KP_MULTIPLY               // tap: *
 
-            #define MAMR5  &kp N0                        // tap: 0 number
-            #define MAMR4  &hm LSHFT N4                  // tap: 4 number   | hold: SHIFT
-            #define MAMR3  &hm LALT  N5                  // tap: 5 number   | hold: ALT
-            #define MAMR2  &hm LCMD  N6                  // tap: 6 number   | hold: COMMAND 
-            #define MAMR1  &hm LCTRL EQUAL               // tap: equal sign | hold: CONTROL
+            #define MAMR5  &kp N0                        // tap: 0
+            #define MAMR4  &hm LSHFT N4                  // tap: 4 ¦ hold: SHIFT
+            #define MAMR3  &hm LALT  N5                  // tap: 5 ¦ hold: ALT
+            #define MAMR2  &hm LCMD  N6                  // tap: 6 ¦ hold: COMMAND 
+            #define MAMR1  &hm LCTRL EQUAL               // tap: = ¦ hold: CONTROL
 
-            #define MABR5  &kp MINUS                     // tap: subtract sign
-            #define MABR4  &kp N1                        // tap: 1 number
-            #define MABR3  &kp N2                        // tap: 2 number
-            #define MABR2  &kp N3                        // tap: 3 number
-            #define MABR1  &kp KP_DIVIDE                 // tap: division sign
+            #define MABR5  &kp MINUS                     // tap: -
+            #define MABR4  &kp N1                        // tap: 1
+            #define MABR3  &kp N2                        // tap: 2
+            #define MABR2  &kp N3                        // tap: 3
+            #define MABR1  &kp KP_DIVIDE                 // tap: /
 
-            #define MATL0  MKY_ESC                       // tap: escape | shift: caps lock | hold: BAS layer
+            #define MATL0  MKY_ESC                       // tap: escape ¦ shift: caps lock ¦ hold: BAS layer
             #define MATL1  &none
             #define MATL2  &none
             #define MATL3  &none
 
             #define MATR3  &none
-            #define MATR2  &kp DOT                       // tap: dot
+            #define MATR2  &kp DOT                       // tap: .
             #define MATR1  &none
             #define MATR0  &none
 
@@ -176,10 +176,10 @@
             #define MFUL4  &kp F12                       // tap: F12
             #define MFUL5  &none
 
-            #define MFML1  &hm LCMD  F5                  // tap: F5 | hold: COMMAND
-            #define MFML2  &hm LCTRL F6                  // tap: F6 | hold: CONTROL
-            #define MFML3  &hm LALT  F7                  // tap: F7 | hold: ALT
-            #define MFML4  &hm LSHFT F8                  // tap: F8 | hold: SHIFT
+            #define MFML1  &hm LCMD  F5                  // tap: F5 ¦ hold: COMMAND
+            #define MFML2  &hm LCTRL F6                  // tap: F6 ¦ hold: CONTROL
+            #define MFML3  &hm LALT  F7                  // tap: F7 ¦ hold: ALT
+            #define MFML4  &hm LSHFT F8                  // tap: F8 ¦ hold: SHIFT
             #define MFML5  &none
 
             #define MFBL1  &kp F1                        // tap: F1
@@ -195,9 +195,9 @@
             #define MFUR1  &none
 
             #define MFMR5  &none
-            #define MFMR4  &hm RSHFT HOME                // tap: home      | hold: SHIFT
-            #define MFMR3  &hm LALT  PG_DN               // tap: Page Down | hold: ALT
-            #define MFMR2  &hm RCTRL END                 // tap: end       | hold: CONTROL
+            #define MFMR4  &hm RSHFT HOME                // tap: home      ¦ hold: SHIFT
+            #define MFMR3  &hm LALT  PG_DN               // tap: Page Down ¦ hold: ALT
+            #define MFMR2  &hm RCTRL END                 // tap: end       ¦ hold: CONTROL
             #define MFMR1  &none
 
             #define MFBR5  &none
@@ -206,7 +206,7 @@
             #define MFBR2  &none
             #define MFBR1  &none
 
-            #define MFTL0  MKY_ESC                       // tap: escape | shift: caps lock | hold: BAS layer
+            #define MFTL0  MKY_ESC                       // tap: escape ¦ shift: caps lock ¦ hold: BAS layer
             #define MFTL1  &none
             #define MFTL2  &none
             #define MFTL3  &none
@@ -236,35 +236,35 @@
             #define MSML1  &hm_mSTG_LC  LCTRL  0         // tap: bluethoot 3 (windows)
             #define MSML2  &m_s_b4                       // tap: bluethoot 4 (windows)
             #define MSML3  &kp LALT                      // hold: ALT
-            #define MSML4  &hm_mSTG_LS  LSHFT  0         // tap: mp_mSTG_screenshot | hold: SHIFT
-            #define MSML5  &mp_ma_zoom_reset             // tap: zoom reset | shift: zoom reset on vscode
+            #define MSML4  &hm_mSTG_LS  LSHFT  0         // tap: mp_mSTG_screenshot ¦ hold: SHIFT
+            #define MSML5  &mp_ma_zoom_reset             // tap: zoom reset ¦ shift: zoom reset on vscode
 
             #define MSBL1  &m_s_b5                       // tap: bluethoot 5 (android)
             #define MSBL2  &m_s_b6                       // tap: bluethoot 6 (android)
             #define MSBL3  &kp C_BRI_UP                  // tap: bright up
-            #define MSBL4  &mp_mSTG_f                    // tap: (finder) file explorer | alt: show/hide system files
+            #define MSBL4  &mp_mSTG_f                    // tap: (finder) file explorer ¦ alt: show/hide system files
             #define MSBL5  &kp RG(MINUS)                 // tap: zoom out
 
             #define MSUR5  &kp C_VOL_UP
-            #define MSUR4  &mp_mSTG_topleft              // tap: ide explorer | alt: rectangle top left
-            #define MSUR3  &mp_mSTG_up                   // tap: ide source control | alt: rectangle top halt
-            #define MSUR2  &mp_mSTG_topright             // tap: ide debugger | alt: rectangle top right
+            #define MSUR4  &mp_mSTG_topleft              // tap: ide explorer ¦ alt: rectangle top left
+            #define MSUR3  &mp_mSTG_up                   // tap: ide source control ¦ alt: rectangle top halt
+            #define MSUR2  &mp_mSTG_topright             // tap: ide debugger ¦ alt: rectangle top right
             #define MSUR1  &kp LC(LS(LG(T)))             // tap: todo extension
 
-            #define MSMR5  &mp_mSTG_m                    // tap: vol mute | shift: mic mute
+            #define MSMR5  &mp_mSTG_m                    // tap: vol mute ¦ shift: mic mute
             #define MSMR4  &hm_mSTG_RS  LSHIFT  0        // tap: mp_mSTG_left
             #define MSMR3  &hm_mSTG_RA  LALT    0        // tap: mp_mSTG_rectangle
-            #define MSMR2  &mp_mSTG_right                // tap: ide secondary side bar | alt: rectangle right
+            #define MSMR2  &mp_mSTG_right                // tap: ide secondary side bar ¦ alt: rectangle right
             #define MSMR1  &kp LC(UP)                    // tap: mission control
 
             #define MSBR5  &kp C_VOL_DN
-            #define MSBR4  &mp_mSTG_downleft             // tap: none | alt: rectangle bottom left
-            #define MSBR3  &mp_mSTG_down                 // tap: ide panel bottom bar | alt: rectangle bottom down
-            #define MSBR2  &mp_mSTG_downright            // tap: none | alt: rectangle bottom right
+            #define MSBR4  &mp_mSTG_downleft             // tap: none ¦ alt: rectangle bottom left
+            #define MSBR3  &mp_mSTG_down                 // tap: ide panel bottom bar ¦ alt: rectangle bottom down
+            #define MSBR2  &mp_mSTG_downright            // tap: none ¦ alt: rectangle bottom right
             #define MSBR1  &kp LC(DOWN)                  // tap: application window               
 
-            #define MSTL0  MKY_ESC                       // tap: escape | shift: caps lock | hold: BAS layer
-            #define MSTL1  &mp_sSTG_cb                   // tap: none | shift: clear current profile | alt: clear all profiles
+            #define MSTL0  MKY_ESC                       // tap: escape ¦ shift: caps lock ¦ hold: BAS layer
+            #define MSTL1  &mp_sSTG_cb                   // tap: none ¦ shift: clear current profile ¦ alt: clear all profiles
             #define MSTL2  &none
             #define MSTL3  &none
 
