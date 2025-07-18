@@ -92,10 +92,10 @@
             #define MDBR2  &kp GT                        // tap: >
             #define MDBR1  &mp_mDEV_ql                   // tap: ?. ¦ shift: ?░:░
 
-            #define MDTL0  MKY_ESC                        // tap: escape ¦ shift: caps lock ¦ hold: BAS layer
+            #define MDTL0  MKY_ESC                       // tap: escape ¦ shift: caps lock ¦ hold: BAS layer
             #define MDTL1  &none
-            #define MDTL2  &none
-            #define MDTL3  &none
+            #define MDTL2  &kp LG(L)                     // tap: cursor add to chat
+            #define MDTL3  &kp LG(K)                     // tap: cursor quick edit
 
             #define MDTR3  &kp LG(FSLH)                  // tap: // line comment
             #define MDTR2  &kp LA(LS(A))                 // tap: /* block comment */ 
