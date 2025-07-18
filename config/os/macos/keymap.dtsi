@@ -35,7 +35,7 @@
             #define MBBR2  &none
             #define MBBR1  &none
 
-            #define MBTL0  &none
+            #define MBTL0  MKY_ESC                      // tap: escape | shift: caps lock | hold: BAS layer
             #define MBTL1  &none
             #define MBTL2  &none
             #define MBTL3  &none
@@ -97,7 +97,7 @@
             #define MDTL2  &none
             #define MDTL3  &none
 
-            #define MDTR3  &none
+            #define MDTR3  MKY_ESC                      // tap: escape | shift: caps lock | hold: BAS layer
             #define MDTR2  &none
             #define MDTR1  &none
             #define MDTR0  &none
@@ -149,7 +149,7 @@
             #define MABR2  &none
             #define MABR1  &none
 
-            #define MATL0  &none
+            #define MATL0  MKY_ESC                      // tap: escape | shift: caps lock | hold: BAS layer
             #define MATL1  &none
             #define MATL2  &none
             #define MATL3  &none
@@ -206,7 +206,7 @@
             #define MFBR2  &none
             #define MFBR1  &none
 
-            #define MFTL0  &none
+            #define MFTL0  MKY_ESC                      // tap: escape | shift: caps lock | hold: BAS layer
             #define MFTL1  &none
             #define MFTL2  &none
             #define MFTL3  &none
