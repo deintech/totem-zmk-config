@@ -1,6 +1,0 @@
-combo_mac_mSTG {
-    bindings = <&mo_mSTG_to_mBAS>;
-    key-positions = <34 35>;
-    slow-release;
-    layers = <mBAS>;
-};
