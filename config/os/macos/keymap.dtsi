@@ -31,8 +31,8 @@
 
             #define MBBR5  &kp K                          // tap: k ¦ shift: K 
             #define MBBR4  &kp H                          // tap: h ¦ shift: H 
-            #define MBBR3  &mp_cs                         // tap: , ¦ shift: ;
-            #define MBBR2  &mp_dc                         // tap: . ¦ shift: :
+            #define MBBR3  &mp_k_cs                       // tap: , ¦ shift: ;
+            #define MBBR2  &mp_k_dc                       // tap: . ¦ shift: :
             #define MBBR1  &mp_mk_q                       // tap: ' ¦ shift: "
 
             #define MBTL0  MKY_ESC                        // tap: escape ¦ shift: caps lock ¦ hold: BAS layer
