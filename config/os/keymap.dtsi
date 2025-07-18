@@ -1,0 +1,284 @@
+        mac_base_layer {
+            #define MBUL1  &none
+            #define MBUL2  &none
+            #define MBUL3  &none
+            #define MBUL4  &none
+            #define MBUL5  &none
+
+            #define MBML1  &none
+            #define MBML2  &none
+            #define MBML3  &none
+            #define MBML4  &none
+            #define MBML5  &none
+
+            #define MBBL1  &none
+            #define MBBL2  &none
+            #define MBBL3  &none
+            #define MBBL4  &none
+            #define MBBL5  &none
+
+            #define MBUR5  &none
+            #define MBUR4  &none
+            #define MBUR3  &none
+            #define MBUR2  &none
+            #define MBUR1  &none
+
+            #define MBMR5  &none
+            #define MBMR4  &none
+            #define MBMR3  &none
+            #define MBMR2  &none
+            #define MBMR1  &none
+
+            #define MBBR5  &none
+            #define MBBR4  &none
+            #define MBBR3  &none
+            #define MBBR2  &none
+            #define MBBR1  &none
+
+            #define MBTL0  &none
+            #define MBTL1  &none
+            #define MBTL2  &none
+            #define MBTL3  &none
+
+            #define MBRT3  &none
+            #define MBRT2  &none
+            #define MBRT1  &none
+            #define MBRT0  &none
+
+
+            display-name = "mBAS";
+            bindings = <
+                     MBUL1  MBUL2  MBUL3  MBUL4  MBUL5    MBUR5  MBUR4  MBUR3  MBUR2  MBUR1
+                     MBML1  MBML2  MBML3  MBML4  MBML5    MBMR5  MBMR4  MBMR3  MBMR2  MBMR1
+              MBTL0  MBBL1  MBBL2  MBBL3  MBBL4  MBBL5    MBBR5  MBBR4  MBBR3  MBBR2  MBBR1  MBTR0
+                                   MBTL1  MBTL2  MBTL3    MBTR3  MBTR2  MBTR1
+            >;
+        };
+
+        mac_dev_layer {
+            #define MDUL1  &none
+            #define MDUL2  &none
+            #define MDUL3  &none
+            #define MDUL4  &none
+            #define MDUL5  &none
+
+            #define MDML1  &none
+            #define MDML2  &none
+            #define MDML3  &none
+            #define MDML4  &none
+            #define MDML5  &none
+
+            #define MDBL1  &none
+            #define MDBL2  &none
+            #define MDBL3  &none
+            #define MDBL4  &none
+            #define MDBL5  &none
+
+            #define MDUR5  &none
+            #define MDUR4  &none
+            #define MDUR3  &none
+            #define MDUR2  &none
+            #define MDUR1  &none
+
+            #define MDMR5  &none
+            #define MDMR4  &none
+            #define MDMR3  &none
+            #define MDMR2  &none
+            #define MDMR1  &none
+
+            #define MDBR5  &none
+            #define MDBR4  &none
+            #define MDBR3  &none
+            #define MDBR2  &none
+            #define MDBR1  &none
+
+            #define MDTL0  &none
+            #define MDTL1  &none
+            #define MDTL2  &none
+            #define MDTL3  &none
+
+            #define MDRT3  &none
+            #define MDRT2  &none
+            #define MDRT1  &none
+            #define MDRT0  &none
+
+
+            display-name = "mDEV";
+            bindings = <
+                     MDUL1  MDUL2  MDUL3  MDUL4  MDUL5    MDUR5  MDUR4  MDUR3  MDUR2  MDUR1
+                     MDML1  MDML2  MDML3  MDML4  MDML5    MDMR5  MDMR4  MDMR3  MDMR2  MDMR1
+              MDTL0  MDBL1  MDBL2  MDBL3  MDBL4  MDBL5    MDBR5  MDBR4  MDBR3  MDBR2  MDBR1  MDTR0
+                                   MDTL1  MDTL2  MDTL3    MDTR3  MDTR2  MDTR1
+            >;
+        };
+
+        mac_act_num_layer {
+            #define MAUL1  &none
+            #define MAUL2  &none
+            #define MAUL3  &none
+            #define MAUL4  &none
+            #define MAUL5  &none
+
+            #define MAML1  &none
+            #define MAML2  &none
+            #define MAML3  &none
+            #define MAML4  &none
+            #define MAML5  &none
+
+            #define MABL1  &none
+            #define MABL2  &none
+            #define MABL3  &none
+            #define MABL4  &none
+            #define MABL5  &none
+
+            #define MAUR5  &none
+            #define MAUR4  &none
+            #define MAUR3  &none
+            #define MAUR2  &none
+            #define MAUR1  &none
+
+            #define MAMR5  &none
+            #define MAMR4  &none
+            #define MAMR3  &none
+            #define MAMR2  &none
+            #define MAMR1  &none
+
+            #define MABR5  &none
+            #define MABR4  &none
+            #define MABR3  &none
+            #define MABR2  &none
+            #define MABR1  &none
+
+            #define MATL0  &none
+            #define MATL1  &none
+            #define MATL2  &none
+            #define MATL3  &none
+
+            #define MART3  &none
+            #define MART2  &none
+            #define MART1  &none
+            #define MART0  &none
+
+
+            display-name = "mAXN";
+            bindings = <
+                     MAUL1  MAUL2  MAUL3  MAUL4  MAUL5    MAUR5  MAUR4  MAUR3  MAUR2  MAUR1
+                     MAML1  MAML2  MAML3  MAML4  MAML5    MAMR5  MAMR4  MAMR3  MAMR2  MAMR1
+              MATL0  MABL1  MABL2  MABL3  MABL4  MABL5    MABR5  MABR4  MABR3  MABR2  MABR1  MATR0
+                                   MATL1  MATL2  MATL3    MATR3  MATR2  MATR1
+            >;
+        };
+
+        mac_functions_layer {
+            #define MAUL1  &none
+            #define MAUL2  &none
+            #define MAUL3  &none
+            #define MAUL4  &none
+            #define MAUL5  &none
+
+            #define MAML1  &none
+            #define MAML2  &none
+            #define MAML3  &none
+            #define MAML4  &none
+            #define MAML5  &none
+
+            #define MABL1  &none
+            #define MABL2  &none
+            #define MABL3  &none
+            #define MABL4  &none
+            #define MABL5  &none
+
+            #define MAUR5  &none
+            #define MAUR4  &none
+            #define MAUR3  &none
+            #define MAUR2  &none
+            #define MAUR1  &none
+
+            #define MAMR5  &none
+            #define MAMR4  &none
+            #define MAMR3  &none
+            #define MAMR2  &none
+            #define MAMR1  &none
+
+            #define MABR5  &none
+            #define MABR4  &none
+            #define MABR3  &none
+            #define MABR2  &none
+            #define MABR1  &none
+
+            #define MATL0  &none
+            #define MATL1  &none
+            #define MATL2  &none
+            #define MATL3  &none
+
+            #define MART3  &none
+            #define MART2  &none
+            #define MART1  &none
+            #define MART0  &none
+
+
+            display-name = "mFNK";
+            bindings = <
+                     MFUL1  MFUL2  MFUL3  MFUL4  MFUL5    MFUR5  MFUR4  MFUR3  MFUR2  MFUR1
+                     MFML1  MFML2  MFML3  MFML4  MFML5    MFMR5  MFMR4  MFMR3  MFMR2  MFMR1
+              MFTL0  MFBL1  MFBL2  MFBL3  MFBL4  MFBL5    MFBR5  MFBR4  MFBR3  MFBR2  MFBR1  MFTR0
+                                   MFTL1  MFTL2  MFTL3    MFTR3  MFTR2  MFTR1
+            >;
+        };
+
+        mac_settings_layer {
+            #define MSUL1  &m_s_b1                      // tap: bluethoot 1 (macOS)
+            #define MSUL2  &m_s_b2                      // tap: bluethoot 2 (macOS)
+            #define MSUL3  &kp C_BRI_DN                 // tap: bright down
+            #define MSUL4  &kp LG(LS(C))                // tap: color picker
+            #define MSUL5  &kp RG(PLUS)                 // tap: zoom in
+
+            #define MSML1  &hm_mSTG_LC  LCTRL  0        // tap: bluethoot 3 (windows)
+            #define MSML2  &m_s_b4                      // tap: bluethoot 4 (windows)
+            #define MSML3  &kp LALT                     // tap: ALT
+            #define MSML4  &hm_mSTG_LS  LSHFT  0        // tap: mp_mSTG_screenshot | hold: SHIFT
+            #define MSML5  &mp_ma_zoom_reset            // tap: zoom reset | shift: zoom reset on vscode
+
+            #define MSBL1  &m_s_b5                      // tap: bluethoot 5 (android)
+            #define MSBL2  &m_s_b6                      // tap: bluethoot 6 (android)
+            #define MSBL3  &kp C_BRI_UP                 // tap: bright up
+            #define MSBL4  &mp_mSTG_f                   // tap: (finder) file explorer | alt: show/hide system files
+            #define MSBL5  &kp RG(MINUS)                // tap: zoom out
+
+            #define MSUR5  &kp C_VOL_UP
+            #define MSUR4  &mp_mSTG_topleft             // tap: ide explorer | alt: rectangle top left
+            #define MSUR3  &mp_mSTG_up                  // tap: ide source control | alt: rectangle top halt
+            #define MSUR2  &mp_mSTG_topright            // tap: ide debugger | alt: rectangle top right
+            #define MSUR1  &kp LC(LS(LG(T)))            // tap: todo extension
+
+            #define MSMR5  &mp_mSTG_m                   // tap: vol mute | shift: mic mute
+            #define MSMR4  &hm_mSTG_RS  LSHIFT  0       // tap: mp_mSTG_left
+            #define MSMR3  &hm_mSTG_RA  LALT    0       // tap: mp_mSTG_rectangle
+            #define MSMR2  &mp_mSTG_right               // tap: ide secondary side bar | alt: rectangle right
+            #define MSMR1  &kp LC(UP)                   // tap: mission control
+
+            #define MSBR5  &kp C_VOL_DN
+            #define MSBR4  &mp_mSTG_downleft            // tap: none | alt: rectangle bottom left
+            #define MSBR3  &mp_mSTG_down                // tap: ide panel bottom bar | alt: rectangle bottom down
+            #define MSBR2  &mp_mSTG_downright           // tap: none | alt: rectangle bottom right
+            #define MSBR1  &kp LC(DOWN)                 // tap: application window               
+
+            #define MSTL0  MKY_ESC                      // tap: escape | shift: caps lock | hold: BAS layer
+            #define MSTL1  &mp_sSTG_cb                  // tap: none | shift: clear current profile | alt: clear all profiles
+            #define MSTL2  &none
+            #define MSTL3  &none
+
+            #define MSRT3  &none
+            #define MSRT2  &none
+            #define MSRT1  &none
+            #define MSRT0  &none
+
+
+            display-name = "mSTG";
+            bindings = <
+                     MSUL1  MSUL2  MSUL3  MSUL4  MSUL5    MSUR5  MSUR4  MSUR3  MSUR2  MSUR1
+                     MSML1  MSML2  MSML3  MSML4  MSML5    MSMR5  MSMR4  MSMR3  MSMR2  MSMR1
+              MSTL0  MSBL1  MSBL2  MSBL3  MSBL4  MSBL5    MSBR5  MSBR4  MSBR3  MSBR2  MSBR1  MSTR0
+                                   MSTL1  MSTL2  MSTL3    MSTR3  MSTR2  MSTR1
+            >;
+        };

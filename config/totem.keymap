@@ -56,7 +56,6 @@
         #include "os/shared/morph/num.dtsi"
 
         #include "os/macos/morph/shared.dtsi"
-        #include "os/macos/morph/layers.dtsi"
         #include "os/macos/morph/locale.dtsi"
         #include "os/macos/morph/base.dtsi"
         #include "os/macos/morph/actions.dtsi"
@@ -110,7 +109,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        // #include "os/macos/keymap.dtsi"
+        #include "os/macos/keymap.dtsi"
         // #include "os/windows/keymap.dtsi"
         // #include "os/android/keymap.dtsi"
     };
