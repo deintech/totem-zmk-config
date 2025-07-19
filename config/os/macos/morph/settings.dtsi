@@ -137,6 +137,7 @@ MORPH_KA(
     STG,
     m,
     mute,
+    MOD_LALT,
     &kp C_MUTE,                 // tap:   volume mute
     &kp LS(LA(LC(LG(M))))       // shift: mic mute
 )
