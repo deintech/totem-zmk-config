@@ -55,7 +55,7 @@
         #include "os/shared/morph/base.dtsi"
         #include "os/shared/morph/num.dtsi"
 
-        #include "os/macos/morph/shared.dtsi"
+        #include "os/macos/morph/layers.dtsi"
         #include "os/macos/morph/locale.dtsi"
         #include "os/macos/morph/base.dtsi"
         #include "os/macos/morph/actions.dtsi"

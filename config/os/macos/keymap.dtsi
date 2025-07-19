@@ -29,21 +29,21 @@
             #define MBMR2  &hm_mBAS_RC RCMD  0           // tap: i ¦ shift: I ¦ alt: í ¦ alt+shift: Í ¦ hold: COMMAND
             #define MBMR1  &hm_mBAS_RG RCTRL 0           // tap: o ¦ shift: O ¦ alt: ó ¦ alt+shift: Ó ¦ hold: CONTROL
 
-            #define MBBR5  &kp K                          // tap: k ¦ shift: K 
-            #define MBBR4  &kp H                          // tap: h ¦ shift: H 
-            #define MBBR3  &mp_k_cs                       // tap: , ¦ shift: ;
-            #define MBBR2  &mp_k_dc                       // tap: . ¦ shift: :
-            #define MBBR1  &mp_mk_q                       // tap: ' ¦ shift: "
+            #define MBBR5  &kp K                         // tap: k ¦ shift: K 
+            #define MBBR4  &kp H                         // tap: h ¦ shift: H 
+            #define MBBR3  &mp_k_cs                      // tap: , ¦ shift: ;
+            #define MBBR2  &mp_k_dc                      // tap: . ¦ shift: :
+            #define MBBR1  &mp_mk_q                      // tap: ' ¦ shift: "
 
-            #define MBTL0  MKY_ESC                        // tap: escape ¦ shift: caps lock ¦ hold: BAS layer
-            #define MBTL1  &none
-            #define MBTL2  &none
-            #define MBTL3  &none
+            #define MBTL0  MKY_ESC                       // tap: escape      ¦ shift: caps lock    ¦ hold: BAS layer
+            #define MBTL1  &mp_mk_dev_right              // tap: right arrow ¦ shift: to DEV layer ¦ long-tap: to DEV momentary
+            #define MBTL2  KEY_SPC                       // tap: blank space
+            #define MBTL3  &mp_mk_axn                    // tap: tab         ¦ shift: to AXN layer ¦ long-tap: to AXN momentary
 
-            #define MBTR3  &none
-            #define MBTR2  &none
-            #define MBTR1  &none
-            #define MBTR0  &none
+            #define MBTR3  &mp_mk_fnk                    // tap: back space  ¦ shift: to AXN layer ¦ long-tap: to FNK momentary
+            #define MBTR2  MKY_RET                       // tap: return      ¦                     ¦ hold: F2 (easy rename on ide)                  
+            #define MBTR1  &mp_mk_dev_left               // tap: delete      ¦ shift: to DEV layer ¦ long-tap: to DEV momentary
+            #define MBTR0  &mp_mk_stg                    //                  ¦ shift: to STG layer ¦ long-tap: to STG momentary
 
 
             display-name = "mBAS";
@@ -190,13 +190,13 @@
 
             #define MFUR5  &none
             #define MFUR4  &none
-            #define MFUR3  &kp PG_UP                     // tap: Page Up
+            #define MFUR3  &kp PG_UP                     // tap: page up
             #define MFUR2  &none
             #define MFUR1  &none
 
             #define MFMR5  &none
             #define MFMR4  &hm RSHFT HOME                // tap: home      ¦ hold: SHIFT
-            #define MFMR3  &hm LALT  PG_DN               // tap: Page Down ¦ hold: ALT
+            #define MFMR3  &hm LALT  PG_DN               // tap: page down ¦ hold: ALT
             #define MFMR2  &hm RCTRL END                 // tap: end       ¦ hold: CONTROL
             #define MFMR1  &none
 
@@ -237,7 +237,7 @@
             #define MSML2  &m_s_b4                       // tap: bluethoot 4 (windows)
             #define MSML3  &kp LALT                      // hold: ALT
             #define MSML4  &hm_mSTG_LS  LSHFT  0         // tap: mp_mSTG_screenshot ¦ hold: SHIFT
-            #define MSML5  &mp_ma_zoom_reset             // tap: zoom reset ¦ shift: zoom reset on vscode
+            #define MSML5  &mp_mSTG_z                    // tap: zoom reset ¦ shift: zoom reset on vscode
 
             #define MSBL1  &m_s_b5                       // tap: bluethoot 5 (android)
             #define MSBL2  &m_s_b6                       // tap: bluethoot 6 (android)

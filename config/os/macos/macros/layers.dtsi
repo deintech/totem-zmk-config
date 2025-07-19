@@ -2,3 +2,7 @@ TO_MACRO(m, DEV)  //to_mDEV
 TO_MACRO(m, AXN)  //to_mAXN
 TO_MACRO(m, FNK)  //to_mFNK
 TO_MACRO(m, STG)  //to_mSTG
+
+MOTO_MACRO(m, AXN, BAS)  //mo_mAXN_to_mBAS
+MOTO_MACRO(m, DEV, BAS)  //mo_mDEV_to_mBAS
+MOTO_MACRO(m, STG, BAS)  //mo_mSTG_to_mBAS

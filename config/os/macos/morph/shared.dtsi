@@ -1,9 +1,0 @@
-// tap:      escape       
-// long-tap: BAS layer
-// shift:    caps lock
-mp_mk_ec: morph_mac_key_esc_caps {
-    compatible = "zmk,behavior-mod-morph";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&to_mBAS_kp  0  ESC>, <&cw_mCAPS>;
-};

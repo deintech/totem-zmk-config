@@ -1,0 +1,59 @@
+// tap:      escape      
+// long-tap: to BAS layer
+// shift:    caps lock
+mp_mk_dev: morph_mac_key_bas_layer {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&to_mBAS_kp 0 ESC>, <&cw_mCAPS>;
+};
+
+// tap:      right arrow       
+// long-tap: to DEV momentary
+// shift:    to DEV layer
+mp_mk_dev_right: morph_mac_key_dev_right_layer {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&mo_mDEV_to_mBAS_kp 0 RIGHT>, <&to_mDEV>;
+};
+
+// tap:      tab       
+// long-tap: to AXN momentary
+// shift:    to AXN layer
+mp_mk_axn: morph_mac_key_axn_layer {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&mo_mAXN_to_mBAS_kp 0 TAB>, <&to_mAXN>;
+};
+
+// tap:      backspace       
+// long-tap: to AXN momentary
+// shift:    to FNK layer
+mp_mk_fnk: morph_mac_key_fnk_layer {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&mo_mAXN_to_mBAS_kp 0 BSPC>, <&to_mFNK>;
+};
+
+// tap:      delete    
+// long-tap: to DEV momentary
+// shift:    to DEV layer
+mp_mk_dev_left: morph_mac_key_dev_left_layer {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&mo_mDEV_to_mBAS_kp 0 DEL>, <&to_mDEV>;
+};
+
+// long-tap: to STG momentary
+// shift:    to STG layer
+mp_mk_stg: morph_mac_stg_layer {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&mo_mSTG_to_mBAS>, <&to_mSTG>;
+};
+
