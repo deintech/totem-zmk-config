@@ -12,7 +12,7 @@ mo_mDEV_to_mBAS_kp: mo_mDEV_to_mBAS_kp {
     tapping-term-ms = <HP_TAPPING>;
     flavor = "hold-preferred";
     bindings = <&mo_mDEV_to_mBAS>, <&kp>;
-}
+};
 
 mo_mAXN_to_mBAS_kp: mo_mAXN_to_mBAS_kp {
     compatible = "zmk,behavior-hold-tap";
@@ -20,7 +20,7 @@ mo_mAXN_to_mBAS_kp: mo_mAXN_to_mBAS_kp {
     tapping-term-ms = <HP_TAPPING>;
     flavor = "hold-preferred";
     bindings = <&mo_mAXN_to_mBAS>, <&kp>;
-}
+};
 
 mo_mSTG_to_mBAS_kp: mo_mSTG_to_mBAS_kp {
     compatible = "zmk,behavior-hold-tap";
@@ -28,4 +28,4 @@ mo_mSTG_to_mBAS_kp: mo_mSTG_to_mBAS_kp {
     tapping-term-ms = <HP_TAPPING>;
     flavor = "hold-preferred";
     bindings = <&mo_mSTG_to_mBAS>, <&kp>;
-}
+};
