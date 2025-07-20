@@ -229,7 +229,7 @@
         mac_settings_layer {
             #define MSUL1  &m_s_b1                       // tap: bluethoot 1
             #define MSUL2  &m_s_b2                       // tap: bluethoot 2
-            #define MSUL3  &kp C_BRI_DN                  // tap: bright down
+            #define MSUL3  &none
             #define MSUL4  &kp LG(LS(C))                 // tap: color picker
             #define MSUL5  &kp RG(PLUS)                  // tap: zoom in
 
@@ -239,9 +239,9 @@
             #define MSML4  &hm_mSTG_LS  LSHFT  0         // tap: mp_mSTG_screenshot ¦ hold: SHIFT
             #define MSML5  &mp_mSTG_z                    // tap: zoom reset ¦ shift: zoom reset on vscode
 
-            #define MSBL1  &m_s_b5                       // tap: bluethoot 5
-            #define MSBL2  &m_s_b6                       // tap: bluethoot 6
-            #define MSBL3  &kp C_BRI_UP                  // tap: bright up
+            #define MSBL1  &kp C_BRI_DN                  // tap: bright down
+            #define MSBL2  &kp C_BRI_UP                  // tap: bright up
+            #define MSBL3  &none
             #define MSBL4  &mp_mSTG_f                    // tap: (finder) file explorer ¦ alt: show/hide system files
             #define MSBL5  &kp RG(MINUS)                 // tap: zoom out
 
