@@ -5,7 +5,7 @@
             #define MBUL4  &kp P                         // tap: p ¦ shift: P
             #define MBUL5  &kp B                         // tap: b ¦ shift: B
 
-            #define MBML1  &hm_mBAS_LC LCTRL 0           // tap: a ¦ shift: A ¦ alt: á ¦ alt+shift: Á ¦ hold: CONTROL
+            #define MBML1  &hm_BAS_LC LCTRL 0            // tap: a ¦ shift: A ¦ alt: á ¦ alt+shift: Á ¦ hold: CONTROL
             #define MBML2  &hm LCMD  R                   // tap: r ¦ shift: R ¦        ¦              ¦ hold: COMMAND
             #define MBML3  &hm LALT  S                   // tap: s ¦ shift: S ¦        ¦              ¦ hold: ALT
             #define MBML4  &hm LSHFT T                   // tap: t ¦ shift: T ¦        ¦              ¦ hold: SHIFT
@@ -24,10 +24,10 @@
             #define MBUR1  &mp_k_m                       // tap: - ¦ shift: _ 
 
             #define MBMR5  &kp M                         // tap: m ¦ shift: M
-            #define MBMR4  &hm_mBAS_RS RSHFT 0           // tap: n ¦ shift: N ¦ alt: ñ ¦ alt+shift: Ñ ¦ hold: SHIFT
-            #define MBMR3  &hm_mBAS_RA LALT  0           // tap: e ¦ shift: E ¦ alt: é ¦ alt+shift: É ¦ hold: ALT
-            #define MBMR2  &hm_mBAS_RC RCMD  0           // tap: i ¦ shift: I ¦ alt: í ¦ alt+shift: Í ¦ hold: COMMAND
-            #define MBMR1  &hm_mBAS_RG RCTRL 0           // tap: o ¦ shift: O ¦ alt: ó ¦ alt+shift: Ó ¦ hold: CONTROL
+            #define MBMR4  &hm_BAS_RS RSHFT 0            // tap: n ¦ shift: N ¦ alt: ñ ¦ alt+shift: Ñ ¦ hold: SHIFT
+            #define MBMR3  &hm_BAS_RA LALT  0            // tap: e ¦ shift: E ¦ alt: é ¦ alt+shift: É ¦ hold: ALT
+            #define MBMR2  &hm_BAS_RC RCMD  0            // tap: i ¦ shift: I ¦ alt: í ¦ alt+shift: Í ¦ hold: COMMAND
+            #define MBMR1  &hm_BAS_RG RCTRL 0            // tap: o ¦ shift: O ¦ alt: ó ¦ alt+shift: Ó ¦ hold: CONTROL
 
             #define MBBR5  &kp K                         // tap: k ¦ shift: K 
             #define MBBR4  &kp H                         // tap: h ¦ shift: H 
@@ -81,9 +81,9 @@
             #define MDUR1  &m_mi_c                       // tap: ^
 
             #define MDMR5  &m_mi_g                       // tap: `
-            #define MDMR4  &hm_mDEV_RS RSHFT 0           // tap: ! ¦ alt: ¡ ¦ hold: SHIFT
-            #define MDMR3  &hm_mDEV_RA LALT  0           // tap: [ ¦ alt: « ¦ hold: ALT
-            #define MDMR2  &hm_mDEV_RC RCMD  0           // tap: ] ¦ alt: » ¦ hold: COMMAND
+            #define MDMR4  &hm_DEV_RS RSHFT 0            // tap: ! ¦ alt: ¡ ¦ hold: SHIFT
+            #define MDMR3  &hm_DEV_RA LALT  0            // tap: [ ¦ alt: « ¦ hold: ALT
+            #define MDMR2  &hm_DEV_RC RCMD  0            // tap: ] ¦ alt: » ¦ hold: COMMAND
             #define MDMR1  &hm RCTRL PIPE                // tap: | ¦        ¦ hold: CONTROL
 
             #define MDBR5  &kp FSLH                      // tap: / 
@@ -233,10 +233,10 @@
             #define MSUL4  &kp LG(LS(C))                 // tap: color picker
             #define MSUL5  &kp RG(PLUS)                  // tap: zoom in
 
-            #define MSML1  &hm_mSTG_LC  LCTRL  0         // tap: bluethoot 3
+            #define MSML1  &hm_STG_LC  LCTRL  0         // tap: bluethoot 3
             #define MSML2  &m_s_b4                       // tap: bluethoot 4
             #define MSML3  &kp LALT                      // hold: ALT
-            #define MSML4  &hm_mSTG_LS  LSHFT  0         // tap: mp_mSTG_screenshot ¦ hold: SHIFT
+            #define MSML4  &hm_STG_LS  LSHFT  0         // tap: mp_mSTG_screenshot ¦ hold: SHIFT
             #define MSML5  &mp_mSTG_z                    // tap: zoom reset ¦ shift: zoom reset on vscode
 
             #define MSBL1  &mp_sSTG_cb                   // tap: none ¦ shift: clear current profile ¦ alt: clear all profiles
@@ -252,8 +252,8 @@
             #define MSUR1  &kp LC(LS(LG(T)))             // tap: todo extension
 
             #define MSMR5  &mp_mSTG_m                    // tap: vol mute ¦ shift: mic mute
-            #define MSMR4  &hm_mSTG_RS  LSHIFT  0        // tap: mp_mSTG_left
-            #define MSMR3  &hm_mSTG_RA  LALT    0        // tap: mp_mSTG_rectangle
+            #define MSMR4  &hm_STG_RS  LSHIFT  0        // tap: mp_mSTG_left
+            #define MSMR3  &hm_STG_RA  LALT    0        // tap: mp_mSTG_rectangle
             #define MSMR2  &mp_mSTG_right                // tap: ide secondary side bar ¦ alt: rectangle right
             #define MSMR1  &kp LC(UP)                    // tap: mission control
 
