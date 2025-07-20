@@ -42,12 +42,12 @@
         #include "os/macos/macros/dev.dtsi"
 
         #include "os/windows/macros/layers.dtsi"
-        // #include "os/windows/macros/int.dtsi"
+        #include "os/windows/macros/locale.dtsi"
         #include "os/windows/macros/base.dtsi"
         // #include "os/windows/macros/dev.dtsi"
 
         #include "os/android/macros/layers.dtsi"
-        // #include "os/android/macros/int.dtsi"
+        #include "os/android/macros/locale.dtsi"
         // #include "os/android/macros/dev.dtsi"
         #include "os/android/macros/base.dtsi"
         // #include "os/android/macros/stg.dtsi"
@@ -72,8 +72,8 @@
         #include "os/macos/hold/settings.dtsi"
 
         #include "os/windows/morph/layers.dtsi"
+        #include "os/windows/morph/locale.dtsi"
         // #include "os/windows/morph/base.dtsi"
-        // #include "os/windows/morph/int.dtsi"
         // #include "os/windows/morph/actions.dtsi"
         // #include "os/windows/morph/dev.dtsi"
         // #include "os/windows/morph/settings.dtsi"
@@ -82,8 +82,8 @@
         // #include "os/windows/hold/dev.dtsi"
 
         #include "os/android/morph/layers.dtsi"
+        #include "os/android/morph/locale.dtsi"
         // #include "os/android/morph/base.dtsi"
-        // #include "os/android/morph/int.dtsi"
         // #include "os/android/morph/dev.dtsi"
         #include "os/android/hold/layers.dtsi"
         // #include "os/android/hold/base.dtsi"
