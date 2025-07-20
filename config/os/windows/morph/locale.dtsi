@@ -1,112 +1,55 @@
-// tap:         a
-// alt:         á
-// alt+shift:   Á
-mp_mi_as: morph_macos_a_shift {
+mp_wi_a: morph_windows_a {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&m_mi_a>, <&m_mi_as>;
-};
-mp_mi_a: morph_macos_a {
-    compatible = "zmk,behavior-mod-morph";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT|MOD_RALT)>;
-    bindings = <&kp A>, <&mp_mi_as>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp A>, <&kp LC(A)>;
+    keep-mods = <(MOD_LALT)>;
 };
 
-// tap:         e
-// alt:         é
-// alt+shift:   É
-mp_mi_es: morph_macos_e_shift {
+mp_wi_e: morph_windows_e {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&m_mi_e>, <&m_mi_es>;
-};
-mp_mi_e: morph_macos_e {
-    compatible = "zmk,behavior-mod-morph";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT|MOD_RALT)>;
-    bindings = <&kp E>, <&mp_mi_es>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp E>, <&kp LC(E)>;
+    keep-mods = <(MOD_LALT)>;
 };
 
-// tap:         i
-// alt:         í
-// alt+shift:   Í
-mp_mi_is: morph_macos_i_shift {
+mp_wi_i: morph_windows_i {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&m_mi_i>, <&m_mi_is>;
-};
-mp_mi_i: morph_macos_i {
-    compatible = "zmk,behavior-mod-morph";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT|MOD_RALT)>;
-    bindings = <&kp I>, <&mp_mi_is>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp I>, <&kp LC(I)>;
+    keep-mods = <(MOD_LALT)>;
 };
 
-// tap:         o
-// alt:         ó
-// alt+shift:   Ó
-mp_mi_os: morph_macos_o_shift {
+mp_wi_o: morph_windows_o {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&m_mi_o>, <&m_mi_os>;
-};
-mp_mi_o: morph_macos_o {
-    compatible = "zmk,behavior-mod-morph";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT|MOD_RALT)>;
-    bindings = <&kp O>, <&mp_mi_os>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp O>, <&kp LC(O)>;
+    keep-mods = <(MOD_LALT)>;
 };
 
-// tap:         u
-// alt:         ú
-// alt+shift:   Ú
-mp_mi_us: morph_macos_u_shift {
+mp_wi_u: morph_windows_u {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&m_mi_u>, <&m_mi_us>;
-};
-mp_mi_u: morph_macos_u {
-    compatible = "zmk,behavior-mod-morph";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT|MOD_RALT)>;
-    bindings = <&kp U>, <&mp_mi_us>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp U>, <&kp LC(U)>;
+    keep-mods = <(MOD_LALT)>;
 };
 
-// tap:         n
-// alt:         ñ
-// alt+shift:   Ñ
-mp_mi_ns: morph_macos_n_shift {
+mp_wi_n: morph_windows_n {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&m_mi_n>, <&m_mi_ns>;
-};
-mp_mi_n: morph_macos_n {
-    compatible = "zmk,behavior-mod-morph";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT|MOD_RALT)>;
-    bindings = <&kp N>, <&mp_mi_ns>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp N>, <&kp LC(N)>;
+    keep-mods = <(MOD_LALT)>;
 };
 
-// tap:         y
-// alt:         ü
-// alt+shift:   Ü
-mp_mi_ys: morph_macos_y_shift {
+mp_wi_y: morph_windows_y {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&m_mi_y>, <&m_mi_ys>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp Y>, <&kp LC(Y)>;
+    keep-mods = <(MOD_LALT)>;
 };
-mp_mi_y: morph_macos_y {
-    compatible = "zmk,behavior-mod-morph";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT|MOD_RALT)>;
-    bindings = <&kp Y>, <&mp_mi_ys>;
-};
-
