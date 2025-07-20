@@ -1,12 +1,3 @@
-cw_aCAPS: cw_aCAPS {
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    tap-ms = <MC_TAP>;
-    bindings
-        = <&kp LS(H_aCWR)>
-        , <&kp CAPS>;
-};
-
 cw_aON: cw_aON {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
