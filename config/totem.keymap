@@ -41,13 +41,15 @@
         #include "os/macos/macros/base.dtsi"
         #include "os/macos/macros/dev.dtsi"
 
-        // #include "os/windows/macros/layers.dtsi"
+        #include "os/windows/macros/layers.dtsi"
         // #include "os/windows/macros/int.dtsi"
+        #include "os/windows/macros/base.dtsi"
         // #include "os/windows/macros/dev.dtsi"
 
-        // #include "os/android/macros/layers.dtsi"
+        #include "os/android/macros/layers.dtsi"
         // #include "os/android/macros/int.dtsi"
         // #include "os/android/macros/dev.dtsi"
+        #include "os/android/macros/base.dtsi"
         // #include "os/android/macros/stg.dtsi"
     };
 };
@@ -69,21 +71,21 @@
         #include "os/macos/hold/dev.dtsi"
         #include "os/macos/hold/settings.dtsi"
 
-        // #include "os/windows/morph/layers.dtsi"
+        #include "os/windows/morph/layers.dtsi"
         // #include "os/windows/morph/base.dtsi"
         // #include "os/windows/morph/int.dtsi"
         // #include "os/windows/morph/actions.dtsi"
         // #include "os/windows/morph/dev.dtsi"
         // #include "os/windows/morph/settings.dtsi"
-        // #include "os/windows/hold/layers.dtsi"
+        #include "os/windows/hold/layers.dtsi"
         // #include "os/windows/hold/base.dtsi"
         // #include "os/windows/hold/dev.dtsi"
 
-        // #include "os/android/morph/layers.dtsi"
+        #include "os/android/morph/layers.dtsi"
         // #include "os/android/morph/base.dtsi"
         // #include "os/android/morph/int.dtsi"
         // #include "os/android/morph/dev.dtsi"
-        // #include "os/android/hold/layers.dtsi"
+        #include "os/android/hold/layers.dtsi"
         // #include "os/android/hold/base.dtsi"
     };
 };
@@ -105,8 +107,8 @@
 /* Keys */
 #include "os/shared/keys.dtsi"
 #include "os/macos/keys.dtsi"
-// #include "os/windows/keys.dtsi"
-// #include "os/android/keys.dtsi"
+#include "os/windows/keys.dtsi"
+#include "os/android/keys.dtsi"
 
 / {
     keymap {

@@ -1,59 +1,59 @@
 // tap:      escape      
 // long-tap: to BAS layer
 // shift:    caps lock
-mp_mk_bas: morph_mac_key_bas_layer {
+mp_wk_bas: morph_windows_key_bas_layer {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&to_mBAS_kp 0 ESC>, <&cw_mCAPS>;
+    bindings = <&to_wBAS_kp 0 ESC>, <&cw_wCAPS>;
 };
 
 // tap:      right arrow       
 // long-tap: to DEV momentary
 // shift:    to DEV layer
-mp_mk_dev_right: morph_mac_key_dev_right_layer {
+mp_wk_dev_right: morph_windows_key_dev_right_layer {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mo_mDEV_to_mBAS_kp 0 RIGHT>, <&to_mDEV>;
+    bindings = <&mo_mDEV_to_wBAS_kp 0 RIGHT>, <&to_wDEV>;
 };
 
 // tap:      tab       
 // long-tap: to AXN momentary
 // shift:    to AXN layer
-mp_mk_axn: morph_mac_key_axn_layer {
+mp_wk_axn: morph_windows_key_axn_layer {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mo_mAXN_to_mBAS_kp 0 TAB>, <&to_mAXN>;
+    bindings = <&mo_mAXN_to_wBAS_kp 0 TAB>, <&to_wAXN>;
 };
 
 // tap:      backspace       
 // long-tap: to AXN momentary
 // shift:    to FNK layer
-mp_mk_fnk: morph_mac_key_fnk_layer {
+mp_wk_fnk: morph_windows_key_fnk_layer {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mo_mAXN_to_mBAS_kp 0 BSPC>, <&to_mFNK>;
+    bindings = <&mo_mAXN_to_wBAS_kp 0 BSPC>, <&to_wFNK>;
 };
 
 // tap:      delete    
 // long-tap: to DEV momentary
 // shift:    to DEV layer
-mp_mk_dev_left: morph_mac_key_dev_left_layer {
+mp_wk_dev_left: morph_windows_key_dev_left_layer {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mo_mDEV_to_mBAS_kp 0 DEL>, <&to_mDEV>;
+    bindings = <&mo_mDEV_to_wBAS_kp 0 DEL>, <&to_wDEV>;
 };
 
 // long-tap: to STG momentary
 // shift:    to STG layer
-mp_mk_stg: morph_mac_stg_layer {
+mp_wk_stg: morph_windows_stg_layer {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mo_mSTG_to_mBAS>, <&to_mSTG>;
+    bindings = <&mo_mSTG_to_wBAS>, <&to_wSTG>;
 };
 

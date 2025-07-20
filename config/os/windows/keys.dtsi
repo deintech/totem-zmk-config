@@ -1,8 +1,8 @@
 // tap:      escape       
 // long-tap: BAS layer
 // shift:    caps lock
-#define MKY_ESC  &mp_mk_bas
+#define WKY_ESC  &mp_wk_bas
 
 // tap: return
 // long-tap: F2 (easy rename on ide)
-#define MKY_RET  &mt  F2  RET
+#define WKY_RET  &mt  F2  RET
