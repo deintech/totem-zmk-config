@@ -239,9 +239,9 @@
             #define MSML4  &hm_mSTG_LS  LSHFT  0         // tap: mp_mSTG_screenshot ¦ hold: SHIFT
             #define MSML5  &mp_mSTG_z                    // tap: zoom reset ¦ shift: zoom reset on vscode
 
-            #define MSBL1  &kp C_BRI_DN                  // tap: bright down
-            #define MSBL2  &kp C_BRI_UP                  // tap: bright up
-            #define MSBL3  &none
+            #define MSBL1  &mp_sSTG_cb                   // tap: none ¦ shift: clear current profile ¦ alt: clear all profiles
+            #define MSBL2  &kp C_BRI_DN                  // tap: bright down
+            #define MSBL3  &kp C_BRI_UP                  // tap: bright up
             #define MSBL4  &mp_mSTG_f                    // tap: (finder) file explorer ¦ alt: show/hide system files
             #define MSBL5  &kp RG(MINUS)                 // tap: zoom out
 
@@ -264,7 +264,7 @@
             #define MSBR1  &kp LC(DOWN)                  // tap: application window               
 
             #define MSTL0  MKY_ESC                       // tap: escape ¦ shift: caps lock ¦ hold: BAS layer
-            #define MSTL1  &mp_sSTG_cb                   // tap: none ¦ shift: clear current profile ¦ alt: clear all profiles
+            #define MSTL1  &none
             #define MSTL2  &none
             #define MSTL3  &none
 
