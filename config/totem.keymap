@@ -44,13 +44,13 @@
         #include "os/windows/macros/layers.dtsi"
         #include "os/windows/macros/locale.dtsi"
         #include "os/windows/macros/base.dtsi"
-        // #include "os/windows/macros/dev.dtsi"
+        #include "os/windows/macros/dev.dtsi"
 
         #include "os/android/macros/layers.dtsi"
         #include "os/android/macros/locale.dtsi"
-        // #include "os/android/macros/dev.dtsi"
+        #include "os/android/macros/dev.dtsi"
         #include "os/android/macros/base.dtsi"
-        // #include "os/android/macros/stg.dtsi"
+        #include "os/android/macros/stettings.dtsi"
     };
 };
 
