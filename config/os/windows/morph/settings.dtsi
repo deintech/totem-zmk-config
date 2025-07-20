@@ -1,8 +1,0 @@
-// tap:          zoom reset
-// shift:        zoom reset vscode
-mp_wa_zoom_reset: morph_windows_action_zoom_reset {
-    compatible = "zmk,behavior-mod-morph";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp RC(N0)>, <&kp RC(KP_N0)>;
-};

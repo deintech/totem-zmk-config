@@ -1,4 +1,4 @@
-/* macOs */
+/* Layers */
 #define mBAS  0
 #define mDEV  1
 #define mAXN  2

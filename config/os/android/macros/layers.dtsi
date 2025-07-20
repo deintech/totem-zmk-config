@@ -1,8 +1,0 @@
-TO_MACRO(a, DEV)  //to_aDEV
-TO_MACRO(a, AXN)  //to_aAXN
-TO_MACRO(a, FNK)  //to_aFNK
-TO_MACRO(a, STG)  //to_aSTG
-
-MOTO_MACRO(a, AXN, BAS)  //mo_aAXN_to_aBAS
-MOTO_MACRO(a, DEV, BAS)  //mo_aDEV_to_aBAS
-MOTO_MACRO(a, STG, BAS)  //mo_aSTG_to_aBAS

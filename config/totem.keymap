@@ -23,8 +23,6 @@
 #include "os/shared/behavior.dtsi"
 #include "os/shared/general.dtsi"
 #include "os/macos/layers.dtsi"
-#include "os/windows/layers.dtsi"
-#include "os/android/layers.dtsi"
 
 /* Helpers */
 #include "helpers/macros.dtsi"
@@ -40,17 +38,6 @@
         #include "os/macos/macros/locale.dtsi"
         #include "os/macos/macros/base.dtsi"
         #include "os/macos/macros/dev.dtsi"
-
-        #include "os/windows/macros/layers.dtsi"
-        #include "os/windows/macros/locale.dtsi"
-        #include "os/windows/macros/base.dtsi"
-        #include "os/windows/macros/dev.dtsi"
-
-        #include "os/android/macros/layers.dtsi"
-        #include "os/android/macros/locale.dtsi"
-        #include "os/android/macros/dev.dtsi"
-        #include "os/android/macros/base.dtsi"
-        #include "os/android/macros/settings.dtsi"
     };
 };
 
@@ -70,23 +57,6 @@
         #include "os/macos/hold/base.dtsi"
         #include "os/macos/hold/dev.dtsi"
         #include "os/macos/hold/settings.dtsi"
-
-        #include "os/windows/morph/layers.dtsi"
-        #include "os/windows/morph/locale.dtsi"
-        #include "os/windows/morph/base.dtsi"
-        #include "os/windows/morph/actions.dtsi"
-        #include "os/windows/morph/dev.dtsi"
-        #include "os/windows/morph/settings.dtsi"
-        #include "os/windows/hold/layers.dtsi"
-        #include "os/windows/hold/base.dtsi"
-        #include "os/windows/hold/dev.dtsi"
-
-        #include "os/android/morph/layers.dtsi"
-        #include "os/android/morph/locale.dtsi"
-        // #include "os/android/morph/base.dtsi"
-        // #include "os/android/morph/dev.dtsi"
-        #include "os/android/hold/layers.dtsi"
-        // #include "os/android/hold/base.dtsi"
     };
 };
 
@@ -96,26 +66,17 @@
 
         #include "os/macos/combos/base.dtsi"
         #include "os/macos/combos/help.dtsi"
-
-        #include "os/windows/combos/base.dtsi"
-        #include "os/windows/combos/help.dtsi"
-
-        #include "os/android/combos/base.dtsi"
     };
 };
 
 /* Keys */
 #include "os/shared/keys.dtsi"
 #include "os/macos/keys.dtsi"
-#include "os/windows/keys.dtsi"
-#include "os/android/keys.dtsi"
 
 / {
     keymap {
         compatible = "zmk,keymap";
 
         #include "os/macos/keymap.dtsi"
-        // #include "os/windows/keymap.dtsi"
-        // #include "os/android/keymap.dtsi"
     };
 };

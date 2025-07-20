@@ -1,8 +1,0 @@
-// tap:      escape       
-// long-tap: BAS layer
-// shift:    caps lock
-#define AKY_ESC  &mp_ak_bas
-
-// tap: return
-// long-tap: F2 (easy rename on ide)
-#define AKY_RET  &mt  F2  RET
