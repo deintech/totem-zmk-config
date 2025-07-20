@@ -50,7 +50,7 @@
         #include "os/android/macros/locale.dtsi"
         #include "os/android/macros/dev.dtsi"
         #include "os/android/macros/base.dtsi"
-        #include "os/android/macros/stettings.dtsi"
+        #include "os/android/macros/settings.dtsi"
     };
 };
 
