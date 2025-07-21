@@ -1,6 +1,6 @@
 // tap:     ,
 // shift:   ;
-mp_k_cs: morph_key_comma_semi {
+mp_key_cs: morph_key_comma_semi {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -9,7 +9,7 @@ mp_k_cs: morph_key_comma_semi {
 
 // tap:     .
 // shift:   :
-mp_k_dc: morph_key_dot_colon {
+mp_key_dc: morph_key_dot_colon {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;

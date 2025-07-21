@@ -21,7 +21,7 @@
             #define MBUR4  &kp L                         // tap: l ¦ shift: L
             #define MBUR3  &mp_locale_u                  // tap: u ¦ shift: U ¦ alt: ú ¦ alt+shift: Ú
             #define MBUR2  &mp_locale_y                  // tap: y ¦ shift: Y ¦ alt: ü ¦ alt+shift: Ü
-            #define MBUR1  &mp_k_m                       // tap: - ¦ shift: _ 
+            #define MBUR1  &mp_key_m                     // tap: - ¦ shift: _ 
 
             #define MBMR5  &kp M                         // tap: m ¦ shift: M
             #define MBMR4  &hm_BAS_RS RSHFT 0            // tap: n ¦ shift: N ¦ alt: ñ ¦ alt+shift: Ñ ¦ hold: SHIFT
@@ -31,8 +31,8 @@
 
             #define MBBR5  &kp K                         // tap: k ¦ shift: K 
             #define MBBR4  &kp H                         // tap: h ¦ shift: H 
-            #define MBBR3  &mp_k_cs                      // tap: , ¦ shift: ;
-            #define MBBR2  &mp_k_dc                      // tap: . ¦ shift: :
+            #define MBBR3  &mp_key_cs                    // tap: , ¦ shift: ;
+            #define MBBR2  &mp_key_dc                    // tap: . ¦ shift: :
             #define MBBR1  &mp_key_q                     // tap: ' ¦ shift: "
 
             #define MBTL0  MKY_ESC                       // tap: escape      ¦ shift: caps lock    ¦ hold: BAS layer
