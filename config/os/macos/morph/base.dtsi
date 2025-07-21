@@ -6,3 +6,21 @@ mp_key_q: morph_key_quote {
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&m_locale_s>, <&m_locale_d>;
 };
+
+// tap:     ,
+// shift:   ;
+mp_key_cs: morph_key_comma_semi {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&kp COMMA>, <&kp SEMICOLON>;
+};
+
+// tap:     .
+// shift:   :
+mp_key_dc: morph_key_dot_colon {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&kp DOT>, <&kp COLON>;
+};

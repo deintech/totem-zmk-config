@@ -42,7 +42,6 @@
 / {
     behaviors {
         #include "os/shared/hold.dtsi"
-        #include "os/shared/morph/base.dtsi"
         #include "os/shared/morph/num.dtsi"
 
         #include "os/macos/morph/layers.dtsi"
