@@ -5,7 +5,7 @@ mp_key_bas: morph_key_bas_layer {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&to_mBAS_kp 0 ESC>, <&caps_word_CAPS>;
+    bindings = <&to_mBAS_kp 0 ESC>, <&m_caps_word_CAPS>;
 };
 
 // tap:      right arrow       
