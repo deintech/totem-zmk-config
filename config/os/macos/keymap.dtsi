@@ -33,17 +33,17 @@
             #define MBBR4  &kp H                         // tap: h ¦ shift: H 
             #define MBBR3  &mp_k_cs                      // tap: , ¦ shift: ;
             #define MBBR2  &mp_k_dc                      // tap: . ¦ shift: :
-            #define MBBR1  &mp_mk_q                      // tap: ' ¦ shift: "
+            #define MBBR1  &mp_key_q                     // tap: ' ¦ shift: "
 
             #define MBTL0  MKY_ESC                       // tap: escape      ¦ shift: caps lock    ¦ hold: BAS layer
-            #define MBTL1  &mp_mk_dev_right              // tap: right arrow ¦ shift: to DEV layer ¦ long-tap: to DEV momentary
+            #define MBTL1  &mp_key_dev_right             // tap: right arrow ¦ shift: to DEV layer ¦ long-tap: to DEV momentary
             #define MBTL2  KEY_SPC                       // tap: blank space
-            #define MBTL3  &mp_mk_axn                    // tap: tab         ¦ shift: to AXN layer ¦ long-tap: to AXN momentary
+            #define MBTL3  &mp_key_axn                   // tap: tab         ¦ shift: to AXN layer ¦ long-tap: to AXN momentary
 
-            #define MBTR3  &mp_mk_fnk                    // tap: back space  ¦ shift: to AXN layer ¦ long-tap: to FNK momentary
+            #define MBTR3  &mp_key_fnk                   // tap: back space  ¦ shift: to AXN layer ¦ long-tap: to FNK momentary
             #define MBTR2  MKY_RET                       // tap: return      ¦                     ¦ hold: F2 (easy rename on ide)                  
-            #define MBTR1  &mp_mk_dev_left               // tap: delete      ¦ shift: to DEV layer ¦ long-tap: to DEV momentary
-            #define MBTR0  &mp_mk_stg                    //                  ¦ shift: to STG layer ¦ long-tap: to STG momentary
+            #define MBTR1  &mp_key_dev_left              // tap: delete      ¦ shift: to DEV layer ¦ long-tap: to DEV momentary
+            #define MBTR0  &mp_key_stg                   //                  ¦ shift: to STG layer ¦ long-tap: to STG momentary
 
 
             display-name = "mBAS";
@@ -114,9 +114,9 @@
 
         mac_act_num_layer {
             #define MAUL1  &kp  LC(LS(LG(RIGHT)))        // tap: expand selection
-            #define MAUL2  &mp_action_prev                   // tap: prev tab ¦ shift: prev desktop
+            #define MAUL2  &mp_action_prev               // tap: prev tab ¦ shift: prev desktop
             #define MAUL3  &kp UP                        // tap: up arrow
-            #define MAUL4  &mp_action_next                   // tap: next tab ¦ shift: next desktop
+            #define MAUL4  &mp_action_next               // tap: next tab ¦ shift: next desktop
             #define MAUL5  &kp  LG(F)                    // tap: find
 
             #define MAML1  &hm LCTRL LC(LS(LG(LEFT)))    // tap: shrink selection ¦ hold: CONTROL
@@ -128,7 +128,7 @@
             #define MABL1  &kp RG(Z)                     // tap: undo
             #define MABL2  &kp RG(X)                     // tap: cut
             #define MABL3  &kp RG(C)                     // tap: copy
-            #define MABL4  &mp_action_paste                  // tap: paste ¦ shift: paste without format
+            #define MABL4  &mp_action_paste              // tap: paste ¦ shift: paste without format
             #define MABL5  &kp RS(RG(Z))                 // tap: redo
 
             #define MAUR5  &kp KP_PLUS                   // tap: +     

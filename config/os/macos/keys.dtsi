@@ -1,7 +1,7 @@
 // tap:      escape       
 // long-tap: BAS layer
 // shift:    caps lock
-#define MKY_ESC  &mp_mk_bas
+#define MKY_ESC  &mp_key_bas
 
 // tap: return
 // long-tap: F2 (easy rename on ide)
