@@ -25,11 +25,11 @@
  * This identifier is also used to derive the associated
  */
 
-#define TO_MACRO(OS, TO)                        \
-    to_##OS##TO##: to_##OS##TO##_layer {        \
-        compatible = "zmk,behavior-macro";      \
-        #binding-cells = <0>;                   \
-        bindings = <&to OS##TO &kp FK_##TO>;    \
+#define TO_MACRO(OS, TO)                            \
+    to_##OS##TO##: to_##OS##TO##_layer {            \
+        compatible = "zmk,behavior-macro";          \
+        #binding-cells = <0>;                       \
+        bindings = <&to OS##TO## &kp FK_##TO##>;    \
     };
 
 /*
@@ -59,17 +59,17 @@
  * when the key is released. This is used to derive the final
  */
 
-#define MOTO_MACRO(OS, MO, TO)                                      \
-    mo_##OS##MO##_to_##OS##TO##: momentary_##OS##MO##_to_##OS##TO { \
-        compatible = "zmk,behavior-macro";                          \
-        #binding-cells = <0>;                                       \
-        wait-ms = <MC_LAYERS>;                                      \
-        tap-ms = <MC_LAYERS>;                                       \
-        bindings                                                    \
-            = <&macro_press &mo OS##MO>                             \
-            , <&macro_tap &kp FK_##MO>                              \
-            , <&macro_pause_for_release>                            \
-            , <&macro_release &mo OS##MO>                           \
-            , <&macro_tap &kp FK_##TO>;                             \
+#define MOTO_MACRO(OS, MO, TO)                                        \
+    mo_##OS##MO##_to_##OS##TO##: momentary_##OS##MO##_to_##OS##TO## { \
+        compatible = "zmk,behavior-macro";                            \
+        #binding-cells = <0>;                                         \
+        wait-ms = <MC_LAYERS>;                                        \
+        tap-ms = <MC_LAYERS>;                                         \
+        bindings                                                      \
+            = <&macro_press &mo OS##MO##>                             \
+            , <&macro_tap &kp FK_##MO##>                              \
+            , <&macro_pause_for_release>                              \
+            , <&macro_release &mo OS##MO##>                           \
+            , <&macro_tap &kp FK_##TO##>;                             \
     };
   
