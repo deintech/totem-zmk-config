@@ -31,11 +31,11 @@
 
 / {
     macros {
-        #include "os/macos/macros/layers.dtsi"
-        #include "os/macos/macros/locale.dtsi"
-        #include "os/macos/macros/base.dtsi"
-        #include "os/macos/macros/dev.dtsi"
-        #include "os/macos/macros/settings.dtsi"
+        #include "keyboard/macros/layers.dtsi"
+        #include "keyboard/macros/locale.dtsi"
+        #include "keyboard/macros/base.dtsi"
+        #include "keyboard/macros/dev.dtsi"
+        #include "keyboard/macros/settings.dtsi"
     };
 };
 
@@ -43,16 +43,17 @@
     behaviors {
         #include "keyboard/behavior/hold.dtsi"
 
-        #include "os/macos/morph/layers.dtsi"
-        #include "os/macos/morph/locale.dtsi"
-        #include "os/macos/morph/base.dtsi"
-        #include "os/macos/morph/actions.dtsi"
-        #include "os/macos/morph/dev.dtsi"
-        #include "os/macos/morph/settings.dtsi"
-        #include "os/macos/hold/layers.dtsi"
-        #include "os/macos/hold/base.dtsi"
-        #include "os/macos/hold/dev.dtsi"
-        #include "os/macos/hold/settings.dtsi"
+        #include "keyboard/morph/layers.dtsi"
+        #include "keyboard/morph/locale.dtsi"
+        #include "keyboard/morph/base.dtsi"
+        #include "keyboard/morph/actions.dtsi"
+        #include "keyboard/morph/dev.dtsi"
+
+        #include "keyboard/morph/settings.dtsi"
+        #include "keyboard/hold/layers.dtsi"
+        #include "keyboard/hold/base.dtsi"
+        #include "keyboard/hold/dev.dtsi"
+        #include "keyboard/hold/settings.dtsi"
     };
 };
 
@@ -60,18 +61,18 @@
     combos {
         compatible = "zmk,combos";
 
-        #include "os/macos/combos/base.dtsi"
-        #include "os/macos/combos/help.dtsi"
+        #include "keyboard/combos/base.dtsi"
+        #include "keyboard/combos/help.dtsi"
     };
 };
 
 /* Keys */
-#include "os/macos/keys.dtsi"
+#include "keyboard/keys.dtsi"
 
 / {
     keymap {
         compatible = "zmk,keymap";
 
-        #include "os/macos/keymap.dtsi"
+        #include "keyboard/keymap.dtsi"
     };
 };
