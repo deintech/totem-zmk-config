@@ -1,32 +1,32 @@
-combo_mac_help-mBAS {
+combo_help-mBAS {
     bindings = <&kp LG(LC(F_mBAS))>;
     key-positions = <20 31>;
     slow-release;
     layers = <mBAS>;
 };
 
-combo_mac_help-mDEV {
+combo_help-mDEV {
     bindings = <&kp LG(LC(F_mDEV))>;
     key-positions = <20 31>;
     slow-release;
     layers = <mDEV>;
 };
 
-combo_mac_help-mAXN {
+combo_help-mAXN {
     bindings = <&kp LG(LC(F_mAXN))>;
     key-positions = <20 31>;
     slow-release;
     layers = <mAXN>;
 };
 
-combo_mac_help-mFNK {
+combo_help-mFNK {
     bindings = <&kp LG(LC(F_mFNK))>;
     key-positions = <20 31>;
     slow-release;
     layers = <mFNK>;
 };
 
-combo_mac_help-mSTG {
+combo_help-mSTG {
     bindings = <&kp LG(LC(F_mSTG))>;
     key-positions = <20 31>;
     slow-release;
