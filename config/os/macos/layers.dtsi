@@ -6,7 +6,7 @@
 #define mSTG  4
 
 /* Helpers Keys Caps */
-#define H_mCWR  F13
+#define FK_CWR  F13
 
 /* Helpers Keys Layers */
 #define FK_BAS  LS(F14)
