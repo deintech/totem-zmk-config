@@ -19,8 +19,8 @@
 
             #define MBUR5  &kp J                         // tap: j ¦ shift: J
             #define MBUR4  &kp L                         // tap: l ¦ shift: L
-            #define MBUR3  &mp_mi_u                      // tap: u ¦ shift: U ¦ alt: ú ¦ alt+shift: Ú
-            #define MBUR2  &mp_mi_y                      // tap: y ¦ shift: Y ¦ alt: ü ¦ alt+shift: Ü
+            #define MBUR3  &mp_locale_u                  // tap: u ¦ shift: U ¦ alt: ú ¦ alt+shift: Ú
+            #define MBUR2  &mp_locale_y                  // tap: y ¦ shift: Y ¦ alt: ü ¦ alt+shift: Ü
             #define MBUR1  &mp_k_m                       // tap: - ¦ shift: _ 
 
             #define MBMR5  &kp M                         // tap: m ¦ shift: M

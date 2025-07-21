@@ -1,112 +1,112 @@
 // tap:         a
 // alt:         á
 // alt+shift:   Á
-mp_mi_as: morph_macos_a_shift {
+mp_locale_as: morph_locale_a_shift {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&m_mi_a>, <&m_mi_as>;
 };
-mp_mi_a: morph_macos_a {
+mp_locale_a: morph_locale_a {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LALT|MOD_RALT)>;
-    bindings = <&kp A>, <&mp_mi_as>;
+    bindings = <&kp A>, <&mp_locale_as>;
 };
 
 // tap:         e
 // alt:         é
 // alt+shift:   É
-mp_mi_es: morph_macos_e_shift {
+mp_locale_es: morph_locale_e_shift {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&m_mi_e>, <&m_mi_es>;
 };
-mp_mi_e: morph_macos_e {
+mp_locale_e: morph_locale_e {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LALT|MOD_RALT)>;
-    bindings = <&kp E>, <&mp_mi_es>;
+    bindings = <&kp E>, <&mp_locale_es>;
 };
 
 // tap:         i
 // alt:         í
 // alt+shift:   Í
-mp_mi_is: morph_macos_i_shift {
+mp_locale_is: morph_locale_i_shift {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&m_mi_i>, <&m_mi_is>;
 };
-mp_mi_i: morph_macos_i {
+mp_locale_i: morph_locale_i {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LALT|MOD_RALT)>;
-    bindings = <&kp I>, <&mp_mi_is>;
+    bindings = <&kp I>, <&mp_locale_is>;
 };
 
 // tap:         o
 // alt:         ó
 // alt+shift:   Ó
-mp_mi_os: morph_macos_o_shift {
+mp_locale_os: morph_locale_o_shift {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&m_mi_o>, <&m_mi_os>;
 };
-mp_mi_o: morph_macos_o {
+mp_locale_o: morph_locale_o {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LALT|MOD_RALT)>;
-    bindings = <&kp O>, <&mp_mi_os>;
+    bindings = <&kp O>, <&mp_locale_os>;
 };
 
 // tap:         u
 // alt:         ú
 // alt+shift:   Ú
-mp_mi_us: morph_macos_u_shift {
+mp_locale_us: morph_locale_u_shift {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&m_mi_u>, <&m_mi_us>;
 };
-mp_mi_u: morph_macos_u {
+mp_locale_u: morph_locale_u {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LALT|MOD_RALT)>;
-    bindings = <&kp U>, <&mp_mi_us>;
+    bindings = <&kp U>, <&mp_locale_us>;
 };
 
 // tap:         n
 // alt:         ñ
 // alt+shift:   Ñ
-mp_mi_ns: morph_macos_n_shift {
+mp_locale_ns: morph_locale_n_shift {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&m_mi_n>, <&m_mi_ns>;
 };
-mp_mi_n: morph_macos_n {
+mp_locale_n: morph_locale_n {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LALT|MOD_RALT)>;
-    bindings = <&kp N>, <&mp_mi_ns>;
+    bindings = <&kp N>, <&mp_locale_ns>;
 };
 
 // tap:         y
 // alt:         ü
 // alt+shift:   Ü
-mp_mi_ys: morph_macos_y_shift {
+mp_locale_ys: morph_locale_y_shift {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&m_mi_y>, <&m_mi_ys>;
 };
-mp_mi_y: morph_macos_y {
+mp_locale_y: morph_locale_y {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LALT|MOD_RALT)>;
-    bindings = <&kp Y>, <&mp_mi_ys>;
+    bindings = <&kp Y>, <&mp_locale_ys>;
 };
 
