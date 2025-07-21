@@ -1,4 +1,4 @@
-cw_mCAPS: cw_mCAPS {
+caps_word_CAPS: caps_word_CAPS {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     tap-ms = <MC_TAP>;
@@ -7,7 +7,7 @@ cw_mCAPS: cw_mCAPS {
         , <&kp CAPS>;
 };
 
-cw_mON: cw_mON {
+caps_word_ON: caps_word_ON {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -15,7 +15,7 @@ cw_mON: cw_mON {
         , <&cw>;
 };
 
-cw_mOFF: cw_mOFF {
+caps_word_OFF: caps_word_OFF {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
