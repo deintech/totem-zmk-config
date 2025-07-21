@@ -1,6 +1,6 @@
 // tap:     ⇺
 // shift:   ⎗
-mp_ma_prev: morph_mac_action_prev {
+mp_action_prev: morph_action_prev {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -9,7 +9,7 @@ mp_ma_prev: morph_mac_action_prev {
 
 // tap:     ⇻
 // shift:   ⎘
-mp_ma_next: morph_mac_action_next {
+mp_action_next: morph_action_next {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -18,7 +18,7 @@ mp_ma_next: morph_mac_action_next {
 
 // tap:     paste
 // shift:   paste without format
-mp_ma_paste: morph_mac_action_paste {
+mp_action_paste: morph_action_paste {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;

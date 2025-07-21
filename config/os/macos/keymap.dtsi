@@ -114,9 +114,9 @@
 
         mac_act_num_layer {
             #define MAUL1  &kp  LC(LS(LG(RIGHT)))        // tap: expand selection
-            #define MAUL2  &mp_ma_prev                   // tap: prev tab ¦ shift: prev desktop
+            #define MAUL2  &mp_action_prev                   // tap: prev tab ¦ shift: prev desktop
             #define MAUL3  &kp UP                        // tap: up arrow
-            #define MAUL4  &mp_ma_next                   // tap: next tab ¦ shift: next desktop
+            #define MAUL4  &mp_action_next                   // tap: next tab ¦ shift: next desktop
             #define MAUL5  &kp  LG(F)                    // tap: find
 
             #define MAML1  &hm LCTRL LC(LS(LG(LEFT)))    // tap: shrink selection ¦ hold: CONTROL
@@ -128,7 +128,7 @@
             #define MABL1  &kp RG(Z)                     // tap: undo
             #define MABL2  &kp RG(X)                     // tap: cut
             #define MABL3  &kp RG(C)                     // tap: copy
-            #define MABL4  &mp_ma_paste                  // tap: paste ¦ shift: paste without format
+            #define MABL4  &mp_action_paste                  // tap: paste ¦ shift: paste without format
             #define MABL5  &kp RS(RG(Z))                 // tap: redo
 
             #define MAUR5  &kp KP_PLUS                   // tap: +     
