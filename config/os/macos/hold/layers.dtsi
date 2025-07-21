@@ -1,4 +1,4 @@
-to_mBAS_kp: to_mBAS_kp {
+to_BAS_kp: to_BAS_kp {
     compatible = "zmk,behavior-hold-tap";
     #binding-cells = <2>;
     tapping-term-ms = <HP_TAPPING>;
@@ -6,7 +6,7 @@ to_mBAS_kp: to_mBAS_kp {
     bindings = <&to_mBAS>, <&kp>;
 };
 
-mo_mDEV_to_mBAS_kp: mo_mDEV_to_mBAS_kp {
+mo_DEV_to_BAS_kp: mo_DEV_to_BAS_kp {
     compatible = "zmk,behavior-hold-tap";
     #binding-cells = <2>;
     tapping-term-ms = <HP_TAPPING>;
@@ -14,7 +14,7 @@ mo_mDEV_to_mBAS_kp: mo_mDEV_to_mBAS_kp {
     bindings = <&mo_mDEV_to_mBAS>, <&kp>;
 };
 
-mo_mAXN_to_mBAS_kp: mo_mAXN_to_mBAS_kp {
+mo_AXN_to_BAS_kp: mo_AXN_to_BAS_kp {
     compatible = "zmk,behavior-hold-tap";
     #binding-cells = <2>;
     tapping-term-ms = <HP_TAPPING>;
@@ -22,7 +22,7 @@ mo_mAXN_to_mBAS_kp: mo_mAXN_to_mBAS_kp {
     bindings = <&mo_mAXN_to_mBAS>, <&kp>;
 };
 
-mo_mSTG_to_mBAS_kp: mo_mSTG_to_mBAS_kp {
+mo_STG_to_BAS_kp: mo_STG_to_BAS_kp {
     compatible = "zmk,behavior-hold-tap";
     #binding-cells = <2>;
     tapping-term-ms = <HP_TAPPING>;
