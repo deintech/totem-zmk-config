@@ -31,7 +31,6 @@
 
 / {
     macros {
-        #include "os/shared/macros/layers.dtsi"
         #include "os/shared/macros/settings.dtsi"
 
         #include "os/macos/macros/layers.dtsi"
