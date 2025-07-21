@@ -60,13 +60,13 @@
             #define MDUL2  &mp_DEV_pound                 // tap: # ¦ alt: °
             #define MDUL3  &mp_DEV_money                 // tap: $ ¦ alt: €
             #define MDUL4  &kp PLUS                      // tap: +
-            #define MDUL5  &m_mi_d                       // tap: "
+            #define MDUL5  &m_locale_d                   // tap: "
 
             #define MDML1  &hm LCTRL AMPS                // tap: & ¦ hold: CONTROL
             #define MDML2  &hm LCMD  LBRC                // tap: { ¦ hold: COMMAND
             #define MDML3  &hm LALT  RBRC                // tap: } ¦ hold: ALT
             #define MDML4  &hm LSHFT EQUAL               // tap: = ¦ hold: SHIFT
-            #define MDML5  &m_mi_s                       // tap: '
+            #define MDML5  &m_locale_s                   // tap: '
 
             #define MDBL1  &kp LG(R)                     // tap: reload ¦ shift: hard reload
             #define MDBL2  &kp LPAR                      // tap: (
@@ -74,13 +74,13 @@
             #define MDBL4  &kp ASTRK                     // tap: *
             #define MDBL5  &kp BSLH                      // tap: \
 
-            #define MDUR5  &m_mi_t                       // tap: ~
+            #define MDUR5  &m_locale_t                   // tap: ~
             #define MDUR4  &kp MINUS                     // tap: -
             #define MDUR3  &kp UNDER                     // tap: _
             #define MDUR2  &kp PRCNT                     // tap: %
-            #define MDUR1  &m_mi_c                       // tap: ^
+            #define MDUR1  &m_locale_c                   // tap: ^
 
-            #define MDMR5  &m_mi_g                       // tap: `
+            #define MDMR5  &m_locale_g                   // tap: `
             #define MDMR4  &hm_DEV_RS RSHFT 0            // tap: ! ¦ alt: ¡ ¦ hold: SHIFT
             #define MDMR3  &hm_DEV_RA LALT  0            // tap: [ ¦ alt: « ¦ hold: ALT
             #define MDMR2  &hm_DEV_RC RCMD  0            // tap: ] ¦ alt: » ¦ hold: COMMAND

@@ -1,5 +1,5 @@
 // action:     á
-m_mi_a: macro_macos_int_a {
+m_locale_a: macro_locale_a {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <MC_WAIT_START>;
@@ -11,7 +11,7 @@ m_mi_a: macro_macos_int_a {
 };
 
 // action:     Á
-m_mi_as: macro_macos_int_a_shift {
+m_locale_as: macro_locale_a_shift {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <MC_WAIT_START>;
@@ -23,7 +23,7 @@ m_mi_as: macro_macos_int_a_shift {
 };
 
 // action:     é
-m_mi_e: macro_macos_int_e {
+m_locale_e: macro_locale_e {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <MC_WAIT_START>;
@@ -35,7 +35,7 @@ m_mi_e: macro_macos_int_e {
 };
 
 // action:     É
-m_mi_es: macro_macos_int_e_shift {
+m_locale_es: macro_locale_e_shift {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <MC_WAIT_START>;
@@ -47,7 +47,7 @@ m_mi_es: macro_macos_int_e_shift {
 };
 
 // action:     í
-m_mi_i: macro_macos_int_i {
+m_locale_i: macro_locale_i {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <MC_WAIT_START>;
@@ -59,7 +59,7 @@ m_mi_i: macro_macos_int_i {
 };
 
 // action:     Í
-m_mi_is: macro_macos_int_i_shift {
+m_locale_is: macro_locale_i_shift {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <MC_WAIT_START>;
@@ -71,7 +71,7 @@ m_mi_is: macro_macos_int_i_shift {
 };
 
 // action:     ó
-m_mi_o: macro_macos_int_o {
+m_locale_o: macro_locale_o {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <MC_WAIT_START>;
@@ -83,7 +83,7 @@ m_mi_o: macro_macos_int_o {
 };
 
 // action:     Ó
-m_mi_os: macro_macos_int_o_shift {
+m_locale_os: macro_locale_o_shift {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <MC_WAIT_START>;
@@ -95,7 +95,7 @@ m_mi_os: macro_macos_int_o_shift {
 };
 
 // action:     ú
-m_mi_u: macro_macos_int_u {
+m_locale_u: macro_locale_u {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <MC_WAIT_START>;
@@ -107,7 +107,7 @@ m_mi_u: macro_macos_int_u {
 };
 
 // action:     Ú
-m_mi_us: macro_macos_int_u_shift {
+m_locale_us: macro_locale_u_shift {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <MC_WAIT_START>;
@@ -120,7 +120,7 @@ m_mi_us: macro_macos_int_u_shift {
 };
 
 // action:     ü
-m_mi_y: macro_macos_int_y {
+m_locale_y: macro_locale_y {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <MC_WAIT_START>;
@@ -132,7 +132,7 @@ m_mi_y: macro_macos_int_y {
 };
 
 // action:     Ü
-m_mi_ys: macro_macos_int_y_shift {
+m_locale_ys: macro_locale_y_shift {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <MC_WAIT_START>;
@@ -144,7 +144,7 @@ m_mi_ys: macro_macos_int_y_shift {
 };
 
 // action:     ñ
-m_mi_n: macro_macos_int_n {
+m_locale_n: macro_locale_n {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <MC_WAIT_START>;
@@ -156,7 +156,7 @@ m_mi_n: macro_macos_int_n {
 };
 
 // action:     Ñ
-m_mi_ns: macro_macos_int_n_shift {
+m_locale_ns: macro_locale_n_shift {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <MC_WAIT_START>;
@@ -168,7 +168,7 @@ m_mi_ns: macro_macos_int_n_shift {
 };
 
 // action:  `
-m_mi_g: macro_macos_int_grave {
+m_locale_g: macro_locale_grave {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings =
@@ -176,7 +176,7 @@ m_mi_g: macro_macos_int_grave {
 };
 
 // action:  ~
-m_mi_t: macro_macos_int_tilde {
+m_locale_t: macro_locale_tilde {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings =
@@ -184,7 +184,7 @@ m_mi_t: macro_macos_int_tilde {
 };
 
 // action:  ^
-m_mi_c: macro_macos_int_caret {
+m_locale_c: macro_locale_caret {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings =
@@ -192,7 +192,7 @@ m_mi_c: macro_macos_int_caret {
 };
 
 // action:  "
-m_mi_d: macro_macos_int_double_quote {
+m_locale_d: macro_locale_double_quote {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings =
@@ -200,7 +200,7 @@ m_mi_d: macro_macos_int_double_quote {
 };
 
 // action:  '
-m_mi_s: macro_macos_int_single_quote {
+m_locale_s: macro_locale_single_quote {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings =

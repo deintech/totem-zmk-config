@@ -5,7 +5,7 @@ mp_locale_as: morph_locale_a_shift {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&m_mi_a>, <&m_mi_as>;
+    bindings = <&m_locale_a>, <&m_locale_as>;
 };
 mp_locale_a: morph_locale_a {
     compatible = "zmk,behavior-mod-morph";
@@ -21,7 +21,7 @@ mp_locale_es: morph_locale_e_shift {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&m_mi_e>, <&m_mi_es>;
+    bindings = <&m_locale_e>, <&m_locale_es>;
 };
 mp_locale_e: morph_locale_e {
     compatible = "zmk,behavior-mod-morph";
@@ -37,7 +37,7 @@ mp_locale_is: morph_locale_i_shift {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&m_mi_i>, <&m_mi_is>;
+    bindings = <&m_locale_i>, <&m_locale_is>;
 };
 mp_locale_i: morph_locale_i {
     compatible = "zmk,behavior-mod-morph";
@@ -53,7 +53,7 @@ mp_locale_os: morph_locale_o_shift {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&m_mi_o>, <&m_mi_os>;
+    bindings = <&m_locale_o>, <&m_locale_os>;
 };
 mp_locale_o: morph_locale_o {
     compatible = "zmk,behavior-mod-morph";
@@ -69,7 +69,7 @@ mp_locale_us: morph_locale_u_shift {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&m_mi_u>, <&m_mi_us>;
+    bindings = <&m_locale_u>, <&m_locale_us>;
 };
 mp_locale_u: morph_locale_u {
     compatible = "zmk,behavior-mod-morph";
@@ -85,7 +85,7 @@ mp_locale_ns: morph_locale_n_shift {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&m_mi_n>, <&m_mi_ns>;
+    bindings = <&m_locale_n>, <&m_locale_ns>;
 };
 mp_locale_n: morph_locale_n {
     compatible = "zmk,behavior-mod-morph";
@@ -101,7 +101,7 @@ mp_locale_ys: morph_locale_y_shift {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&m_mi_y>, <&m_mi_ys>;
+    bindings = <&m_locale_y>, <&m_locale_ys>;
 };
 mp_locale_y: morph_locale_y {
     compatible = "zmk,behavior-mod-morph";
