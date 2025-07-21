@@ -20,9 +20,9 @@
 #include "layout/totem.dtsi"
 
 /* Global */
-#include "os/shared/behavior.dtsi"
-#include "os/shared/general.dtsi"
-#include "os/macos/layers.dtsi"
+#include "keyboard/global/config.dtsi"
+#include "keyboard/global/tap.dtsi"
+#include "keyboard/global/layers.dtsi"
 
 /* Helpers */
 #include "helpers/macros.dtsi"
@@ -41,7 +41,7 @@
 
 / {
     behaviors {
-        #include "os/shared/hold.dtsi"
+        #include "keyboard/behavior/hold.dtsi"
 
         #include "os/macos/morph/layers.dtsi"
         #include "os/macos/morph/locale.dtsi"
