@@ -5,10 +5,12 @@
 #define mFNK  3
 #define mSTG  4
 
-/* Helpers */
+/* Helpers Keys Caps */
 #define H_mCWR  F13
-#define F_mBAS  LS(F14)
-#define F_mDEV  LS(F15)
-#define F_mAXN  LS(F16)
-#define F_mFNK  LS(F17)
-#define F_mSTG  LS(F18)
+
+/* Helpers Keys Layers */
+#define FK_BAS  LS(F14)
+#define FK_DEV  LS(F15)
+#define FK_AXN  LS(F16)
+#define FK_FNK  LS(F17)
+#define FK_STG  LS(F18)

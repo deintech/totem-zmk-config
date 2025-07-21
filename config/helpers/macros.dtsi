@@ -28,7 +28,7 @@
   to_##OS##TO##: to_##OS##TO##_layer {        \
       compatible = "zmk,behavior-macro";      \
       #binding-cells = <0>;                   \
-      bindings = <&to OS##TO &kp F_##OS##TO>; \
+      bindings = <&to OS##TO &kp FK_##TO>;    \
   };
 
 /*
@@ -65,9 +65,9 @@
       tap-ms = <MC_LAYERS>;                                       \
       bindings                                                    \
           = <&macro_press &mo OS##MO>                             \
-          , <&macro_tap &kp F_##OS##MO>                           \
+          , <&macro_tap &kp FK_##MO>                              \
           , <&macro_pause_for_release>                            \
           , <&macro_release &mo OS##MO>                           \
-          , <&macro_tap &kp F_##OS##TO>;                          \
+          , <&macro_tap &kp FK_##TO>;                             \
   };
   
