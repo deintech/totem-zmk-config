@@ -61,9 +61,9 @@
         wait-ms = <MC_LAYERS>;                         \
         tap-ms = <MC_LAYERS>;                          \
         bindings                                       \
-            = <&macro_press &mo ##MO##>                \
+            = <&macro_press &mo MO>                    \
             , <&macro_tap &kp FK_##MO##>               \
             , <&macro_pause_for_release>               \
-            , <&macro_release &mo ##MO##>              \
+            , <&macro_release &mo MO>                  \
             , <&macro_tap &kp FK_##TO##>;              \
     };
