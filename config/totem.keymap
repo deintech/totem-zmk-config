@@ -31,12 +31,11 @@
 
 / {
     macros {
-        #include "os/shared/macros/settings.dtsi"
-
         #include "os/macos/macros/layers.dtsi"
         #include "os/macos/macros/locale.dtsi"
         #include "os/macos/macros/base.dtsi"
         #include "os/macos/macros/dev.dtsi"
+        #include "os/macos/macros/settings.dtsi"
     };
 };
 
