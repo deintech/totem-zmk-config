@@ -27,14 +27,15 @@
  * associated with the hold action).
  * @param TO Target Layer: The layer activated when the key is tapped.
  */
+
 #define MOTO_HOLD(MO, CB, TO)                         \
-  mo_##MO##CB##_to_##TO: hold_mo_##MO##CB##_to_##TO { \
-      compatible = "zmk,behavior-hold-tap";           \
-      #binding-cells = <2>;                           \
-      tapping-term-ms = <HP_TAPPING>;                 \
-      flavor = "hold-preferred";                      \
-      bindings = <&mo_##MO##_to_##CB>, <&to_##TO>;    \
-  };
+    mo_##MO##CB##_to_##TO: hold_mo_##MO##CB##_to_##TO { \
+        compatible = "zmk,behavior-hold-tap";           \
+        #binding-cells = <2>;                           \
+        tapping-term-ms = <HP_TAPPING>;                 \
+        flavor = "hold-preferred";                      \
+        bindings = <&mo_##MO##_to_##CB>, <&to_##TO>;    \
+    };
 
 /*
  * @brief Macro for Home Row Hold (Morph)
@@ -50,12 +51,13 @@
  * @param MP Morphe: Custom key morph with different  The behavior (e.g., a keycode or a custom macro)
  * executed when the key is tapped.
  */
+
 #define HR_HOLD(LYR, MOD, MP)                 \
-  hm_##LYR##_##MOD: hold_hm_##LYR##_##MOD {   \
-      compatible = "zmk,behavior-hold-tap";   \
-      #binding-cells = <2>;                   \
-      tapping-term-ms = <HR_TAPPING>;         \
-      quick-tap-ms = <HR_QUICK_TAP>;          \
-      flavor = HR_FLAVOR;                     \
-      bindings = <&kp>, <&MP>;                \
-  };
+    hm_##LYR##_##MOD: hold_hm_##LYR##_##MOD {   \
+        compatible = "zmk,behavior-hold-tap";   \
+        #binding-cells = <2>;                   \
+        tapping-term-ms = <HR_TAPPING>;         \
+        quick-tap-ms = <HR_QUICK_TAP>;          \
+        flavor = HR_FLAVOR;                     \
+        bindings = <&kp>, <&MP>;                \
+    };

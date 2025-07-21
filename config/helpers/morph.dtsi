@@ -28,6 +28,7 @@
  * @param KS The key output when the Shift modifier is active.
  * @param KAS The key output when both Alt and Shift modifiers are active.
  */
+
 #define MORPH_KASAS(LYR, NAME, DESC, MODS, KEY, KA, KS, KAS)            \
     mp_##LYR##_##NAME##_as: morph_##LYR##_##DESC##_alt_shift {          \
         compatible = "zmk,behavior-mod-morph";                          \
@@ -69,6 +70,7 @@
  * @param KS The key output when the Shift modifier is active.
  * @param KA The key output when the Alt modifier (or `MODS`) is active.
  */
+
 #define MORPH_KSA(LYR, NAME, DESC, MODS, KEY, KS, KA)               \
     mp_##LYR##_##NAME##_a: morph_##LYR##_##DESC##_alt {             \
         compatible = "zmk,behavior-mod-morph";                      \
@@ -102,6 +104,7 @@
  * @param KA The key output when the Alt modifier (or `MODS`) is active.
  * @param KS The key output when the Shift modifier is active.
  */
+
 #define MORPH_KAS(LYR, NAME, DESC, MODS, KEY, KA, KS)               \
     mp_##LYR##_##NAME##_s: morph_##LYR##_##DESC##_shift {           \
         compatible = "zmk,behavior-mod-morph";                      \
@@ -133,6 +136,7 @@
  * @param KEY The default key output when `MODS` are not active.
  * @param KA The key output when `MODS` are active.
  */
+
 #define MORPH_KA(LYR, NAME, DESC, MODS, KEY, KA)                    \
     mp_##LYR##_##NAME: morph_##LYR##_##DESC {                       \
         compatible = "zmk,behavior-mod-morph";                      \
@@ -155,6 +159,7 @@
  * @param KEY The default key output when Shift is not active.
  * @param KS The key output when Shift is active.
  */
+
 #define MORPH_KS(LYR, NAME, DESC, KEY, KS)                          \
     mp_##LYR##_##NAME: morph_##LYR##_##DESC {                       \
         compatible = "zmk,behavior-mod-morph";                      \
