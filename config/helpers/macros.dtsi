@@ -59,7 +59,7 @@
  * when the key is released. This is used to derive the final
  */
 
-#define MOTO_MACRO(OS, MO, TO)                                    \
+#define MOTO_MACRO(OS, MO, TO)                                      \
     mo_##OS##MO##_to_##OS##TO##: momentary_##OS##MO##_to_##OS##TO { \
         compatible = "zmk,behavior-macro";                          \
         #binding-cells = <0>;                                       \

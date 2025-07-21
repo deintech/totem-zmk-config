@@ -28,7 +28,7 @@
  * @param TO Target Layer: The layer activated when the key is tapped.
  */
 
-#define MOTO_HOLD(MO, CB, TO)                         \
+#define MOTO_HOLD(MO, CB, TO)                           \
     mo_##MO##CB##_to_##TO: hold_mo_##MO##CB##_to_##TO { \
         compatible = "zmk,behavior-hold-tap";           \
         #binding-cells = <2>;                           \
@@ -52,7 +52,7 @@
  * executed when the key is tapped.
  */
 
-#define HR_HOLD(LYR, MOD, MP)                 \
+#define HR_HOLD(LYR, MOD, MP)                   \
     hm_##LYR##_##MOD: hold_hm_##LYR##_##MOD {   \
         compatible = "zmk,behavior-hold-tap";   \
         #binding-cells = <2>;                   \
