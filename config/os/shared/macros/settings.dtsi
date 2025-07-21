@@ -2,28 +2,28 @@ m_s_b1: macro_stg_bluetooth_1 {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings =
-        <&bt BT_SEL 0 &to_mBAS>;
+        <&bt BT_SEL 0 &to_BAS>;
 };
 
 m_s_b2: macro_stg_bluetooth_2 {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings =
-        <&bt BT_SEL 1 &to_mBAS>;
+        <&bt BT_SEL 1 &to_BAS>;
 };
 
 m_s_b3: macro_stg_bluetooth_3 {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings =
-        <&bt BT_SEL 2 &to_mBAS>;
+        <&bt BT_SEL 2 &to_BAS>;
 };
 
 m_s_b4: macro_stg_bluetooth_4 {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings =
-        <&bt BT_SEL 3 &to_mBAS>;
+        <&bt BT_SEL 3 &to_BAS>;
 };
 
 // mp_STG_cb

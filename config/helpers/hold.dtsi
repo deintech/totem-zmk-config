@@ -28,13 +28,13 @@
  * @param TO Target Layer: The layer activated when the key is tapped.
  */
 
-#define HOLD_MOTO(MO, CB, TO)                           \
-    mo_##MO##CB##_to_##TO: hold_mo_##MO##CB##_to_##TO { \
-        compatible = "zmk,behavior-hold-tap";           \
-        #binding-cells = <2>;                           \
-        tapping-term-ms = <HP_TAPPING>;                 \
-        flavor = "hold-preferred";                      \
-        bindings = <&mo_##MO##_to_##CB>, <&to_##TO>;    \
+#define HOLD_MOTO(MO, CB, TO)                                \
+    mo_##MO##CB##_to_##TO##: hold_mo_##MO##CB##_to_##TO## {  \
+        compatible = "zmk,behavior-hold-tap";                \
+        #binding-cells = <2>;                                \
+        tapping-term-ms = <HP_TAPPING>;                      \
+        flavor = "hold-preferred";                           \
+        bindings = <&mo_##MO##_to_##CB>, <&to_##TO##>;       \
     };
 
 /*
@@ -52,12 +52,12 @@
  * executed when the key is tapped.
  */
 
-#define HOLD_HR(LYR, MOD, MP)                   \
-    hm_##LYR##_##MOD: hold_hm_##LYR##_##MOD {   \
-        compatible = "zmk,behavior-hold-tap";   \
-        #binding-cells = <2>;                   \
-        tapping-term-ms = <HR_TAPPING>;         \
-        quick-tap-ms = <HR_QUICK_TAP>;          \
-        flavor = HR_FLAVOR;                     \
-        bindings = <&kp>, <&MP>;                \
+#define HOLD_HR(LYR, MOD, MP)                       \
+    hm_##LYR##_##MOD##: hold_hm_##LYR##_##MOD## {   \
+        compatible = "zmk,behavior-hold-tap";       \
+        #binding-cells = <2>;                       \
+        tapping-term-ms = <HR_TAPPING>;             \
+        quick-tap-ms = <HR_QUICK_TAP>;              \
+        flavor = HR_FLAVOR;                         \
+        bindings = <&kp>, <&MP>;                    \
     };

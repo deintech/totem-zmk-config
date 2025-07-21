@@ -2,12 +2,12 @@ combo_CW_on {
     bindings = <&m_caps_word_ON>;
     key-positions = <13 16>;
     slow-release;
-    layers = <mBAS>;
+    layers = <BAS>;
 };
 
 combo_CW_off {
     bindings = <&m_caps_word_OFF>;
     key-positions = <11 18>;
     slow-release;
-    layers = <mBAS>;
+    layers = <BAS>;
 };

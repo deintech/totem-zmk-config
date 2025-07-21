@@ -15,7 +15,7 @@ mp_key_dev_right: morph_key_dev_right_layer {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mo_DEV_to_BAS_kp 0 RIGHT>, <&to_mDEV>;
+    bindings = <&mo_DEV_to_BAS_kp 0 RIGHT>, <&to_DEV>;
 };
 
 // tap:      tab       
@@ -25,7 +25,7 @@ mp_key_axn: morph_key_axn_layer {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mo_AXN_to_BAS_kp 0 TAB>, <&to_mAXN>;
+    bindings = <&mo_AXN_to_BAS_kp 0 TAB>, <&to_AXN>;
 };
 
 // tap:      backspace       
@@ -35,7 +35,7 @@ mp_key_fnk: morph_key_fnk_layer {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mo_AXN_to_BAS_kp 0 BSPC>, <&to_mFNK>;
+    bindings = <&mo_AXN_to_BAS_kp 0 BSPC>, <&to_FNK>;
 };
 
 // tap:      delete    
@@ -45,7 +45,7 @@ mp_key_dev_left: morph_key_dev_left_layer {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mo_DEV_to_BAS_kp 0 DEL>, <&to_mDEV>;
+    bindings = <&mo_DEV_to_BAS_kp 0 DEL>, <&to_DEV>;
 };
 
 // long-tap: to STG momentary
@@ -54,6 +54,6 @@ mp_key_stg: morph_stg_layer {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mo_mSTG_to_mBAS>, <&to_mSTG>;
+    bindings = <&mo_STG_to_BAS>, <&to_STG>;
 };
 

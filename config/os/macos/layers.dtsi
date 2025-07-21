@@ -1,9 +1,9 @@
 /* Layers */
-#define mBAS  0
-#define mDEV  1
-#define mAXN  2
-#define mFNK  3
-#define mSTG  4
+#define BAS  0
+#define DEV  1
+#define AXN  2
+#define FNK  3
+#define STG  4
 
 /* Helpers Keys Caps */
 #define FK_CWR  F13

@@ -1,8 +1,8 @@
-TO_MACRO(m, DEV)  //to_mDEV
-TO_MACRO(m, AXN)  //to_mAXN
-TO_MACRO(m, FNK)  //to_mFNK
-TO_MACRO(m, STG)  //to_mSTG
+TO_MACRO(DEV)  //to_DEV
+TO_MACRO(AXN)  //to_AXN
+TO_MACRO(FNK)  //to_FNK
+TO_MACRO(STG)  //to_STG
 
-MOTO_MACRO(m, AXN, BAS)  //mo_mAXN_to_mBAS
-MOTO_MACRO(m, DEV, BAS)  //mo_mDEV_to_mBAS
-MOTO_MACRO(m, STG, BAS)  //mo_mSTG_to_mBAS
+MOTO_MACRO(AXN, BAS)  //mo_AXN_to_BAS
+MOTO_MACRO(DEV, BAS)  //mo_DEV_to_BAS
+MOTO_MACRO(STG, BAS)  //mo_STG_to_BAS
