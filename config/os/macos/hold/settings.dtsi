@@ -1,4 +1,4 @@
 HR_HOLD(STG, LC, m_s_b3)              //hm_STG_LC
-HR_HOLD(STG, LS, mp_mSTG_screenshot)  //hm_STG_LS
-HR_HOLD(STG, RS, mp_mSTG_left)        //hm_STG_RS
-HR_HOLD(STG, RA, mp_mSTG_rectangle)   //hm_STG_RA
+HR_HOLD(STG, LS, mp_STG_screenshot)  //hm_STG_LS
+HR_HOLD(STG, RS, mp_STG_left)        //hm_STG_RS
+HR_HOLD(STG, RA, mp_STG_rectangle)   //hm_STG_RA

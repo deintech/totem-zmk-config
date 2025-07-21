@@ -26,9 +26,8 @@ m_s_b4: macro_stg_bluetooth_4 {
         <&bt BT_SEL 3 &to_mBAS>;
 };
 
-// mp_sSTG_cb
+// mp_STG_cb
 MORPH_KAS(
-    s,
     STG,
     cb,
     clear_bluetooth,

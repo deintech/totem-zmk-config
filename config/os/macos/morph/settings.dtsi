@@ -1,6 +1,5 @@
-// mp_mSTG_z
+// mp_STG_z
 MORPH_KS(
-    m,
     STG,
     z,
     zoom,
@@ -8,9 +7,8 @@ MORPH_KS(
     &kp RG(KP_N0)               // shift: zoom reset vscode
 )
 
-// mp_mSTG_f
+// mp_STG_f
 MORPH_KS(
-    m,
     STG,
     f,
     files,
@@ -18,9 +16,8 @@ MORPH_KS(
     &kp LS(LG(DOT))             // shift: show/hide system files
 )
 
-// mp_mSTG_screenshot
+// mp_STG_screenshot
 MORPH_KAS(
-    m,
     STG,
     screenshot,
     screenshot,
@@ -31,9 +28,8 @@ MORPH_KAS(
 )
 // ctrl: adding ctrl key copy to clipboard instead of saving a file
 
-// mp_mSTG_topleft
+// mp_STG_topleft
 MORPH_KA(
-    m,
     STG,
     topleft,
     topleft,
@@ -42,9 +38,8 @@ MORPH_KA(
     &kp LS(LA(LG(LC(LEFT))))    // alt:   rectangle top left
 )
 
-// mp_mSTG_up
+// mp_STG_up
 MORPH_KA(
-    m,
     STG,
     up,
     up,
@@ -53,9 +48,8 @@ MORPH_KA(
     &kp LS(LA(LG(UP)))          // alt:   rectangle top half
 )
 
-// mp_mSTG_topright
+// mp_STG_topright
 MORPH_KA(
-    m,
     STG,
     topright,
     topright,
@@ -64,9 +58,8 @@ MORPH_KA(
     &kp LS(LA(LG(LC(RIGHT))))   // alt:   rectangle top right
 )
 
-// mp_mSTG_left
+// mp_STG_left
 MORPH_KA(
-    m,
     STG,
     left,
     left,
@@ -75,9 +68,8 @@ MORPH_KA(
     &kp LA(LG(LS(LEFT)))        // alt:   rectangle left
 )
 
-// mp_mSTG_rectangle
+// mp_STG_rectangle
 MORPH_KAS(
-    m,
     STG,
     rectangle,
     rectangle,
@@ -87,9 +79,8 @@ MORPH_KAS(
     &kp LS(LA(LC(F)))           // shift: center
 )
 
-// mp_mSTG_right
+// mp_STG_right
 MORPH_KA(
-    m,
     STG,
     right,
     right,
@@ -98,9 +89,8 @@ MORPH_KA(
     &kp LA(LG(LS(RIGHT)))       // alt:   rectangle right
 )
 
-// mp_mSTG_downleft
+// mp_STG_downleft
 MORPH_KA(
-    m,
     STG,
     downleft,
     downleft,
@@ -109,9 +99,8 @@ MORPH_KA(
     &kp LA(LG(LC(LEFT)))        // alt:   rectangle down left
 )
 
-// mp_mSTG_down
+// mp_STG_down
 MORPH_KA(
-    m,
     STG,
     down,
     down,
@@ -120,9 +109,8 @@ MORPH_KA(
     &kp LS(LA(LG(DOWN)))       // alt:   rectangle right
 )
 
-// mp_mSTG_downright
+// mp_STG_downright
 MORPH_KA(
-    m,
     STG,
     downright,
     downright,
@@ -131,9 +119,8 @@ MORPH_KA(
     &kp LA(LG(LC(RIGHT)))       // alt:   rectangle down right
 )
 
-// mp_mSTG_m
+// mp_STG_m
 MORPH_KA(
-    m,
     STG,
     m,
     mute,

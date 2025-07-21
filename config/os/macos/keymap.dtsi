@@ -57,8 +57,8 @@
 
         mac_dev_layer {
             #define MDUL1  &kp AT                        // tap: @
-            #define MDUL2  &mp_mDEV_pound                // tap: # ¦ alt: °
-            #define MDUL3  &mp_mDEV_money                // tap: $ ¦ alt: €
+            #define MDUL2  &mp_DEV_pound                 // tap: # ¦ alt: °
+            #define MDUL3  &mp_DEV_money                 // tap: $ ¦ alt: €
             #define MDUL4  &kp PLUS                      // tap: +
             #define MDUL5  &m_mi_d                       // tap: "
 
@@ -87,10 +87,10 @@
             #define MDMR1  &hm RCTRL PIPE                // tap: | ¦        ¦ hold: CONTROL
 
             #define MDBR5  &kp FSLH                      // tap: / 
-            #define MDBR4  &mp_mDEV_qs                   // tap: ?  ¦ alt: ¿
+            #define MDBR4  &mp_DEV_qs                    // tap: ?  ¦ alt: ¿
             #define MDBR3  &kp LT                        // tap: <
             #define MDBR2  &kp GT                        // tap: >
-            #define MDBR1  &mp_mDEV_ql                   // tap: ?. ¦ shift: ?░:░
+            #define MDBR1  &mp_DEV_ql                    // tap: ?. ¦ shift: ?░:░
 
             #define MDTL0  MKY_ESC                       // tap: escape ¦ shift: caps lock ¦ hold: BAS layer
             #define MDTL1  &none
@@ -233,34 +233,34 @@
             #define MSUL4  &kp LG(LS(C))                 // tap: color picker
             #define MSUL5  &kp RG(PLUS)                  // tap: zoom in
 
-            #define MSML1  &hm_STG_LC  LCTRL  0         // tap: bluethoot 3
+            #define MSML1  &hm_STG_LC LCTRL 0            // tap: bluethoot 3
             #define MSML2  &m_s_b4                       // tap: bluethoot 4
             #define MSML3  &kp LALT                      // hold: ALT
-            #define MSML4  &hm_STG_LS  LSHFT  0         // tap: mp_mSTG_screenshot ¦ hold: SHIFT
-            #define MSML5  &mp_mSTG_z                    // tap: zoom reset ¦ shift: zoom reset on vscode
+            #define MSML4  &hm_STG_LS LSHFT 0            // tap: mp_STG_screenshot ¦ hold: SHIFT
+            #define MSML5  &mp_STG_z                     // tap: zoom reset ¦ shift: zoom reset on vscode
 
-            #define MSBL1  &mp_sSTG_cb                   // tap: none ¦ shift: clear current profile ¦ alt: clear all profiles
+            #define MSBL1  &mp_STG_cb                    // tap: none ¦ shift: clear current profile ¦ alt: clear all profiles
             #define MSBL2  &kp C_BRI_DN                  // tap: bright down
             #define MSBL3  &kp C_BRI_UP                  // tap: bright up
-            #define MSBL4  &mp_mSTG_f                    // tap: (finder) file explorer ¦ alt: show/hide system files
+            #define MSBL4  &mp_STG_f                     // tap: (finder) file explorer ¦ alt: show/hide system files
             #define MSBL5  &kp RG(MINUS)                 // tap: zoom out
 
             #define MSUR5  &kp C_VOL_UP
-            #define MSUR4  &mp_mSTG_topleft              // tap: ide explorer ¦ alt: rectangle top left
-            #define MSUR3  &mp_mSTG_up                   // tap: ide source control ¦ alt: rectangle top halt
-            #define MSUR2  &mp_mSTG_topright             // tap: ide debugger ¦ alt: rectangle top right
+            #define MSUR4  &mp_STG_topleft               // tap: ide explorer ¦ alt: rectangle top left
+            #define MSUR3  &mp_STG_up                    // tap: ide source control ¦ alt: rectangle top halt
+            #define MSUR2  &mp_STG_topright              // tap: ide debugger ¦ alt: rectangle top right
             #define MSUR1  &kp LC(LS(LG(T)))             // tap: todo extension
 
-            #define MSMR5  &mp_mSTG_m                    // tap: vol mute ¦ shift: mic mute
-            #define MSMR4  &hm_STG_RS  LSHIFT  0        // tap: mp_mSTG_left
-            #define MSMR3  &hm_STG_RA  LALT    0        // tap: mp_mSTG_rectangle
-            #define MSMR2  &mp_mSTG_right                // tap: ide secondary side bar ¦ alt: rectangle right
+            #define MSMR5  &mp_STG_m                     // tap: vol mute ¦ shift: mic mute
+            #define MSMR4  &hm_STG_RS  LSHIFT  0         // tap: mp_STG_left
+            #define MSMR3  &hm_STG_RA  LALT    0         // tap: mp_STG_rectangle
+            #define MSMR2  &mp_STG_right                 // tap: ide secondary side bar ¦ alt: rectangle right
             #define MSMR1  &kp LC(UP)                    // tap: mission control
 
             #define MSBR5  &kp C_VOL_DN
-            #define MSBR4  &mp_mSTG_downleft             // tap: none ¦ alt: rectangle bottom left
-            #define MSBR3  &mp_mSTG_down                 // tap: ide panel bottom bar ¦ alt: rectangle bottom down
-            #define MSBR2  &mp_mSTG_downright            // tap: none ¦ alt: rectangle bottom right
+            #define MSBR4  &mp_STG_downleft              // tap: none ¦ alt: rectangle bottom left
+            #define MSBR3  &mp_STG_down                  // tap: ide panel bottom bar ¦ alt: rectangle bottom down
+            #define MSBR2  &mp_STG_downright             // tap: none ¦ alt: rectangle bottom right
             #define MSBR1  &kp LC(DOWN)                  // tap: application window               
 
             #define MSTL0  MKY_ESC                       // tap: escape ¦ shift: caps lock ¦ hold: BAS layer

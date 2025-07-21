@@ -1,3 +1,3 @@
-HR_HOLD(DEV, RS, mp_mDEV_es)   //hm_DEV_RS
-HR_HOLD(DEV, RA, mp_mDEV_lb)   //hm_DEV_RA
-HR_HOLD(DEV, RC, mp_mDEV_rb)   //hm_DEV_RC
+HR_HOLD(DEV, RS, mp_DEV_es)   //hm_DEV_RS
+HR_HOLD(DEV, RA, mp_DEV_lb)   //hm_DEV_RA
+HR_HOLD(DEV, RC, mp_DEV_rb)   //hm_DEV_RC

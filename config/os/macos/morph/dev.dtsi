@@ -1,6 +1,5 @@
-//mp_mDEV_pound
+// mp_DEV_pound
 MORPH_KA(
-    m,
     DEV,
     pound,
     pound,
@@ -9,9 +8,8 @@ MORPH_KA(
     &kp LA(N0)  // alt:  °
 )
 
-//mp_mDEV_money
+// mp_DEV_money
 MORPH_KA(
-    m,
     DEV,
     money,
     money,
@@ -20,9 +18,8 @@ MORPH_KA(
     &kp LA(LS(N2))  // alt:  €
 )
 
-//mp_mDEV_lb
+// mp_DEV_lb
 MORPH_KA(
-    m,
     DEV,
     lb,
     left_brackets,
@@ -31,9 +28,8 @@ MORPH_KA(
     &kp LA(BSLH)  // alt:  «
 )
 
-//mp_mDEV_rb
+// mp_DEV_rb
 MORPH_KA(
-    m,
     DEV,
     rb,
     right_brackets,
@@ -42,9 +38,8 @@ MORPH_KA(
     &kp LA(LS(BSLH))  // alt:  »
 )
 
-// mp_mDEV_qs
+// mp_DEV_qs
 MORPH_KA(
-    m,
     DEV,
     qs,
     question_symbol,
@@ -53,9 +48,8 @@ MORPH_KA(
     &kp LA(LS(FSLH))  // alt:  ¿
 )
 
-// mp_mDEV_es
+// mp_DEV_es
 MORPH_KA(
-    m,
     DEV,
     es,
     exclamation_symbol,
@@ -64,9 +58,8 @@ MORPH_KA(
     &kp LA(N1)  // alt:  ¡
 )
 
-//mp_mDEV_ql
+// mp_DEV_ql
 MORPH_KS(
-    m,
     DEV,
     ql,
     question_logical,
