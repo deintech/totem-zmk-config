@@ -23,10 +23,10 @@
  */
 
 #define TO_MACRO(TO)                            \
-    to_##TO##: to_##TO##_layer {                    \
-        compatible = "zmk,behavior-macro";          \
-        #binding-cells = <0>;                       \
-        bindings = <&to ##TO## &kp FK_##TO##>;    \
+    to_##TO##: to_##TO##_layer {                \
+        compatible = "zmk,behavior-macro";      \
+        #binding-cells = <0>;                   \
+        bindings = <&to TO &kp FK_##TO##>;  \
     };
 
 /*
@@ -67,4 +67,4 @@
             , <&macro_release &mo ##MO##>                           \
             , <&macro_tap &kp FK_##TO##>;                             \
     };
-  
+  >
