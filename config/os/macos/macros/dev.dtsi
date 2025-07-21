@@ -1,5 +1,5 @@
 // action:  ?░:░
-m_md_cto: macro_mac_conditional_ternary_operator {
+m_operator_cto: macro_operator_conditional_ternary {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -10,7 +10,7 @@ m_md_cto: macro_mac_conditional_ternary_operator {
 };
 
 // action:  ?.
-m_md_oco: macro_mac_optional_chaining_operator {
+m_operator_oco: macro_operator_optional_chaining {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings

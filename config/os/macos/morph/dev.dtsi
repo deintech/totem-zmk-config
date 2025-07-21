@@ -63,6 +63,6 @@ MORPH_KS(
     DEV,
     ql,
     question_logical,
-    &m_md_oco,  // tap:    ?.
-    &m_md_cto   // shift:  ?░:░
+    &m_operator_oco,  // tap:    ?.
+    &m_operator_cto   // shift:  ?░:░
 )
