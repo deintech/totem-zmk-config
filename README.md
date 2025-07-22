@@ -125,12 +125,12 @@ Symbols and dev shortcuts for JS/TS.
 
 #### IDE
 
-| Label               | Shortcut                  | Action                      |
-| ------------------: | ------------------------: | --------------------------- |
-| <kbd>💬</kbd>       |                           | Cursor: Add to Chat         |
-| <kbd>⚡</kbd>        |                           | Cursor: Quick Edit          |
-| <kbd>//</kbd>       | <kbd>⌃</kbd>+<kbd>/</kbd> | Toggle line comment         |
-| <kbd>/\* \*/</kbd>  | <kbd>⌥</kbd>+<kbd>/</kbd> | Toggle block comment        |
+| Label               | Action                      |
+| ------------------: | --------------------------- |
+| <kbd>💬</kbd>       | Cursor: Add to Chat         |
+| <kbd>⚡</kbd>        | Cursor: Quick Edit          |
+| <kbd>//</kbd>       | Toggle line comment         |
+| <kbd>/\* \*/</kbd>  | Toggle block comment        |
 
 ⇧ [Back to menu](#menu)
 
