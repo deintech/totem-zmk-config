@@ -2,9 +2,10 @@
 /* https://zmk-physical-layout-converter.streamlit.app/ */
 
 / {
-    physical_layout: physical_layout {
+    default_layout: default_layout {
         compatible = "zmk,physical-layout";
         display-name = "Default Layout";
+        
         transform = <&default_transform>;
 
         keys  //                     w   h    x    y     rot   rx   ry

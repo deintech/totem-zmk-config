@@ -16,9 +16,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
-/* ZMK Studio */
-#include "layout/totem.dtsi"
-
 /* Global */
 #include "keyboard/global/config.dtsi"
 #include "keyboard/global/tap.dtsi"
