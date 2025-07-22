@@ -1,3 +1,11 @@
+/*
+ * Copyright (c) 2025 Camilo Martinez (Equiman)
+ * SPDX-License-Identifier: MIT
+ *
+ * Documentation:
+ * @see https://zmk.dev/docs/keymaps/combos
+ */
+
 combo_CW_on {
     bindings = <&m_caps_word_ON>;
     key-positions = <13 16>;

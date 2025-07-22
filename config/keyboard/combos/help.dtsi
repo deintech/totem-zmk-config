@@ -1,3 +1,11 @@
+/*
+ * Copyright (c) 2025 Camilo Martinez (Equiman)
+ * SPDX-License-Identifier: MIT
+ *
+ * Documentation:
+ * @see https://zmk.dev/docs/keymaps/combos
+ */
+
 combo_help-BAS {
     bindings = <&kp LG(LC(FK_BAS))>;
     key-positions = <20 31>;
