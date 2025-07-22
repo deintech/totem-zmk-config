@@ -16,10 +16,11 @@ This is a WIP layout based on Colemak DHm for using on macOS (with **en-US Inter
 
 - [Conventions](#conventions)
 - [Layers](#layers)
-  - [BAS](bas)
-  - [DEV](dev)
-  - [AXN](axn)
-  - [STG](stg)
+  - [BAS](#bas)
+  - [DEV](#dev)
+  - [AXN](#axn)
+  - [STG](#stg)
+- [About](#about)
 
 ---
 
@@ -208,7 +209,7 @@ Dedicated to Bluetooth and media controls.
 | <kbd>⌑</kbd>   | <kbd>⌥</kbd>+<kbd>⎅</kbd>  | Show/hide system files        |
 
 > [!NOTE]
-> Combine `^` with `⇧` or `⌥` for sending to the clipboard instead of saving it to a file.
+> Combine `^` with `⇧` or `⌥` for sending the screenshoot to the clipboard instead of saving it to a file.
 
 #### Media
 
@@ -224,7 +225,7 @@ Dedicated to Bluetooth and media controls.
 #### IDE
 
 | Label        | Action |
-| ------ ----: | ------ |
+| -----------: | ------ |
 | <kbd>☗</kbd> | Home   |
 | <kbd>♆</kbd> | Git    |
 | <kbd>♺</kbd> | Debug  |
