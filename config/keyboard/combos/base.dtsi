@@ -19,3 +19,10 @@ combo_CW_off {
     slow-release;
     layers = <BAS>;
 };
+
+combo_to_STG {
+    bindings = <&mo_STG_to_BAS>;
+    key-positions = <34 35>;
+    slow-release;
+    layers = <mBAS>;
+};
