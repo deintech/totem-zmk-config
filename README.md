@@ -16,9 +16,9 @@ This is a WIP layout based on Colemak DHm for using on macOS (with **en-US Inter
 
 - [Usage](#usage)
   - [Power](#power)
-  - [Charge](#charge)
+  - [Charging](#charging)
   - [Reset](#reset)
-  - [Configure](#configure)
+  - [Firmware](#firmware)
 - [Conventions](#conventions)
 - [Layers](#layers)
   - [BAS](#bas)
@@ -29,57 +29,66 @@ This is a WIP layout based on Colemak DHm for using on macOS (with **en-US Inter
 
 ---
 
-## Usage
+## Usage Guide
 
 ### Power
 
-The keyboard can be powered either by **USB-C cable** or **built-in battery**.
+Your keyboard can be powered by **USB-C cable** or its **built-in battery**.
 
-To turn on **battery power**, slide the power switch to the **left** (when seem from behind)."
+* **Battery Power:** To turn on battery power, slide the power switch to the **right** on both halves. The two halves will pair automatically.
 
-The two halves pair automatically when both are powered.
+  > The power switch controls battery power only. When connected via USB-C, the keyboard is powered and functions even if the switch is off.
 
-- To use in wired mode:
-Connect the left half to your device via USB-C.
+* **Wired Mode:** Connect the left half to your device using a USB-C cable.
 
-- To use in wireless (Bluetooth) mode:
-Power on the left half (battery switch ON). No cable is needed.
+* **Wireless (Bluetooth) Mode:** Power on both halves using the battery switch. No cable is needed.
 
-> The power switch controls battery power only. When connected by cable, the keyboard is powered and works even if the switch is off.
+### Charging
 
-### Charge
-
-To charge your boards you must put the half you want to charge in the ON position and connect it to a power source (it can be your computer) through the USB port.
+To charge a half, ensure its power switch is in the **ON** position, then connect it to a power source (e.g., your computer) via its USB-C port.
 
 ### Reset
 
-Pressing it once resets the keyboard (power cycle so essentially equivalent to turning it off and then back on).
+The reset button offers two functions:
 
-Pressing it twice quickly puts into programming mode, if you plug it into your computer it shows up as a USB device instead of a keyboard; you can then drag and drop or copy and paste your firmware file to update your keymap.
+* **Single Press:** Resets the keyboard (power cycles).
+* **Double Press (quick):** Puts the keyboard into programming mode. When connected to your computer, it will appear as a USB device, allowing you to drag and drop or copy/paste firmware files for keymap updates.
 
-### Configure
+### Firmware
 
-The wireless version of the Totem use ZMK as their firmware, you can find out more at [ZMK docs](https://zmk.dev/docs)
+Your Totem wireless keyboard uses **ZMK firmware**. For in-depth information, customization guides, and keymap creation, refer to the [ZMK documentation](https://zmk.dev/docs), specifically the [customization](https://zmk.dev/docs/customization) and [keymaps](https://zmk.dev/docs/features/keymaps) sections after your initial user setup.
 
-These pages will guide you to create your own keymap (follow them after your user-setup) [customization](https://zmk.dev/docs/customization) and [keymaps](https://zmk.dev/docs/features/keymaps)
+**Updating Firmware:**
+To update your keymap, you generally only need to flash the left half. However, for certain changes or troubleshooting, you may need to flash both.
 
-Once you make changes to your keymap, you can download the firmware from the github actions tab of your repo. Since the keyboards come pre-flashed, you only need to flash the left half to change your keymaps. You can do it by following these steps:
+**To flash a single half:**
 
-1. Turn off both halves
+1.  Turn off the half you intend to flash.
+2.  Plug the half into your computer (ensure it's off).
+3.  Double-press the reset button quickly.
+4.  A new storage device, **XIAO-SENSE**, will appear on your computer. Drag and drop (or copy/paste) the appropriate firmware file (e.g., `totem_left-seeduino_xiao_ble-zmk.uf2` for the left half, or `totem_right-seeduino_xiao_ble-zmk.uf2` for the right) onto it.
+5.  Wait for the storage device to automatically disappear (a few seconds).
+6.  Unplug the board.
+7.  Follow the [Power](#power) instructions to turn it ON.
 
-2. Plug in the left half into your computer (without turning it on)
+**When to flash both halves:**
+* If new keymap changes don't take effect after flashing only the left half.
+* If you are updating to a new major version of ZMK firmware.
+* **If you are experiencing persistent Bluetooth connection issues between the two halves or with your host device.** This is often resolved by ensuring both halves have compatible and up-to-date firmware.
 
-3. "Double tap" the reset button
+### Bluetooth Connection Troubleshooting (Reset Firmware Shield)
 
-4. After the previous step you should see a new storage device in your computer **XIAO-SENSE**. Drag and drop (or copy and paste) the firmware file `totem_left-seeduino_xiao_ble-zmk.uf2` which you should have generated and downloaded by following the guides linked above.
+If you are experiencing persistent issues with Bluetooth connections (e.g., halves not pairing, intermittent disconnections, or difficulty connecting to your computer), performing a "settings reset" on both halves can often resolve the problem. This clears all saved Bluetooth profiles and settings.
 
-5. Wait until the storage device automatically disappears from your computer, this should not take longer than a few seconds.
+**To perform a settings reset on both halves:**
 
-6. Unplug the board from your computer
-
-7. Follow the procedure in [Power ON](#power)
-
-> Flashing the left half is usually enough. Flash both halves if some changes don’t take effect.
+1.  **Generate the "settings reset" firmware:** You will need to modify your ZMK configuration to build a special "settings reset" `.uf2` file. Refer to the ZMK documentation on "Connection Issues" or "Reset Behaviors" for detailed instructions on how to include the `settings_reset` shield in your `build.yaml` (if using GitHub Actions) or how to build it locally. This will produce a specific `.uf2` file for settings reset.
+2.  **Flash the "settings reset" firmware to the left half:** Follow the "To flash a single half" procedure above, but use the "settings reset" `.uf2` file generated in step 1.
+3.  **Flash the "settings reset" firmware to the right half:** Repeat the "To flash a single half" procedure for the right half, using the "settings reset" `.uf2` file.
+4.  **Re-flash your regular left firmware:** After resetting both halves, they will not automatically pair. Flash your standard `totem_left-seeduino_xiao_ble-zmk.uf2` file to the left half using the "To flash a single half" procedure.
+5.  **Re-flash your regular right firmware:** Flash your standard `totem_right-seeduino_xiao_ble-zmk.uf2` file to the right half using the "To flash a single half" procedure.
+6.  **Re-pair the halves:** After both halves are flashed with their regular firmware, ensure both are powered on. You may need to press the reset button on both halves simultaneously or briefly turn them off and on again to encourage them to re-pair.
+7.  **Forget and Reconnect on Host Device:** On your computer or host device, "forget" or "remove" the keyboard from your Bluetooth devices list, then initiate a new pairing process.
 
 ---
 
