@@ -14,6 +14,11 @@ This is a WIP layout based on Colemak DHm for using on macOS (with **en-US Inter
 
 ## Menu
 
+- [Usage](#usage)
+  - [Power](#power)
+  - [Charge](#charge)
+  - [Reset](#reset)
+  - [Configure](#configure)
 - [Conventions](#conventions)
 - [Layers](#layers)
   - [BAS](#bas)
@@ -21,6 +26,60 @@ This is a WIP layout based on Colemak DHm for using on macOS (with **en-US Inter
   - [AXN](#axn)
   - [STG](#stg)
 - [About](#about)
+
+---
+
+## Usage
+
+### Power
+
+The keyboard can be powered either by **USB-C cable** or **built-in battery**.
+
+To turn on **battery power**, slide the power switch to the **left** (when seem from behind)."
+
+The two halves pair automatically when both are powered.
+
+- To use in wired mode:
+Connect the left half to your device via USB-C.
+
+- To use in wireless (Bluetooth) mode:
+Power on the left half (battery switch ON). No cable is needed.
+
+> The power switch controls battery power only. When connected by cable, the keyboard is powered and works even if the switch is off.
+
+### Charge
+
+To charge your boards you must put the half you want to charge in the ON position and connect it to a power source (it can be your computer) through the USB port.
+
+### Reset
+
+Pressing it once resets the keyboard (power cycle so essentially equivalent to turning it off and then back on).
+
+Pressing it twice quickly puts into programming mode, if you plug it into your computer it shows up as a USB device instead of a keyboard; you can then drag and drop or copy and paste your firmware file to update your keymap.
+
+### Configure
+
+The wireless version of the Totem use ZMK as their firmware, you can find out more at [ZMK docs](https://zmk.dev/docs)
+
+These pages will guide you to create your own keymap (follow them after your user-setup) [customization](https://zmk.dev/docs/customization) and [keymaps](https://zmk.dev/docs/features/keymaps)
+
+Once you make changes to your keymap, you can download the firmware from the github actions tab of your repo. Since the keyboards come pre-flashed, you only need to flash the left half to change your keymaps. You can do it by following these steps:
+
+1. Turn off both halves
+
+2. Plug in the left half into your computer (without turning it on)
+
+3. "Double tap" the reset button
+
+4. After the previous step you should see a new storage device in your computer **XIAO-SENSE**. Drag and drop (or copy and paste) the firmware file `totem_left-seeduino_xiao_ble-zmk.uf2` which you should have generated and downloaded by following the guides linked above.
+
+5. Wait until the storage device automatically disappears from your computer, this should not take longer than a few seconds.
+
+6. Unplug the board from your computer
+
+7. Follow the procedure in [Power ON](#power)
+
+> Flashing the left half is usually enough. Flash both halves if some changes don’t take effect.
 
 ---
 
