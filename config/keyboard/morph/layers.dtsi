@@ -13,22 +13,24 @@ MORPH_KASAS(
     BAS,
     dl,
     dev_left,
-    MOD_LSFT|MOD_RSFT,
-    &mo_DEV_to_BAS_kp 0 RIGHT,  //tap: right arrow ¦ hold:  to DEV momentary
+    MOD_LSFT,
+    &mo_DEV_to_BAS_kp 0 RIGHT,  // tap: right arrow ¦ hold: to DEV momentary
     &none,
     &none,
-    &to_DEV                     //shitf+alt: to DEV layer
+    &to_DEV                     // shitf+alt: to DEV layer
 )
 
-// tap:   right arrow       
-// hold:  to DEV momentary
-// alt:   to DEV layer
-mp_key_dev_right: morph_key_dev_right_layer {
-    compatible = "zmk,behavior-mod-morph";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
-    bindings = <&mo_DEV_to_BAS_kp 0 RIGHT>, <&to_DEV>;
-};
+//mp_BAS_al
+MORPH_KASAS(
+    BAS,
+    al,
+    axn_left,
+    MOD_LSFT,
+    &mo_AXN_to_BAS_kp 0 TAB,    // tap: tab ¦ hold: to AXN momentary
+    &none,
+    &none,
+    &to_AXN                     // shitf+alt: to AXN layer
+)
 
 // tap:   tab       
 // hold:  to AXN momentary
