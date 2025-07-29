@@ -32,25 +32,17 @@ MORPH_KASAS(
     &to_AXN                     // shitf+alt: to AXN layer
 )
 
-// tap:   tab       
-// hold:  to AXN momentary
-// alt:   to AXN layer
-mp_key_axn: morph_key_axn_layer {
-    compatible = "zmk,behavior-mod-morph";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
-    bindings = <&mo_AXN_to_BAS_kp 0 TAB>, <&to_AXN>;
-};
-
-// tap:  backspace       
-// hold: to AXN momentary
-// alt:  to FNK layer
-mp_key_fnk: morph_key_fnk_layer {
-    compatible = "zmk,behavior-mod-morph";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
-    bindings = <&mo_AXN_to_BAS_kp 0 BSPC>, <&to_FNK>;
-};
+//mp_BAS_ar
+MORPH_KASAS(
+    BAS,
+    ar,
+    axn_right,
+    MOD_RSFT,
+    &mo_AXN_to_BAS_kp 0 BSPC,   // tap: backspace ¦ hold: to AXN momentary
+    &none,
+    &none,
+    &to_FNK                     // shitf+alt: to FNK layer
+)
 
 // tap:  delete    
 // hold: to DEV momentary
