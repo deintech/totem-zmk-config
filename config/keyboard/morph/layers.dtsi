@@ -8,6 +8,18 @@ mp_key_bas: morph_key_bas_layer {
     bindings = <&to_BAS_kp 0 ESC>, <&m_caps_word_CAPS>;
 };
 
+//mp_BAS_dl
+MORPH_KASAS(
+    BAS,
+    dl,
+    dev_left,
+    MOD_LSFT|MOD_RSFT,
+    &mo_DEV_to_BAS_kp 0 RIGHT,  //tap: right arrow ¦ hold:  to DEV momentary
+    &none,
+    &none,
+    &to_DEV                     //shitf+alt: to DEV layer
+)
+
 // tap:   right arrow       
 // hold:  to DEV momentary
 // alt:   to DEV layer
