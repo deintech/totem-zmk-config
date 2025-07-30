@@ -270,9 +270,9 @@ Dedicated to Bluetooth and media controls.
 | <kbd>⛢</kbd>  |                            | Show Color Picker             |
 | <kbd>🜜</kbd>   | <kbd>⌥</kbd>+<kbd>⛢</kbd> | Pick a color                  |
 | <kbd>□</kbd>   |                            | Capture screenshot options    |
-| <kbd>▣</kbd>   | <kbd>⇧</kbd>+<kbd>□</kbd>  | Capture portion of the screen |
+| <kbd>▣</kbd>   | <kbd>⇧</kbd>+<kbd>□</kbd>  | Capture of selected area      |
 | <kbd>▣</kbd>   | <kbd>▣</kbd>+<kbd>␣</kbd>  | Capture a window or menu      |
-| <kbd>⛶</kbd>  | <kbd>⌥</kbd>+<kbd>□</kbd>  | Capture area of the screen    |
+| <kbd>⛶</kbd>  | <kbd>⌥</kbd>+<kbd>□</kbd>  | Capture with teampaper         |
 | <kbd>⎅</kbd>   |                            | Finder (File Explorer)        |
 | <kbd>⌑</kbd>   | <kbd>⌥</kbd>+<kbd>⎅</kbd>  | Show/hide system files        |
 
