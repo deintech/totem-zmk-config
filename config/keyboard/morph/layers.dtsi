@@ -28,7 +28,7 @@ MORPH_KASAS(
     MOD_LSFT,
     &mo_AXN_to_BAS_kp 0 TAB,    // tap: tab ¦ hold: to AXN momentary
     &none,
-    &none,
+    &kp LS(TAB),                // shift: reverse tab
     &to_AXN                     // shitf+alt: to AXN layer
 )
 
@@ -40,7 +40,7 @@ MORPH_KASAS(
     MOD_RSFT,
     &mo_AXN_to_BAS_kp 0 BSPC,   // tap: backspace ¦ hold: to AXN momentary
     &none,
-    &none,
+    &kp DEL,                    // shift: delete
     &to_FNK                     // shitf+alt: to FNK layer
 )
 
