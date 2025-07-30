@@ -44,21 +44,26 @@ MORPH_KASAS(
     &to_FNK                     // shitf+alt: to FNK layer
 )
 
-// tap:  delete    
-// hold: to DEV momentary
-// alt:  to DEV layer
-mp_key_dev_left: morph_key_dev_left_layer {
-    compatible = "zmk,behavior-mod-morph";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
-    bindings = <&mo_DEV_to_BAS_kp 0 DEL>, <&to_DEV>;
-};
+//mp_BAS_dr
+MORPH_KASAS(
+    BAS,
+    dr,
+    dev_right,
+    MOD_RSFT,
+    &mo_DEV_to_BAS_kp 0 DEL,    // tap: delete ¦ hold: to DEV momentary
+    &none,
+    &none,
+    &to_DEV                     // shitf+alt: to DEV layer
+)
 
-// hold:  to STG momentary
-// alt:   to STG layer
-mp_key_stg: morph_stg_layer {
-    compatible = "zmk,behavior-mod-morph";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
-    bindings = <&mo_STG_to_BAS>, <&to_STG>;
-};
+//mp_BAS_sr
+MORPH_KASAS(
+    BAS,
+    sr,
+    stg_right,
+    MOD_RSFT,
+    &mo_STG_to_BAS,             // hold: to STG momentary
+    &none,
+    &none,
+    &to_STG                     // shitf+alt: to STG layer
+)

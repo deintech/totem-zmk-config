@@ -42,8 +42,8 @@
 
             #define MBTR3  &mp_BAS_ar                    // tap: backspace   ¦ alt+shift: to AXN layer  ¦ hold: to FNK momentary
             #define MBTR2  MKY_RET                       // tap: return      ¦                          ¦ hold: F2 (easy rename on ide)                  
-            #define MBTR1  &mp_key_dev_left              // tap: delete      ¦ alt: to DEV layer        ¦ hold: to DEV momentary
-            #define MBTR0  &mp_key_stg                   //                  ¦ alt: to STG layer        ¦ hold: to STG momentary
+            #define MBTR1  &mp_BAS_dr                    // tap: delete      ¦ alt+shift: to DEV layer  ¦ hold: to DEV momentary
+            #define MBTR0  &mp_BAS_sr                    //                  ¦ alt+shift: to STG layer  ¦ hold: to STG momentary
 
 
             display-name = "BAS";
