@@ -8,52 +8,13 @@ mp_key_bas: morph_key_bas_layer {
     bindings = <&to_BAS_kp 0 ESC>, <&m_caps_word_CAPS>;
 };
 
-//mp_BAS_dl
-MORPH_KASAS(
-    BAS,
-    dl,
-    dev_left,
-    MOD_LSFT,
-    &mo_DEV_to_BAS_kp 0 RIGHT,  // tap: right arrow ¦ hold: to DEV momentary
-    &none,
-    &none,
-    &to_DEV                     // shitf+alt: to DEV layer
-)
-
-//mp_BAS_al
-MORPH_KASAS(
+// mp_BAS_al
+MORPH_KS(
     BAS,
     al,
     axn_left,
-    MOD_LSFT,
     &mo_AXN_to_BAS_kp 0 TAB,    // tap: tab ¦ hold: to AXN momentary
-    &none,
     &kp LS(TAB),                // shift: reverse tab
-    &to_AXN                     // shitf+alt: to AXN layer
-)
-
-//mp_BAS_ar
-MORPH_KASAS(
-    BAS,
-    ar,
-    axn_right,
-    MOD_RSFT,
-    &mo_AXN_to_BAS_kp 0 BSPC,   // tap: backspace ¦ hold: to AXN momentary
-    &none,
-    &kp DEL,                    // shift: delete
-    &to_FNK                     // shitf+alt: to FNK layer
-)
-
-//mp_BAS_dr
-MORPH_KASAS(
-    BAS,
-    dr,
-    dev_right,
-    MOD_RSFT,
-    &mo_DEV_to_BAS_kp 0 DEL,    // tap: delete ¦ hold: to DEV momentary
-    &none,
-    &none,
-    &to_DEV                     // shitf+alt: to DEV layer
 )
 
 //mp_BAS_sr
