@@ -36,13 +36,13 @@
             #define MBBR1  &mp_key_q                     // tap: ' ¦ shift: "
 
             #define MBTL0  MKY_ESC                       // tap: escape      ¦ shift: caps lock         ¦ hold: to BAS layer
-            #define MBTL1  &mo_DEV_to_BAS_kp 0 RIGHT,    // tap: right arrow ¦                          ¦ hold: to DEV momentary
+            #define MBTL1  &mo_DEV_to_BAS_kp 0 RIGHT     // tap: right arrow ¦                          ¦ hold: to DEV momentary
             #define MBTL2  KEY_SPC                       // tap: blank space
             #define MBTL3  &mp_BAS_al                    // tap: tab         ¦                          ¦ hold: to AXN momentary
 
-            #define MBTR3  &mo_AXN_to_BAS_kp 0 BSPC,     // tap: backspace   ¦                          ¦ hold: to AXN momentary
+            #define MBTR3  &mo_AXN_to_BAS_kp 0 BSPC      // tap: backspace   ¦                          ¦ hold: to AXN momentary
             #define MBTR2  MKY_RET                       // tap: return      ¦                          ¦ hold: F2 (easy rename on ide)                  
-            #define MBTR1  &mo_DEV_to_BAS_kp 0 DEL,      // tap: delete      ¦                          ¦ hold: to DEV momentary
+            #define MBTR1  &mo_DEV_to_BAS_kp 0 DEL       // tap: delete      ¦                          ¦ hold: to DEV momentary
             #define MBTR0  &mp_BAS_sr                    //                  ¦ alt+shift: to STG layer  ¦ hold: to STG momentary
 
 
