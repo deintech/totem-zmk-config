@@ -14,7 +14,7 @@ MORPH_KS(
     al,
     axn_left,
     &mo_AXN_to_BAS_kp 0 TAB,    // tap: tab ¦ hold: to AXN momentary
-    &kp LS(TAB),                // shift: reverse tab
+    &kp LS(TAB)                 // shift: reverse tab
 )
 
 //mp_BAS_sr
