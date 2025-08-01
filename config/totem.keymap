@@ -60,6 +60,7 @@
 
         #include "keyboard/combos/base.dtsi"
         #include "keyboard/combos/help.dtsi"
+        #include "keyboard/combos/layers.dtsi"
     };
 };
 
