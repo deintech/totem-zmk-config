@@ -17,11 +17,20 @@ MORPH_KS(
     &kp LS(TAB)                 // shift: reverse tab
 )
 
+// mp_BAS_ar
+MORPH_KS(
+    BAS,
+    ar,
+    axn_right,
+    &mo_AXN_to_BAS_kp 0 BSPC,   // tap: backspace ¦ hold: to AXN momentary
+    &kp DEL                     // shift: delete
+)
+
 //mp_BAS_sr
 MORPH_KS(
     BAS,
     sr,
-    stg_left,
+    stg_right,
     &mo_STG_to_BAS,             // hold: to FNK momentary
-    &&to_STG                    // shift: to STG layer
+    &to_STG                     // shift: to STG layer
 )
