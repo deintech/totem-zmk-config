@@ -22,6 +22,14 @@ mo_AXN_to_BAS_kp: mo_AXN_to_BAS_kp {
     bindings = <&mo_AXN_to_BAS>, <&kp>;
 };
 
+mo_FNK_to_BAS_kp: mo_FNK_to_BAS_kp {
+    compatible = "zmk,behavior-hold-tap";
+    #binding-cells = <2>;
+    tapping-term-ms = <HP_TAPPING>;
+    flavor = "hold-preferred";
+    bindings = <&mo_FNK_to_BAS>, <&kp>;
+};
+
 mo_STG_to_BAS_kp: mo_STG_to_BAS_kp {
     compatible = "zmk,behavior-hold-tap";
     #binding-cells = <2>;
