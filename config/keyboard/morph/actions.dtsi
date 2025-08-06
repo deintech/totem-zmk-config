@@ -33,3 +33,12 @@ mp_key_m: morph_key_minus {
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&kp MINUS>, <&kp UNDER>;
 };
+
+// mp_DEV_ar
+MORPH_KS(
+    DEV,
+    ar,
+    axn_right,
+    &kp BSPC,   // tap: backspace
+    &kp DEL     // shift: delete
+)

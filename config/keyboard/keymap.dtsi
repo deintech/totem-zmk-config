@@ -154,7 +154,7 @@
             #define MATL2  &none
             #define MATL3  &none
 
-            #define MATR3  &none
+            #define MATR3  &mp_DEV_ar                    // tap: bakcspase ¦ shift: delete
             #define MATR2  &kp DOT                       // tap: .
             #define MATR1  &none
             #define MATR0  &none
