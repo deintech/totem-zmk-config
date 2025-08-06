@@ -18,13 +18,10 @@ MORPH_KS(
 )
 
 //mp_BAS_sr
-MORPH_KASAS(
+MORPH_KS(
     BAS,
     sr,
-    stg_right,
-    MOD_RSFT,
-    &mo_STG_to_BAS,             // hold: to STG momentary
-    &none,
-    &none,
-    &to_STG                     // shitf+alt: to STG layer
+    stg_left,
+    &mo_STG_to_BAS,             // hold: to FNK momentary
+    &&to_STG                    // shift: to STG layer
 )
