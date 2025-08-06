@@ -193,7 +193,7 @@
             #define MFUR3  &kp PG_UP                     // tap: page up
             #define MFUR2  &kp LC(LS(LG(RIGHT)))         // tap: expand selection
             #define MFUR1  &none
-)
+
             #define MFMR5  &none
             #define MFMR4  &hm RSHFT HOME                // tap: home      ¦ hold: SHIFT
             #define MFMR3  &hm LALT  PG_DN               // tap: page down ¦ hold: ALT
