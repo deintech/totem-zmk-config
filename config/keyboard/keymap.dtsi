@@ -1,4 +1,4 @@
-        mac_base_layer {
+        base_layer {
             #define MBUL1  &kp Q                         // tap: q ¦ shift: Q
             #define MBUL2  &kp W                         // tap: w ¦ shift: W
             #define MBUL3  &kp F                         // tap: f ¦ shift: F
@@ -55,7 +55,7 @@
             >;
         };
 
-        mac_dev_layer {
+        dev_layer {
             #define MDUL1  &kp AT                        // tap: @
             #define MDUL2  &mp_DEV_pound                 // tap: # ¦ alt: °
             #define MDUL3  &mp_DEV_money                 // tap: $ ¦ alt: €
@@ -112,7 +112,7 @@
             >;
         };
 
-        mac_act_num_layer {
+        act_num_layer {
             #define MAUL1  &none
             #define MAUL2  &mp_action_prev               // tap: prev tab ¦ shift: prev desktop
             #define MAUL3  &kp UP                        // tap: up arrow
@@ -169,7 +169,7 @@
             >;
         };
 
-        mac_functions_layer {
+        functions_layer {
             #define MFUL1  &kp F9                        // tap: F9
             #define MFUL2  &kp F10                       // tap: F10
             #define MFUL3  &kp F11                       // tap: F11
@@ -226,7 +226,7 @@
             >;
         };
 
-        mac_settings_layer {
+        settings_layer {
             #define MSUL1  &m_s_b1                       // tap: bluethoot 1
             #define MSUL2  &m_s_b2                       // tap: bluethoot 2
             #define MSUL3  &none
