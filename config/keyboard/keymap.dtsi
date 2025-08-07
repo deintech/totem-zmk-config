@@ -141,7 +141,7 @@
             #define MAMR4  &hm LSHFT N4                  // tap: 4 ¦ hold: SHIFT
             #define MAMR3  &hm LALT  N5                  // tap: 5 ¦ hold: ALT
             #define MAMR2  &hm LCMD  N6                  // tap: 6 ¦ hold: COMMAND 
-            #define MAMR1  &hm LCTRL EQUAL               // tap: = ¦ hold: CONTROL
+            #define MAMR1  &hm LCTRL DOT                 // tap: . ¦ hold: CONTROL
 
             #define MABR5  &kp MINUS                     // tap: -
             #define MABR4  &kp N1                        // tap: 1
@@ -155,9 +155,9 @@
             #define MATL3  &none
 
             #define MATR3  &mp_DEV_ar                    // tap: bakcspase ¦ shift: delete
-            #define MATR2  &kp DOT                       // tap: .
+            #define MATR2  &kp RET                       // tap: return
             #define MATR1  &none
-            #define MATR0  &none
+            #define MATR0  &kp EQUAL                     // tap: =
 
 
             display-name = "AXN";
