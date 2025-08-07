@@ -114,14 +114,14 @@
 
         act_num_layer {
             #define MAUL1  &none
-            #define MAUL2  &mp_action_prev               // tap: prev tab ¦ shift: prev desktop
+            #define MAUL2  &kp LC(LS(LG(LEFT)))          // tap: shrink selection
             #define MAUL3  &kp UP                        // tap: up arrow
-            #define MAUL4  &mp_action_next               // tap: next tab ¦ shift: next desktop
+            #define MAUL4  &kp LC(LS(LG(RIGHT)))         // tap: expand selection
             #define MAUL5  &kp LG(F)                     // tap: find
 
             #define MAML1  &kp LCTRL                     // hold: CONTROL
-            #define MAML2  &hm LCMD  LEFT                // tap: left arrow ¦ hold: COMMAND
-            #define MAML3  &hm LALT  DOWN                // tap: down arrow ¦ hold: ALT
+            #define MAML2  &hm LCMD  LEFT                // tap: left arrow  ¦ hold: COMMAND
+            #define MAML3  &hm LALT  DOWN                // tap: down arrow  ¦ hold: ALT
             #define MAML4  &hm LSHFT RIGHT               // tap: right arrow ¦ hold: SHIFT
             #define MAML5  &kp LA(LG(F))                 // tap: replace
 
@@ -189,9 +189,9 @@
             #define MFBL5  &none
 
             #define MFUR5  &none
-            #define MFUR4  &kp LC(LS(LG(LEFT)))          // tap: shrink selection
+            #define MFUR4  &mp_action_prev               // tap: prev tab ¦ shift: prev desktop
             #define MFUR3  &kp PG_UP                     // tap: page up
-            #define MFUR2  &kp LC(LS(LG(RIGHT)))         // tap: expand selection
+            #define MFUR2  &mp_action_next               // tap: next tab ¦ shift: next desktop
             #define MFUR1  &none
 
             #define MFMR5  &none
