@@ -1,8 +1,8 @@
-combo_to_FNK {
-    bindings = <&to_FNK>;
+combo_to_DEV {
+    bindings = <&to_DEV>;
     key-positions = <4 5>;
     slow-release;
-    layers = <BAS DEV AXN STG>;
+    layers = <BAS AXN FNK STG>;
 };
 
 combo_to_AXN {
@@ -12,11 +12,11 @@ combo_to_AXN {
     layers = <BAS DEV FNK STG>;
 };
 
-combo_to_DEV {
-    bindings = <&to_DEV>;
+combo_to_FNK {
+    bindings = <&to_FNK>;
     key-positions = <25 26>;
     slow-release;
-    layers = <BAS AXN FNK STG>;
+    layers = <BAS DEV AXN STG>;
 };
 
 combo_to_STG {
