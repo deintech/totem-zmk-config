@@ -285,7 +285,7 @@ Dedicated to Bluetooth and media controls.
 | ------------: | ------------------------- | ------------ |
 | <kbd>🔊</kbd> |                            | Volume up    |
 | <kbd>🔇</kbd> |                            | Volume Mute  |
-| <kbd>🎙️</kbd> | <kbd>⇧</kbd>+<kbd>🔇</kbd> | Mic Mute     |
+| <kbd>🎙️</kbd> | <kbd>⌥</kbd>+<kbd>🔇</kbd> | Mic Mute     |
 | <kbd>🔉</kbd> |                            | Volume down  |
 
 > Requires (MuteKey)[https://apps.apple.com/us/app/mutekey/id1509590766?mt=12] app
