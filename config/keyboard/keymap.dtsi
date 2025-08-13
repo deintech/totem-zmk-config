@@ -46,7 +46,8 @@
             #define MBTR0  &mp_BAS_sr                    //                  ¦ shift: to STG layer      ¦ hold: to STG momentary
 
 
-            display-name = "BAS";
+            label = "BAS";
+            display-name = "BASE";
             bindings = <
                      MBUL1  MBUL2  MBUL3  MBUL4  MBUL5    MBUR5  MBUR4  MBUR3  MBUR2  MBUR1
                      MBML1  MBML2  MBML3  MBML4  MBML5    MBMR5  MBMR4  MBMR3  MBMR2  MBMR1
@@ -103,7 +104,8 @@
             #define MDTR0  &kp LA(LG(I))                 // tap: dev tools
 
 
-            display-name = "DEV";
+            label = "DEV";
+            display-name = "DEVELOPER";
             bindings = <
                      MDUL1  MDUL2  MDUL3  MDUL4  MDUL5    MDUR5  MDUR4  MDUR3  MDUR2  MDUR1
                      MDML1  MDML2  MDML3  MDML4  MDML5    MDMR5  MDMR4  MDMR3  MDMR2  MDMR1
@@ -160,7 +162,8 @@
             #define MATR0  &kp EQUAL                     // tap: =
 
 
-            display-name = "AXN";
+            label = "AXN";
+            display-name = "ACTION & NUM";
             bindings = <
                      MAUL1  MAUL2  MAUL3  MAUL4  MAUL5    MAUR5  MAUR4  MAUR3  MAUR2  MAUR1
                      MAML1  MAML2  MAML3  MAML4  MAML5    MAMR5  MAMR4  MAMR3  MAMR2  MAMR1
@@ -217,7 +220,8 @@
             #define MFTR0  &none
 
 
-            display-name = "FNK";
+            label = "FNK";
+            display-name = "FUNCTION";
             bindings = <
                      MFUL1  MFUL2  MFUL3  MFUL4  MFUL5    MFUR5  MFUR4  MFUR3  MFUR2  MFUR1
                      MFML1  MFML2  MFML3  MFML4  MFML5    MFMR5  MFMR4  MFMR3  MFMR2  MFMR1
@@ -274,7 +278,8 @@
             #define MSTR0  &none
 
 
-            display-name = "STG";
+            label = "STG";
+            display-name = "SETTINGS";
             bindings = <
                      MSUL1  MSUL2  MSUL3  MSUL4  MSUL5    MSUR5  MSUR4  MSUR3  MSUR2  MSUR1
                      MSML1  MSML2  MSML3  MSML4  MSML5    MSMR5  MSMR4  MSMR3  MSMR2  MSMR1
