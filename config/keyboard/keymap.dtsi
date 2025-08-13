@@ -229,7 +229,7 @@
         settings_layer {
             #define MSUL1  &m_s_b1                       // tap: bluethoot 1
             #define MSUL2  &m_s_b2                       // tap: bluethoot 2
-            #define MSUL3  &kp C_BRI_UP                  // tap: bright up
+            #define MSUL3  &mp_STG_bru                   // tap: bright up ¦ alt: dongle screen bright up
             #define MSUL4  &kp LG(LS(C))                 // tap: color picker
             #define MSUL5  &kp RG(PLUS)                  // tap: zoom in
 
@@ -241,7 +241,7 @@
 
             #define MSBL1  &mp_STG_cb                    // tap: none ¦ shift: clear current profile ¦ alt: clear all profiles
             #define MSBL2  &none
-            #define MSBL3  &kp C_BRI_DN                  // tap: bright down
+            #define MSBL3  &mp_STG_brd                   // tap: bright down ¦ alt: dongle screen bright down
             #define MSBL4  &mp_STG_f                     // tap: (finder) file explorer ¦ alt: show/hide system files
             #define MSBL5  &kp RG(MINUS)                 // tap: zoom out
 
