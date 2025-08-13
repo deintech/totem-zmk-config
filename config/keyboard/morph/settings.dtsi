@@ -130,10 +130,10 @@ MORPH_KA(
 )
 
 // mp_STG_bru
-MORPH_KA(
-    STG,
+MORPH_KA(    STG,
     bru,
     bright_up,
+    MOD_LALT,
     &kp C_BRI_UP,               // tap: bright up
     &kp F24                     // alt: dongle screen bright up
 )
@@ -143,6 +143,7 @@ MORPH_KA(
     STG,
     brd,
     bright_down,
+    MOD_LALT,
     &kp C_BRI_DN,               // tap: bright down
     &kp F23                     // alt: dongle screen bright down
 )
