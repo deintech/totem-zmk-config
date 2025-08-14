@@ -239,7 +239,7 @@
             #define MSML4  &hm_STG_LS LSHFT 0            // tap: mp_STG_screenshot ¦ hold: SHIFT
             #define MSML5  &mp_STG_z                     // tap: zoom reset ¦ shift: zoom reset on vscode
 
-            #define MSBL1  &mp_STG_cb                    // tap: none ¦ shift: clear current profile ¦ alt: clear all profiles
+            #define MSBL1  &mp_STG_cb                    // tap: ZMK studio ¦ shift: clear current profile ¦ alt: clear all profiles
             #define MSBL2  &none
             #define MSBL3  &mp_STG_brd                   // tap: bright down ¦ alt: dongle screen bright down
             #define MSBL4  &mp_STG_f                     // tap: (finder) file explorer ¦ alt: show/hide system files
