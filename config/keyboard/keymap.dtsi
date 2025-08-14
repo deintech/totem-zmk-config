@@ -264,9 +264,9 @@
             #define MSBR1  &kp LC(DOWN)                  // tap: application window               
 
             #define MSTL0  MKY_ESC                       // tap: escape ¦ shift: caps lock ¦ hold: BAS layer
-            #define MSTL1  &none
-            #define MSTL2  &none
-            #define MSTL3  &none
+            #define MSTL1  &out OUT_BLE                  // tap: switch to Bluethoot
+            #define MSTL2  &out OUT_USB                  // tap: switch to USB
+            #define MSTL3  &out OUT_TOG                  // tap: toggle between Bluethoot and USB
 
             #define MSTR3  &none
             #define MSTR2  &none
