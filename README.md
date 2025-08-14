@@ -19,6 +19,7 @@ This is a WIP layout based on Colemak DHm for using on macOS (with **en-US Inter
   - [Charging](#charging)
   - [Reset](#reset)
   - [Firmware](#firmware)
+  - [Pairing](#pairing)
 - [Conventions](#conventions)
 - [Layers](#layers)
   - [BAS](#bas)
