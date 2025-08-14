@@ -333,15 +333,21 @@ Dedicated to Bluetooth and media controls.
 
 ## About
 
+### Hardware
+
+- [Totem Split Keyboard](https://github.com/GEIGEIGEIST/TOTEM)
+- [Prospector Dongle](https://github.com/carrefinho/prospector)
+
 ### Fork
 
 - [zmk-config-totem](https://github.com/GEIGEIGEIST/zmk-config-totem) - ZMK GEIGEIGEIST layout
+- [zmk-dongle-screen](https://github.com/janpfischer/zmk-dongle-screen) - ZMK Dongle Screen YADS (Yet another Dongle Screen)
 
 ### Built With
 
 - [VS Code](https://code.visualstudio.com/) - Code editing redefined.
 - [ZMK Docs](https://zmk.dev/docs) - Modern, open source keyboard firmware
-- [Keymap Editor](https://nickcoutsos.github.io/keymap-editor) - GUI ZMK Keymap Editor
+- [ZMK physical layouts converter](https://zmk-physical-layout-converter.streamlit.app/) - Tool to convert and visualize physical layout representations for ZMK Studio
 - [Figma](https://www.figma.com/) - The collaborative interface design tool
 
 ### Typing
