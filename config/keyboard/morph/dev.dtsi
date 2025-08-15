@@ -66,3 +66,13 @@ MORPH_KS(
     &m_operator_oco,  // tap:    ?.
     &m_operator_cto   // shift:  ?░:░
 )
+
+// mp_DEV_t
+MORPH_KA(
+    DEV,
+    t,
+    terminal,
+    MOD_LALT,
+    &kp LC(GRAVE),   // tap:  ide terminal ¦ shift: new terminal
+    &kp LA(GRAVE)    // alt:  ide terminal mini/maxi-mize
+)

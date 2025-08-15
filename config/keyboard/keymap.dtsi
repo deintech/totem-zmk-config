@@ -99,7 +99,7 @@
 
             #define MDTR3  &kp LG(FSLH)                  // tap: // line comment
             #define MDTR2  &kp LA(LS(A))                 // tap: /* block comment */ 
-            #define MDTR1  &none
+            #define MDTR1  &mp_DEV_t                     // tap: ide terminal ¦ shift: new terminal ¦ alt: ide terminal mini/maxi-mize
             #define MDTR0  &kp LA(LG(I))                 // tap: dev tools
 
 
