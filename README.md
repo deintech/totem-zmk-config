@@ -19,6 +19,7 @@ This is a WIP layout based on Colemak DHm for using on macOS (with **en-US Inter
   - [Charging](#charging)
   - [Reset](#reset)
   - [Firmware](#firmware)
+  - [Pairing](#pairing)
 - [Conventions](#conventions)
 - [Layers](#layers)
   - [BAS](#bas)
@@ -37,7 +38,7 @@ Your keyboard can be powered by **USB-C cable** or its **built-in battery**.
 
 * **Battery Power:** To turn on battery power, slide the power switch to the **right** on both halves. The two halves will pair automatically.
 
-  > The power switch controls battery power only. When connected via USB-C, the keyboard is powered and functions even if the switch is off.
+> The power switch controls battery power only. When connected via USB-C, the keyboard is powered and functions even if the switch is off.
 
 * **Wired Mode:** Connect the left half to your device using a USB-C cable.
 
@@ -59,36 +60,52 @@ The reset button offers two functions:
 Your Totem wireless keyboard uses **ZMK firmware**. For in-depth information, customization guides, and keymap creation, refer to the [ZMK documentation](https://zmk.dev/docs), specifically the [customization](https://zmk.dev/docs/customization) and [keymaps](https://zmk.dev/docs/features/keymaps) sections after your initial user setup.
 
 **Updating Firmware:**
-To update your keymap, you generally only need to flash the left half. However, for certain changes or troubleshooting, you may need to flash both.
+To update your keymap, you generally only need to flash the dongle. However, for certain changes or troubleshooting, you may need to flash all of them: dongle, left and right half.
 
-**To flash a single half:**
+**To flash:**
 
-1.  Turn off the half you intend to flash.
-2.  Plug the half into your computer (ensure it's off).
+1.  Turn off the device you intend to flash.
+2.  Plug the device into your computer (ensure it's off).
 3.  Double-press the reset button quickly.
-4.  A new storage device, **XIAO-SENSE**, will appear on your computer. Drag and drop (or copy/paste) the appropriate firmware file (e.g., `totem_left-seeduino_xiao_ble-zmk.uf2` for the left half, or `totem_right-seeduino_xiao_ble-zmk.uf2` for the right) onto it.
+4.  A new storage device, **XIAO-SENSE**, will appear on your computer. Drag and drop (or copy/paste) the appropriate firmware file (e.g., `totem_dongle-seeduino_xiao_ble-zmk.uf2` for the dongle, `totem_left-seeduino_xiao_ble-zmk.uf2` for the left half, or `totem_right-seeduino_xiao_ble-zmk.uf2` for the right) onto it.
 5.  Wait for the storage device to automatically disappear (a few seconds).
 6.  Unplug the board.
 7.  Follow the [Power](#power) instructions to turn it ON.
 
-**When to flash both halves:**
+**When to flash all devices:**
 * If new keymap changes don't take effect after flashing only the left half.
 * If you are updating to a new major version of ZMK firmware.
 * **If you are experiencing persistent Bluetooth connection issues between the two halves or with your host device.** This is often resolved by ensuring both halves have compatible and up-to-date firmware.
 
 ### Bluetooth Connection Troubleshooting (Reset Firmware Shield)
 
-If you are experiencing persistent issues with Bluetooth connections (e.g., halves not pairing, intermittent disconnections, or difficulty connecting to your computer), performing a "settings reset" on both halves can often resolve the problem. This clears all saved Bluetooth profiles and settings.
+If you are experiencing persistent issues with Bluetooth connections (e.g., halves not pairing, intermittent disconnections, or difficulty connecting to your computer), performing a "settings reset" on all devices can often resolve the problem. This clears all saved Bluetooth profiles and settings.
 
-**To perform a settings reset on both halves:**
+**To perform a settings reset:**
 
 1.  **Generate the "settings reset" firmware:** You will need to modify your ZMK configuration to build a special "settings reset" `.uf2` file. Refer to the ZMK documentation on "Connection Issues" or "Reset Behaviors" for detailed instructions on how to include the `settings_reset` shield in your `build.yaml` (if using GitHub Actions) or how to build it locally. This will produce a specific `.uf2` file for settings reset.
-2.  **Flash the "settings reset" firmware to the left half:** Follow the "To flash a single half" procedure above, but use the "settings reset" `.uf2` file generated in step 1.
-3.  **Flash the "settings reset" firmware to the right half:** Repeat the "To flash a single half" procedure for the right half, using the "settings reset" `.uf2` file.
-4.  **Re-flash your regular left firmware:** After resetting both halves, they will not automatically pair. Flash your standard `totem_left-seeduino_xiao_ble-zmk.uf2` file to the left half using the "To flash a single half" procedure.
-5.  **Re-flash your regular right firmware:** Flash your standard `totem_right-seeduino_xiao_ble-zmk.uf2` file to the right half using the "To flash a single half" procedure.
-6.  **Re-pair the halves:** After both halves are flashed with their regular firmware, ensure both are powered on. You may need to press the reset button on both halves simultaneously or briefly turn them off and on again to encourage them to re-pair.
-7.  **Forget and Reconnect on Host Device:** On your computer or host device, "forget" or "remove" the keyboard from your Bluetooth devices list, then initiate a new pairing process.
+2.  **Flash the "settings reset" firmware to the dongle:** Follow the "To flash" procedure above, but use the "settings reset" `.uf2` file generated in step 1.
+3.  **Flash the "settings reset" firmware to the left half:** Follow the "To flash" procedure above, but use the "settings reset" `.uf2` file generated in step 1.
+4.  **Flash the "settings reset" firmware to the right half:** Repeat the "To flash" procedure for the right half, using the "settings reset" `.uf2` file.
+
+
+### Pairing
+
+The battery widget on the dongle assigns the battery indicators from left to right, based on the sequence in which the keyboard halves are paired to the dongle.
+
+For split keyboards, it is essential to pair the left half first after flashing the dongle, followed by the right half. This ensures the correct mapping of battery status indicators and avoids swapped displays in the widget.
+
+The recommended procedure is as follows:
+* Switch off both keyboard halves.
+* Flash the dongle
+* Disconnect the dongle
+* Flash the left half
+* Flash the right half
+* Reconnect the dongle
+* Switch on the left half and wait until the battery indicator appears on the dongle
+* Switch on the right half
+
+> If the dongle has already been paired with both keyboard halves and the battery widget displays swapped indicators (i.e., the left battery indicator refers to the right keyboard half), a full reset of the dongle is required.
 
 ---
 
@@ -248,20 +265,25 @@ Dedicated to Bluetooth and media controls.
 
 #### Actions
 
-| Label           | Shortcut                   | Action                        |
-| --------------: | -------------------------- |  ---------------------------- |
-| <kbd>B#️⃣</kbd>   |                           | Jump to #️⃣ device             |
-| <kbd>❌</kbd>   |                            | ZMK Studio                    |
-| <kbd>BC</kbd>   | <kbd>⇧</kbd>+<kbd>❌</kbd> | Clear Current Bluetooth       |
-| <kbd>BA</kbd>   | <kbd>⌥</kbd>+<kbd>❌</kbd> | Clear All Bluetooth           |
-| <kbd>Z+</kbd>   |                            | Zoom in                       |
-| <kbd>ZR</kbd>   |                            | Zoom reset                    |
-| <kbd>ZR</kbd>   | <kbd>⇧</kbd>+<kbd>ZR</kbd> | Zoom reset VSCode             |
-| <kbd>Z-</kbd>   |                            | Zoom out                      |
-| <kbd>🔅</kbd>   |                            | Bright down                   |
-| <kbd>🔆</kbd>   |                            | Bright up                     |
-| <kbd>⎚</kbd>    |                            | Application Window            |
-| <kbd>▤</kbd>    |                            | Mission Control               |
+| Label           | Shortcut                   | Action                           |
+| --------------: | -------------------------- |  ------------------------------- |
+| <kbd>B#️⃣</kbd>   |                           | Jump to #️⃣ device                |   
+| <kbd>❌</kbd>   |                            | ZMK Studio                       |
+| <kbd>CP</kbd>   | <kbd>⇧</kbd>+<kbd>❌</kbd> | Clear Current Bluetooth          |
+| <kbd>CA</kbd>   | <kbd>⌥</kbd>+<kbd>❌</kbd> | Clear All Bluetooth              |
+| <kbd>Z+</kbd>   |                            | Zoom in                          |
+| <kbd>ZR</kbd>   |                            | Zoom reset                       |
+| <kbd>ZR</kbd>   | <kbd>⇧</kbd>+<kbd>ZR</kbd> | Zoom reset VSCode                |
+| <kbd>Z-</kbd>   |                            | Zoom out                         |
+| <kbd>🔅</kbd>   |                            | Bright down                      |
+| <kbd>🔆</kbd>   |                            | Bright up                        |
+| <kbd>🔅</kbd>   | <kbd>⌥</kbd>+<kbd>🔅</kbd> | Dongle Bright down               |
+| <kbd>🔆</kbd>   | <kbd>⌥</kbd>+<kbd>🔆</kbd> | Dongle Bright up                 |
+| <kbd>⎚</kbd>    |                            | Application Window               |
+| <kbd>▤</kbd>    |                            | Mission Control                  |
+| <kbd>TB</kbd>   |                            | Switch to Bluethoot              |
+| <kbd>TU</kbd>   |                            | Switch to USB                    |
+| <kbd>TT</kbd>   |                            | Toggle between Bluethoot and USB |
 
 #### Tools
 
@@ -312,15 +334,21 @@ Dedicated to Bluetooth and media controls.
 
 ## About
 
+### Hardware
+
+- [Totem Split Keyboard](https://github.com/GEIGEIGEIST/TOTEM)
+- [Prospector Dongle](https://github.com/carrefinho/prospector)
+
 ### Fork
 
 - [zmk-config-totem](https://github.com/GEIGEIGEIST/zmk-config-totem) - ZMK GEIGEIGEIST layout
+- [zmk-dongle-screen](https://github.com/janpfischer/zmk-dongle-screen) - ZMK Dongle Screen YADS (Yet another Dongle Screen)
 
 ### Built With
 
 - [VS Code](https://code.visualstudio.com/) - Code editing redefined.
 - [ZMK Docs](https://zmk.dev/docs) - Modern, open source keyboard firmware
-- [Keymap Editor](https://nickcoutsos.github.io/keymap-editor) - GUI ZMK Keymap Editor
+- [ZMK physical layouts converter](https://zmk-physical-layout-converter.streamlit.app/) - Tool to convert and visualize physical layout representations for ZMK Studio
 - [Figma](https://www.figma.com/) - The collaborative interface design tool
 
 ### Typing
