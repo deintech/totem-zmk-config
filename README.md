@@ -209,7 +209,7 @@ Symbols and dev shortcuts for JS/TS.
 #### IDE
 
 | Label                                                             | Shortcut                                                           | Action                      |
-| ----------------------------------------------------------------: | ------------------------------------------------------------------ | --------------------------- |
+| ----------------------------------------------------------------: | -----------------------------------------------------------------: | --------------------------- |
 | <kbd>![cursor-chat](assets/icons/DEV/cursor-chat.svg)</kbd>       |                                                                    | Cursor: Add to Chat         |
 | <kbd>![cursor-quick](assets/icons/DEV/cursor-quick.svg)</kbd>     |                                                                    | Cursor: Quick Edit          |
 | <kbd>//</kbd>                                                     |                                                                    | Toggle line comment         |
@@ -228,23 +228,23 @@ Quick navigation actions and numbers. Function keys works independently as a sub
 
 #### Navigation
 
-| Label         | Shortcut                   | Action                |
-| ------------: | -------------------------- | --------------------- |
-| <kbd>△</kbd>  |                            | Up                    |
-| <kbd>▽</kbd>  |                            | Down                  |
-| <kbd>◁</kbd>  |                            | Left                  |
-| <kbd>▷</kbd>  |                            | Right                 |
-| <kbd>⇤</kbd>  |                            | Home                  |
-| <kbd>⇥</kbd>  |                            | End                   |
-| <kbd>⇞</kbd>  |                            | Page up               |
-| <kbd>⇟</kbd>  |                            | Page down             |
-| <kbd>⇺</kbd>  |                            | Prev Tab              |
-| <kbd>⇻</kbd>  |                            | Next Tab              |
+| Label         | Action                |
+| ------------: | --------------------- |
+| <kbd>△</kbd>  | Up                    |
+| <kbd>▽</kbd>  | Down                  |
+| <kbd>◁</kbd>  | Left                  |
+| <kbd>▷</kbd>  | Right                 |
+| <kbd>⇤</kbd>  | Home                  |
+| <kbd>⇥</kbd>  | End                   |
+| <kbd>⇞</kbd>  | Page up               |
+| <kbd>⇟</kbd>  | Page down             |
+| <kbd>⇺</kbd>  | Prev Tab              |
+| <kbd>⇻</kbd>  | Next Tab              |
 
 #### Actions
 
 | Label                                                                | Shortcut                                                     | Action               |
-| -------------------------------------------------------------------: | ------------------------------------------------------------ | -------------------- |
+| -------------------------------------------------------------------: | -----------------------------------------------------------: | -------------------- |
 | <kbd><\|</kbd>                                                       |                                                              | Expand selection     |
 | <kbd>\|></kbd>                                                       |                                                              | Shrink selection     |
 | <kbd>↶</kbd>                                                         |                                                              | Undo                 |
@@ -267,7 +267,7 @@ Dedicated to Bluetooth and media controls.
 #### Actions
 
 | Label                                                                       | Shortcut                                                                 | Action                           |
-| --------------------------------------------------------------------------: | ------------------------------------------------------------------------ |  ------------------------------- |
+| --------------------------------------------------------------------------: | -----------------------------------------------------------------------: |  ------------------------------- |
 | <kbd>![bt-number](assets/icons/STG/bt-number.svg)</kbd>                     |                                                                          | Jump to #️⃣ device                |   
 | <kbd>![zmk-studio](assets/icons/STG/zmk-studio.svg)</kbd>                   |                                                                          | ZMK Studio                       |
 | <kbd>![bt-clear-current](assets/icons/STG/bt-clear-current.svg)</kbd>       | <kbd>⇧</kbd>+<kbd>![zmk-studio](assets/icons/STG/zmk-studio.svg)</kbd>   | Clear Current Bluetooth          |
@@ -289,7 +289,7 @@ Dedicated to Bluetooth and media controls.
 #### Tools
 
 | Label                                                                | Shortcut                                                                 | Action                        |
-| -------------------------------------------------------------------: | ------------------------------------------------------------------------ |  ---------------------------- |
+| -------------------------------------------------------------------: | -----------------------------------------------------------------------: |  ---------------------------- |
 | <kbd>![color-slurp](assets/icons/STG/color-slurp.svg)</kbd>          |                                                                          | Show Color Picker             |
 | <kbd>![color-picker](assets/icons/STG/color-picker.svg)</kbd>        | <kbd>⌥</kbd>+<kbd>![color-slurp](assets/icons/STG/color-slurp.svg)</kbd> | Pick a color                  |
 | <kbd>![screenshot](assets/icons/STG/screenshot.svg)</kbd>            |                                                                          | Capture screenshot options    |
@@ -304,7 +304,7 @@ Dedicated to Bluetooth and media controls.
 #### Media
 
 | Label                                                 | Shortcut                                                           | Action       |
-| ----------------------------------------------------: | ------------------------------------------------------------------ | ------------ |
+| ----------------------------------------------------: | -----------------------------------------------------------------: | ------------ |
 | <kbd>![vol-up](assets/icons/STG/vol-up.svg)</kbd>     |                                                                    | Volume up    |
 | <kbd>![vol-mute](assets/icons/STG/vol-mute.svg)</kbd> |                                                                    | Volume Mute  |
 | <kbd>![mic-mute](assets/icons/STG/mic-mute.svg)</kbd> | <kbd>⌥</kbd>+<kbd>![vol-mute](assets/icons/STG/vol-mute.svg)</kbd> | Mic Mute     |
