@@ -170,9 +170,7 @@ Letters, accents for Spanish language and quick shortcuts for most used symbols 
 | <kbd>⌦</kbd>   | <kbd>⌥</kbd>+<kbd>⌦</kbd>   | Delete word forward                                   |
 | <kbd>⌦</kbd>   | <kbd>⌘</kbd>+<kbd>⌦</kbd>   | Delete until end                                      |
 | <kbd>▷</kbd>   |                             | Left (terminal autocompletion)                        |
-| <kbd>🄰</kbd>   | <kbd>⇧</kbd>+<kbd>⎋</kbd>   | Caps lock                                             |
-| <kbd>⇧⇧</kbd>  | <kbd>L⇧</kbd>+<kbd>R⇧</kbd> | [Caps word](https://zmk.dev/docs/behaviors/caps-word) |
-| <kbd>⌘⌘</kbd>  | <kbd>L^</kbd>+<kbd>R^</kbd> | Cancel caps                                           |
+| <kbd>🄰</kbd>  | <kbd>⇧</kbd>+<kbd>⎋</kbd>   | Caps lock                                             |
 
 ### Files
 
@@ -202,20 +200,23 @@ Symbols and dev shortcuts for JS/TS.
 
 #### Browser DevTools
 
-| Label        | Shortcut                     | Action                     |
-| -----------: | ---------------------------: | -------------------------- |
-| <kbd>↻</kbd> |                              | Refresh                    |
-| <kbd>⟳</kbd> | <kbd>⇧</kbd>+<kbd>↻</kbd>    | Hard refresh (clean cache) |
-| <kbd>⩸</kbd> |                              | Open DevTools              |
+| Label                                                                         | Shortcut                                                                       | Action                     |
+| ----------------------------------------------------------------------------: | -----------------------------------------------------------------------------: | -------------------------- |
+| <kbd>![browser-reload](assets/icons/DEV/browser-reload.svg)</kbd>             |                                                                                | Refresh                    |
+| <kbd>![browser-reload-cache](assets/icons/DEV/browser-reload-cache.svg)</kbd> | <kbd>⇧</kbd>+<kbd>![browser-reload](assets/icons/DEV/browser-reload.svg)</kbd> | Hard refresh (clean cache) |
+| <kbd>![dev-tools](assets/icons/DEV/dev-tools.svg)</kbd>                       |                                                                                | Open DevTools              |
 
 #### IDE
 
-| Label               | Action                      |
-| ------------------: | --------------------------- |
-| <kbd>💬</kbd>       | Cursor: Add to Chat         |
-| <kbd>⚡</kbd>        | Cursor: Quick Edit          |
-| <kbd>//</kbd>       | Toggle line comment         |
-| <kbd>/\* \*/</kbd>  | Toggle block comment        |
+| Label                                                             | Shortcut                                                           | Action                      |
+| ----------------------------------------------------------------: | ------------------------------------------------------------------ | --------------------------- |
+| <kbd>![cursor-chat](assets/icons/DEV/cursor-chat.svg)</kbd>       |                                                                    | Cursor: Add to Chat         |
+| <kbd>![cursor-quick](assets/icons/DEV/cursor-quick.svg)</kbd>     |                                                                    | Cursor: Quick Edit          |
+| <kbd>//</kbd>                                                     |                                                                    | Toggle line comment         |
+| <kbd>/\* \*/</kbd>                                                |                                                                    | Toggle block comment        |
+| <kbd>![terminal](assets/icons/DEV/terminal.svg)</kbd>             |                                                                    | Open Terminal               |
+| <kbd>![terminal-new](assets/icons/DEV/terminal-shift.svg)</kbd>   | <kbd>⇧</kbd>+<kbd>![terminal](assets/icons/DEV/terminal.svg)</kbd> | Open New Terminal           |
+| <kbd>![terminal-max-min](assets/icons/DEV/terminal-alt.svg)</kbd> | <kbd>⌥</kbd>+<kbd>![terminal](assets/icons/DEV/terminal.svg)</kbd> | Max/Min Terminal            |
 
 ⇧ [Back to menu](#menu)
 
@@ -242,18 +243,18 @@ Quick navigation actions and numbers. Function keys works independently as a sub
 
 #### Actions
 
-| Label          | Shortcut                   | Action               |
-| -------------: | -------------------------- | -------------------- |
-| <kbd><\|</kbd> |                            | Expand selection     |
-| <kbd>\|></kbd> |                            | Shrink selection     |
-| <kbd>↶</kbd>   |                            | Undo                 |
-| <kbd>↷</kbd>   |                            | Redo                 |
-| <kbd>⬚</kbd>   |                            | Cut                  |
-| <kbd>⿻</kbd>  |                            | Copy                 |
-| <kbd>⏍</kbd>   |                            | Paste                |
-| <kbd>⛶</kbd>  | <kbd>⇧</kbd>+<kbd>⏍</kbd>  | Paste without format |
-| <kbd>☉</kbd>  |                            | Find                 |
-| <kbd>☊</kbd>  |                            | Replace              |
+| Label                                                                | Shortcut                                                     | Action               |
+| -------------------------------------------------------------------: | ------------------------------------------------------------ | -------------------- |
+| <kbd><\|</kbd>                                                       |                                                              | Expand selection     |
+| <kbd>\|></kbd>                                                       |                                                              | Shrink selection     |
+| <kbd>↶</kbd>                                                         |                                                              | Undo                 |
+| <kbd>↷</kbd>                                                         |                                                              | Redo                 |
+| <kbd>![cut](assets/icons/AXN/cut.svg)</kbd>                          |                                                              | Cut                  |
+| <kbd>![copy](assets/icons/AXN/copy.svg)</kbd>                        |                                                              | Copy                 |
+| <kbd>![paste](assets/icons/AXN/paste.svg)</kbd>                      |                                                              | Paste                |
+| <kbd>![paste-plain](assets/icons/AXN/paste-without-format.svg)</kbd> | <kbd>⇧</kbd>+<kbd>![paste](assets/icons/AXN/paste.svg)</kbd> | Paste without format |
+| <kbd>![find](assets/icons/AXN/find.svg)</kbd>                        |                                                              | Find                 |
+| <kbd>![replace](assets/icons/AXN/replace.svg)</kbd>                  |                                                              | Replace              |
 
 ⇧ [Back to menu](#menu)
 
@@ -265,68 +266,65 @@ Dedicated to Bluetooth and media controls.
 
 #### Actions
 
-| Label           | Shortcut                   | Action                           |
-| --------------: | -------------------------- |  ------------------------------- |
-| <kbd>B#️⃣</kbd>   |                           | Jump to #️⃣ device                |   
-| <kbd>❌</kbd>   |                            | ZMK Studio                       |
-| <kbd>CP</kbd>   | <kbd>⇧</kbd>+<kbd>❌</kbd> | Clear Current Bluetooth          |
-| <kbd>CA</kbd>   | <kbd>⌥</kbd>+<kbd>❌</kbd> | Clear All Bluetooth              |
-| <kbd>Z+</kbd>   |                            | Zoom in                          |
-| <kbd>ZR</kbd>   |                            | Zoom reset                       |
-| <kbd>ZR</kbd>   | <kbd>⇧</kbd>+<kbd>ZR</kbd> | Zoom reset VSCode                |
-| <kbd>Z-</kbd>   |                            | Zoom out                         |
-| <kbd>🔅</kbd>   |                            | Bright down                      |
-| <kbd>🔆</kbd>   |                            | Bright up                        |
-| <kbd>🔅</kbd>   | <kbd>⌥</kbd>+<kbd>🔅</kbd> | Dongle Bright down               |
-| <kbd>🔆</kbd>   | <kbd>⌥</kbd>+<kbd>🔆</kbd> | Dongle Bright up                 |
-| <kbd>⎚</kbd>    |                            | Application Window               |
-| <kbd>▤</kbd>    |                            | Mission Control                  |
-| <kbd>TB</kbd>   |                            | Switch to Bluethoot              |
-| <kbd>TU</kbd>   |                            | Switch to USB                    |
-| <kbd>TT</kbd>   |                            | Toggle between Bluethoot and USB |
+| Label                                                                       | Shortcut                                                                 | Action                           |
+| --------------------------------------------------------------------------: | ------------------------------------------------------------------------ |  ------------------------------- |
+| <kbd>![bt-number](assets/icons/STG/bt-number.svg)</kbd>                     |                                                                          | Jump to #️⃣ device                |   
+| <kbd>![zmk-studio](assets/icons/STG/zmk-studio.svg)</kbd>                   |                                                                          | ZMK Studio                       |
+| <kbd>![bt-clear-current](assets/icons/STG/bt-clear-current.svg)</kbd>       | <kbd>⇧</kbd>+<kbd>![zmk-studio](assets/icons/STG/zmk-studio.svg)</kbd>   | Clear Current Bluetooth          |
+| <kbd>![bt-clear-all](assets/icons/STG/bt-clear-all.svg)</kbd>               | <kbd>⌥</kbd>+<kbd>![zmk-studio](assets/icons/STG/zmk-studio.svg)</kbd>   | Clear All Bluetooth              |
+| <kbd>![zoom-in](assets/icons/STG/zoom-in.svg)</kbd>                         |                                                                          | Zoom in                          |
+| <kbd>![zoom-reset](assets/icons/STG/zoom-reset.svg)</kbd>                   |                                                                          | Zoom reset                       |
+| <kbd>![zoom-reset](assets/icons/STG/zoom-reset.svg)</kbd>                   | <kbd>⇧</kbd>+<kbd>![zoom-reset](assets/icons/STG/zoom-reset.svg)</kbd>   | Zoom reset IDE                   |
+| <kbd>![zoom-out](assets/icons/STG/zoom-out.svg)</kbd>                       |                                                                          | Zoom out                         |
+| <kbd>![bright-up](assets/icons/STG/bright-up.svg)</kbd>                     |                                                                          | Bright down                      |
+| <kbd>![bright-down](assets/icons/STG/bright-down.svg)</kbd>                 |                                                                          | Bright up                        |
+| <kbd>![bright-up](assets/icons/STG/bright-up.svg)</kbd>                     | <kbd>⌥</kbd>+<kbd>![bright-up](assets/icons/STG/bright-up.svg)</kbd>     | Dongle Bright down               |
+| <kbd>![bright-down](assets/icons/STG/bright-down.svg)</kbd>                 | <kbd>⌥</kbd>+<kbd>![bright-down](assets/icons/STG/bright-down.svg)</kbd> | Dongle Bright up                 |
+| <kbd>![mac-app-window](assets/icons/STG/mac-app-window.svg)</kbd>           |                                                                          | Application Window               |
+| <kbd>![mac-mission-control](assets/icons/STG/mac-mission-control.svg)</kbd> |                                                                          | Mission Control                  |
+| <kbd>![dongle-usb](assets/icons/STG/dongle-usb.svg)</kbd>                   |                                                                          | Switch to USB                    |
+| <kbd>![dongle-switch](assets/icons/STG/dongle-switch.svg)</kbd>             |                                                                          | Toggle between Bluethoot and USB |
+| <kbd>![dongle-bt](assets/icons/STG/dongle-bt.svg)</kbd>                     |                                                                          | Switch to Bluethoot              |
 
 #### Tools
 
-| Label          | Shortcut                   | Action                        |
-| -------------: | -------------------------- |  ---------------------------- |
-| <kbd>⛢</kbd>  |                            | Show Color Picker             |
-| <kbd>🜜</kbd>   | <kbd>⌥</kbd>+<kbd>⛢</kbd> | Pick a color                  |
-| <kbd>□</kbd>   |                            | Capture screenshot options    |
-| <kbd>▣</kbd>   | <kbd>⇧</kbd>+<kbd>□</kbd>  | Capture of selected area      |
-| <kbd>▣</kbd>   | <kbd>▣</kbd>+<kbd>␣</kbd>  | Capture a window or menu      |
-| <kbd>⛶</kbd>  | <kbd>⌥</kbd>+<kbd>□</kbd>  | Capture with teampaper         |
-| <kbd>⎅</kbd>   |                            | Finder (File Explorer)        |
-| <kbd>⌑</kbd>   | <kbd>⌥</kbd>+<kbd>⎅</kbd>  | Show/hide system files        |
+| Label                                                                | Shortcut                                                                 | Action                        |
+| -------------------------------------------------------------------: | ------------------------------------------------------------------------ |  ---------------------------- |
+| <kbd>![color-slurp](assets/icons/STG/color-slurp.svg)</kbd>          |                                                                          | Show Color Picker             |
+| <kbd>![color-picker](assets/icons/STG/color-picker.svg)</kbd>        | <kbd>⌥</kbd>+<kbd>![color-slurp](assets/icons/STG/color-slurp.svg)</kbd> | Pick a color                  |
+| <kbd>![screenshot](assets/icons/STG/screenshot.svg)</kbd>            |                                                                          | Capture screenshot options    |
+| <kbd>![screenshoot-save](assets/icons/STG/screenshot-save.svg)</kbd> | <kbd>⇧</kbd>+<kbd>![screenshot](assets/icons/STG/screenshot.svg)</kbd>   | Capture of selected area      |
+| <kbd>![screenshot-edit](assets/icons/STG/screenshot-edit.svg)</kbd>  | <kbd>⌥</kbd>+<kbd>![screenshot](assets/icons/STG/screenshot.svg)</kbd>   | Capture with teampaper        |
+| <kbd>![finder](assets/icons/STG/mac-finder.svg)</kbd>                |                                                                          | Finder (File Explorer)        |
+| <kbd>![mac-hide](assets/icons/STG/mac-hide.svg)</kbd>                | <kbd>⌥</kbd>+<kbd>![finder](assets/icons/STG/mac-finder.svg)</kbd>       | Show/hide system files        |
 
 > [!NOTE]
 > Combine `^` with `⇧` or `⌥` for sending the screenshoot to the clipboard instead of saving it to a file.
 
 #### Media
 
-| Label         | Shortcut                  | Action       |
-| ------------: | ------------------------- | ------------ |
-| <kbd>🔊</kbd> |                            | Volume up    |
-| <kbd>🔇</kbd> |                            | Volume Mute  |
-| <kbd>🎙️</kbd> | <kbd>⌥</kbd>+<kbd>🔇</kbd> | Mic Mute     |
-| <kbd>🔉</kbd> |                            | Volume down  |
-
-> Requires (MuteKey)[https://apps.apple.com/us/app/mutekey/id1509590766?mt=12] app
+| Label                                                 | Shortcut                                                           | Action       |
+| ----------------------------------------------------: | ------------------------------------------------------------------ | ------------ |
+| <kbd>![vol-up](assets/icons/STG/vol-up.svg)</kbd>     |                                                                    | Volume up    |
+| <kbd>![vol-mute](assets/icons/STG/vol-mute.svg)</kbd> |                                                                    | Volume Mute  |
+| <kbd>![mic-mute](assets/icons/STG/mic-mute.svg)</kbd> | <kbd>⌥</kbd>+<kbd>![vol-mute](assets/icons/STG/vol-mute.svg)</kbd> | Mic Mute     |
+| <kbd>![vol-down](assets/icons/STG/vol-down.svg)</kbd> |                                                                    | Volume down  |
 
 #### IDE
 
-| Label        | Action |
-| -----------: | ------ |
-| <kbd>☗</kbd> | Home   |
-| <kbd>♆</kbd> | Git    |
-| <kbd>♺</kbd> | Debug  |
-| <kbd>⊛</kbd> | ToDo   |
+| Label                                                   | Action |
+| ------------------------------------------------------: | ------ |
+| <kbd>![ide-home](assets/icons/STG/ide-home.svg)</kbd>   | Home   |
+| <kbd>![ide-git](assets/icons/STG/ide-git.svg)</kbd>     | Git    |
+| <kbd>![ide-debug](assets/icons/STG/ide-debug.svg)</kbd> | Debug  |
+| <kbd>![ide-todo](assets/icons/STG/ide-todo.svg)</kbd>   | ToDo   |
 
 #### MacOS
 
-| Label        | Action             |
-| -----------: | ------------------ |
-| <kbd>▤</kbd> | Mission Control    |
-| <kbd>⎚</kbd> | Application Window |
+| Label                                                                   | Action             |
+| ----------------------------------------------------------------------: | ------------------ |
+| <kbd>![mission-control](assets/icons/STG/mac-mission-control.svg)</kbd> | Mission Control    |
+| <kbd>![mac-window](assets/icons/STG/mac-app-window.svg)</kbd>           | Application Window |
 
 ⇧ [Back to menu](#menu)
 
@@ -350,6 +348,13 @@ Dedicated to Bluetooth and media controls.
 - [ZMK Docs](https://zmk.dev/docs) - Modern, open source keyboard firmware
 - [ZMK physical layouts converter](https://zmk-physical-layout-converter.streamlit.app/) - Tool to convert and visualize physical layout representations for ZMK Studio
 - [Figma](https://www.figma.com/) - The collaborative interface design tool
+
+### Tools
+
+- (ColorSlurp)[https://apps.apple.com/us/app/colorslurp/id1287239339]
+- (Teampaper)[https://apps.apple.com/us/app/teampaper-screen-capture-tool/id1199502670?mt=12]
+- (MuteKey)[https://apps.apple.com/us/app/mutekey/id1509590766?mt=12]
+- (Rectangle)[https://rectangleapp.com/]
 
 ### Typing
 
