@@ -151,7 +151,7 @@
 
             #define MATL0  MKY_ESC                       // tap: escape ¦ shift: caps lock ¦ hold: BAS layer
             #define MATL1  &none
-            #define MATL2  &none
+            #define MATL2  &kp SPACE                     // tap: blank space 
             #define MATL3  &none
 
             #define MATR3  &mp_DEV_ar                    // tap: bakcspase ¦ shift: delete
