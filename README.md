@@ -351,10 +351,10 @@ Dedicated to Bluetooth and media controls.
 
 ### Tools
 
-- (ColorSlurp)[https://apps.apple.com/us/app/colorslurp/id1287239339]
-- (Teampaper)[https://apps.apple.com/us/app/teampaper-screen-capture-tool/id1199502670?mt=12]
-- (MuteKey)[https://apps.apple.com/us/app/mutekey/id1509590766?mt=12]
-- (Rectangle)[https://rectangleapp.com/]
+- [ColorSlurp](https://apps.apple.com/us/app/colorslurp/id1287239339)
+- [Teampaper](https://apps.apple.com/us/app/teampaper-screen-capture-tool/id1199502670?mt=12)
+- [MuteKey](https://apps.apple.com/us/app/mutekey/id1509590766?mt=12)
+- [Rectangle](https://rectangleapp.com/)
 
 ### Typing
 
