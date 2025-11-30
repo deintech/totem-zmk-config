@@ -6,34 +6,34 @@ to_BAS_kp: to_BAS_kp {
     bindings = <&to_BAS>, <&kp>;
 };
 
-mo_DEV_to_BAS_kp: mo_DEV_to_BAS_kp {
+mo_DEV_kp: mo_DEV_kp {
     compatible = "zmk,behavior-hold-tap";
     #binding-cells = <2>;
     tapping-term-ms = <HP_TAPPING>;
     flavor = "hold-preferred";
-    bindings = <&mo_DEV_to_BAS>, <&kp>;
+    bindings = <&mo_DEV>, <&kp>;
 };
 
-mo_AXN_to_BAS_kp: mo_AXN_to_BAS_kp {
+mo_AXN_kp: mo_AXN_kp {
     compatible = "zmk,behavior-hold-tap";
     #binding-cells = <2>;
     tapping-term-ms = <HP_TAPPING>;
     flavor = "hold-preferred";
-    bindings = <&mo_AXN_to_BAS>, <&kp>;
+    bindings = <&mo_AXN>, <&kp>;
 };
 
-mo_FNK_to_BAS_kp: mo_FNK_to_BAS_kp {
+mo_FNK_kp: mo_FNK_kp {
     compatible = "zmk,behavior-hold-tap";
     #binding-cells = <2>;
     tapping-term-ms = <HP_TAPPING>;
     flavor = "hold-preferred";
-    bindings = <&mo_FNK_to_BAS>, <&kp>;
+    bindings = <&mo_FNK>, <&kp>;
 };
 
-mo_STG_to_BAS_kp: mo_STG_to_BAS_kp {
+mo_STG_kp: mo_STG_kp {
     compatible = "zmk,behavior-hold-tap";
     #binding-cells = <2>;
     tapping-term-ms = <HP_TAPPING>;
     flavor = "hold-preferred";
-    bindings = <&mo_STG_to_BAS>, <&kp>;
+    bindings = <&mo_STG>, <&kp>;
 };

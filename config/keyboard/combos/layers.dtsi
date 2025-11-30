@@ -20,7 +20,7 @@ combo_to_FNK {
 };
 
 combo_to_STG {
-    bindings = <&mo_STG_to_BAS>;
+    bindings = <&mo_STG>;
     key-positions = <34 35>;
     slow-release;
     layers = <BAS DEV AXN FNK>;
