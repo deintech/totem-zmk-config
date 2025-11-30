@@ -61,11 +61,16 @@
  * when the key is released. This is used to derive the final
  */
 
- #define MO_MACRO(TO)                       \
-    mo_##TO##: mo_##TO##_layer {            \
-        compatible = "zmk,behavior-macro";  \
-        #binding-cells = <0>;               \
-        bindings = <&mo TO>;                \
+#define MO_MACRO(MO, TO)                               \
+    mo_##MO##_to_##TO##: momentary_##MO##_to_##TO## {  \
+        compatible = "zmk,behavior-macro";             \
+        #binding-cells = <0>;                          \
+        wait-ms = <MC_LAYERS>;                         \
+        tap-ms = <MC_LAYERS>;                          \
+        bindings                                       \
+            = <&macro_press &mo MO>                    \
+            , <&macro_pause_for_release>               \
+            , <&macro_release &mo MO>;                 \
     };
 
 #define MOTO_MACRO(MO, TO)                             \
