@@ -62,7 +62,7 @@
  */
 
  #define MO_MACRO(TO)                       \
-    mo_##TO##: to_##TO##_layer {            \
+    mo_##TO##: mo_##TO##_layer {            \
         compatible = "zmk,behavior-macro";  \
         #binding-cells = <0>;               \
         bindings = <&mo TO>;                \
