@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: janpfischer
       url-base: https://github.com/janpfischer
+    - name: caksoylar
+      url-base: https://github.com/caksoylar
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -12,5 +14,8 @@ manifest:
     - name: zmk-dongle-screen
       remote: janpfischer
       revision: main
+    - name: zmk-rgbled-widget
+      remote: caksoylar
+      revision: mai
   self:
     path: config
